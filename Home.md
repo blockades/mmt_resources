@@ -13,6 +13,13 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 * [Crypto Instructions Shared Open Source Documentation](https://docs.google.com/document/d/1KNGu-RQ5Iw3FovJKPWHSyc2p-_HXU9V9WMrrrJvSfi4/edit) Please add notes to this document as you go along so we can all benefit from your insights and learnings!
 
+# Related projects
+
+* [Blockades.org](http://blockades.org/)
+* [Dyne.org digital community and free software foundry](https://www.dyne.org/)
+* [Bank of the Commons](https://bankofthecommons.coop/who-we-are/)
+* [FairCoin](https://fair.coop/faircoin/)
+
 ## Models and examples
 
 * [Bail bloc](https://bailbloc.thenewinquiry.com/about.html) - using Monero mining to pay bail for low-income people in New York.
