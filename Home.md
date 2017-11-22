@@ -1,7 +1,9 @@
 
 # MMT resources
 
-Here is a list of resources collated from loomio and keybase.  Please add more.  or organise them better/add comments.  
+Here is a list of resources collated from loomio and keybase.  Please add more.  or organise them better/add comments.  Dont be afraid to go off topic!  You can use this for anything you find interesting that you think others might also like.
+
+To edit this list, click on the 'edit' button above.  Alternatively you can clone this repository to your computer using the link to the right, and use your text editor to make changes, then push the changes using git.  
 
 # Reading group
 
