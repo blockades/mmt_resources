@@ -88,4 +88,6 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 * [Nakamoto, Satoshi, 2008. "Bitcoin: A Peer-to-Peer Electronic Cash System."](http://Bitcoin.org/Bitcoin.pdf)
 
+## conferencing
 
+* [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page) - peg's proposal for a way of conferencing without relying on google or microsoft.  it might not be encrypted, and be audio only.  but the only online meeting ive ever had that did not involve ages of messing about with settings was with mumble.  know something better?  put it here.
