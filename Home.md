@@ -20,6 +20,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Bank of the Commons](https://bankofthecommons.coop/who-we-are/)
 * [FairCoin](https://fair.coop/faircoin/)
 
+* [Explanation of mmt on scuttlebot](https://viewer.scuttlebot.io/%25Vxdim9E7D8JHERHKLc6T0qMHcd2Bw9cG58Mb8Z0xpdQ%3D.sha256)
 ## Models and examples
 
 * [Bail bloc](https://bailbloc.thenewinquiry.com/about.html) - using Monero mining to pay bail for low-income people in New York.
@@ -40,6 +41,12 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * Ruby programming: [ruby koans](https://github.com/CUNY-TAP/ruby-koans)
 * [Basic Ruby app with Sinatra](https://github.com/wegotcoders/wgc_groundwork)
 * [bbatsov/ruby-style-guide: A community-driven Ruby coding style guide](https://github.com/bbatsov/ruby-style-guide)
+
+### docker
+
+* [50+ Useful Docker Tools | Caylent](http://caylent.com/50-useful-docker-tools/)
+* [Dockerizing a Ruby on Rails Application - Semaphore](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
+* [Quickstart: Compose and Rails | Docker Documentation](https://docs.docker.com/compose/rails/)
 
 ## unsorted
 
