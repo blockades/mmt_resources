@@ -42,11 +42,13 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Basic Ruby app with Sinatra](https://github.com/wegotcoders/wgc_groundwork)
 * [bbatsov/ruby-style-guide: A community-driven Ruby coding style guide](https://github.com/bbatsov/ruby-style-guide)
 
-### docker
+### Container-related
 
 * [50+ Useful Docker Tools | Caylent](http://caylent.com/50-useful-docker-tools/)
 * [Dockerizing a Ruby on Rails Application - Semaphore](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
 * [Quickstart: Compose and Rails | Docker Documentation](https://docs.docker.com/compose/rails/)
+* [Rancher](http://rancher.com/) open source container management platform
+* [Travis CI](https://travis-ci.org/)
 
 ## unsorted
 
