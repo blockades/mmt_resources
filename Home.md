@@ -49,10 +49,12 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Quickstart: Compose and Rails | Docker Documentation](https://docs.docker.com/compose/rails/)
 * [Rancher](http://rancher.com/) open source container management platform
 * [Travis CI](https://travis-ci.org/)
+* [captainduckduck: Automated Scalable Ready Webserver Package | In experimental phase](https://github.com/githubsaturn/captainduckduck/)
 
 ## unsorted
 
 * [Triple Entry Accounting](http://iang.org/papers/triple_entry.html) - Ian Grigg
+* [EOS - an Introduction](http://iang.org/papers/EOS_An_Introduction.pdf) - Ian Grigg
 * [ssbc/patchwork: A decentralized messaging and sharing app built on top of Secure Scuttlebutt (SSB).](https://github.com/ssbc/patchwork)
 * [Blockstream/satellite: Blockstream Satellite](https://github.com/Blockstream/satellite)
 * [Unenumerated](http://unenumerated.blogspot.de/) nick szabo's blog
