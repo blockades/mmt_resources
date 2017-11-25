@@ -27,6 +27,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## Programming resources
 
+* [Open Source Guides | Learn how to launch and grow your project.](https://opensource.guide/)
 * Many different languages: [code academy](https://www.codecademy.com/)
 * Maths problems: [projecteuler.net](https://projecteuler.net/)
 * [OverTheWire: Bandit](http://overthewire.org/wargames/bandit/) game to help improve command line skills
@@ -59,8 +60,10 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Blockstream/satellite: Blockstream Satellite](https://github.com/Blockstream/satellite)
 * [Unenumerated](http://unenumerated.blogspot.de/) nick szabo's blog
 
-## privacy tools
+## privacy/security tools
 
+* [Diceware Secure Passphrase and Password Generator](https://www.rempe.us/diceware/#eff)
+* [KeePass Password Safe](https://keepass.info/)
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) - [Tomb :: File Encryption on GNU/Linux](https://www.dyne.org/software/tomb/)
 * [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
 * [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook)
@@ -71,12 +74,19 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 * [Andrew O’Hagan · The Satoshi Affair · LRB 30 June 2016](https://www.lrb.co.uk/v38/n13/andrew-ohagan/the-satoshi-affair)
 * [The cypherpunk revolution](http://projects.csmonitor.com/cypherpunk) - the history of cryptography
-* [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) [jimmy song twitter](https://twitter.com/jimmysong?s=09) [Bitcoin Tech Talk](https://bitcointechtalk.com/)
-* [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
+* [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) - [jimmy song twitter](https://twitter.com/jimmysong?s=09) - [Bitcoin Tech Talk](https://bitcointechtalk.com/)
+* [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [rustyrussels remarkably unreliable guide to bitcoin storage](https://github.com/rustyrussell/bitcoin-storage-guide)
 * [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning)
 
+* [Bitcoin-Treff.de](http://bitcoin-treff.de/) - buy bitcoins face to face without fees in germany.  
 
+### wallet software
+
+* [Electrum Bitcoin Wallet](https://electrum.org/#home) - [Cold Storage — Electrum 2.10 documentation](http://docs.electrum.org/en/latest/coldstorage.html#create-a-watching-only-version-of-your-wallet) 
+* [MyEtherWallet.com](https://www.myetherwallet.com/)
+* [NEON](http://neonwallet.com/)
+* [MyZenWallet.io](https://myzenwallet.io/)
 
 ### books
 
