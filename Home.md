@@ -55,6 +55,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## unsorted
 
+* [Backfeed - Spreading Consensus](http://backfeed.cc/)
 * [Triple Entry Accounting](http://iang.org/papers/triple_entry.html) - Ian Grigg
 * [EOS - an Introduction](http://iang.org/papers/EOS_An_Introduction.pdf) - Ian Grigg
 * [ssbc/patchwork: A decentralized messaging and sharing app built on top of Secure Scuttlebutt (SSB).](https://github.com/ssbc/patchwork)
@@ -73,14 +74,19 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### web
 
+* News/media:  [The Merkle](https://themerkle.com/) - [CoinDesk](http://www.coindesk.com/) - [Cointelegraph](https://cointelegraph.com/) 
+* [LocalBitcoins](https://localbitcoins.com/) 
+* [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq)
 * [Andrew O’Hagan · The Satoshi Affair · LRB 30 June 2016](https://www.lrb.co.uk/v38/n13/andrew-ohagan/the-satoshi-affair)
+* [Finland Turns to Blockchain to Help Unbanked Refugees](https://www.cryptocoinsnews.com/finns-turn-to-blockchain-to-help-unbanked-refugees-enter-the-digital-economy/)
 * [The cypherpunk revolution](http://projects.csmonitor.com/cypherpunk) - the history of cryptography
 * [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) - [jimmy song twitter](https://twitter.com/jimmysong?s=09) - [Bitcoin Tech Talk](https://bitcointechtalk.com/)
 * [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [rustyrussels remarkably unreliable guide to bitcoin storage](https://github.com/rustyrussell/bitcoin-storage-guide)
 * [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning)
-
 * [Bitcoin-Treff.de](http://bitcoin-treff.de/) - buy bitcoins face to face without fees in germany.  
+* [Honigdachs - Der Bitcoin-Podcast aus Leipzig](https://coinspondent.de/news-nachrichten/bitcoin-podcasts/honigdachs-der-bitcoin-podcast-aus-leipzig/) German language bitcoin podcast
+* [pegs blockchain article](http://ehion.com/~ameba/site/blockchain/) Our submission to more automation and control, or the path to a more free and decentralised world? - several years old now
 
 ### wallet software
 
