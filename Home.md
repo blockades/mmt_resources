@@ -45,6 +45,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### Container-related
 
+* [docker 'from scratch'](https://embano1.github.io/post/scratch/)
 * [50+ Useful Docker Tools | Caylent](http://caylent.com/50-useful-docker-tools/)
 * [Dockerizing a Ruby on Rails Application - Semaphore](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
 * [Quickstart: Compose and Rails | Docker Documentation](https://docs.docker.com/compose/rails/)
@@ -102,6 +103,6 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## communication
 
-* [Keybase](https://keybase.io/)  
+* [Keybase](https://keybase.io/) - [understanding following and the web of trust](https://keybase.io/docs/server_security/following)
 * [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page) - peg's proposal for a way of conferencing without relying on google or microsoft.  it might not be encrypted, and be audio only.  but the only online meeting ive ever had that did not involve ages of messing about with settings was with mumble.  know something better?  put it here.
 * [Matrix.org](https://matrix.org/)  Yet another open network for secure, decentralized communication.
