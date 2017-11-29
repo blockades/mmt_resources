@@ -9,6 +9,8 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 * [Collective Courage: A History of African American Cooperative Economic Thought and Practice By Jessica Gordon Nembhard](http://www.psupress.org/books/titles/978-0-271-06216-7.html) - how to link to the actual pdf on loomio?
 
+> @peg I think you would need to uploaded the resource (the pdf) to a repo and then you would get the url for the pdf and then you would reference it here with the url using this syntax: https://stackoverflow.com/questions/39777166/display-pdf-image-in-markdown
+
 # Editable guide
 
 * [Crypto Instructions Shared Open Source Documentation](https://docs.google.com/document/d/1KNGu-RQ5Iw3FovJKPWHSyc2p-_HXU9V9WMrrrJvSfi4/edit) Please add notes to this document as you go along so we can all benefit from your insights and learnings!
