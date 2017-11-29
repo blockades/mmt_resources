@@ -113,3 +113,8 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Keybase](https://keybase.io/) - [understanding following and the web of trust](https://keybase.io/docs/server_security/following)
 * [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page) - peg's proposal for a way of conferencing without relying on google or microsoft.  it might not be encrypted, and be audio only.  but the only online meeting ive ever had that did not involve ages of messing about with settings was with mumble.  know something better?  put it here.
 * [Matrix.org](https://matrix.org/)  Yet another open network for secure, decentralized communication.
+
+
+## disorganised dump
+
+https://medium.com/@jillcarlson/cryptocurrency-101-4f141c00ff00
