@@ -117,4 +117,4 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## disorganised dump
 
-https://medium.com/@jillcarlson/cryptocurrency-101-4f141c00ff00
+* [Jill Carson's Cryptocurrency 101 reading list](https://medium.com/@jillcarlson/cryptocurrency-101-4f141c00ff00)
