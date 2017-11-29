@@ -61,6 +61,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [ssbc/patchwork: A decentralized messaging and sharing app built on top of Secure Scuttlebutt (SSB).](https://github.com/ssbc/patchwork)
 * [Blockstream/satellite: Blockstream Satellite](https://github.com/Blockstream/satellite)
 * [Unenumerated](http://unenumerated.blogspot.de/) nick szabo's blog
+* [Jill Carson's Cryptocurrency 101 reading list](https://medium.com/@jillcarlson/cryptocurrency-101-4f141c00ff00)
 
 ## privacy/security tools
 
@@ -114,7 +115,3 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page) - peg's proposal for a way of conferencing without relying on google or microsoft.  it might not be encrypted, and be audio only.  but the only online meeting ive ever had that did not involve ages of messing about with settings was with mumble.  know something better?  put it here.
 * [Matrix.org](https://matrix.org/)  Yet another open network for secure, decentralized communication.
 
-
-## disorganised dump
-
-* [Jill Carson's Cryptocurrency 101 reading list](https://medium.com/@jillcarlson/cryptocurrency-101-4f141c00ff00)
