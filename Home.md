@@ -74,6 +74,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### web
 
+* [Time to bin Bitcoin?](http://matslats.net/time-to-bin-bitcoin) Matt Slater's criticism of bitcoin.  Also more interesting stuff on this site.
 * News/media:  [The Merkle](https://themerkle.com/) - [CoinDesk](http://www.coindesk.com/) - [Cointelegraph](https://cointelegraph.com/) 
 * [LocalBitcoins](https://localbitcoins.com/) 
 * [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq)
