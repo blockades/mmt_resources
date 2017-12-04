@@ -5,6 +5,8 @@ Here is a list of resources collated from loomio and keybase.  Please add more. 
 
 To edit this list, click on the 'edit' button above.  Alternatively you can clone this repository to your computer using the link to the right, and use your text editor to make changes, then push the changes using git.  
 
+***please note*** links to cryptocurrencies, exchanges or wallet software listed here does not imply they are recommended or endorsed by this group unless explicity stated.  Rather, this is a place to gather links of things that have been talked about to save searching for them again.  
+
 # Reading group
 
 * [Collective Courage: A History of African American Cooperative Economic Thought and Practice By Jessica Gordon Nembhard](http://www.psupress.org/books/titles/978-0-271-06216-7.html) - how to link to the actual pdf on loomio?
