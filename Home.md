@@ -9,9 +9,12 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 # Reading group
 
-* [Collective Courage: A History of African American Cooperative Economic Thought and Practice By Jessica Gordon Nembhard](http://www.psupress.org/books/titles/978-0-271-06216-7.html) - how to link to the actual pdf on loomio?
-
-> @peg I think you would need to uploaded the resource (the pdf) to a repo and then you would get the url for the pdf and then you would reference it here with the url using this syntax: https://stackoverflow.com/questions/39777166/display-pdf-image-in-markdown
+* [Collective Courage: A History of African American Cooperative Economic Thought and Practice By Jessica Gordon Nembhard](http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf) 
+<object data="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 # Editable guide
 
