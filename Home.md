@@ -10,11 +10,6 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 # Reading group
 
 * [Collective Courage: A History of African American Cooperative Economic Thought and Practice By Jessica Gordon Nembhard](http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf) 
-<object data="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://ameba.ehion.com/download/Jessica_Gordon_Nembhard-Collective_courage.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
 
 # Editable guide
 
@@ -85,14 +80,16 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 * [Time to bin Bitcoin?](http://matslats.net/time-to-bin-bitcoin) Matt Slater's criticism of bitcoin.  Also more interesting stuff on this site.
 * News/media:  [The Merkle](https://themerkle.com/) - [CoinDesk](http://www.coindesk.com/) - [Cointelegraph](https://cointelegraph.com/) 
 * [LocalBitcoins](https://localbitcoins.com/) 
+* [Jameson Lopp's Bitcoin Resources](http://lopp.net/bitcoin.html) - A large list of beginners guides, articles, online courses, documentaries. 
+* [beginnersproject.org](https://beginnersproject.org/) Bitcoin for beginners blog by David Oliver Doswell
 * [Bitcoin Beginners FAQ- blockchain.info](https://blockchain.info/wallet/bitcoin-faq)
 * [Andrew O’Hagan · The Satoshi Affair · LRB 30 June 2016](https://www.lrb.co.uk/v38/n13/andrew-ohagan/the-satoshi-affair)
 * [Finland Turns to Blockchain to Help Unbanked Refugees](https://www.cryptocoinsnews.com/finns-turn-to-blockchain-to-help-unbanked-refugees-enter-the-digital-economy/)
 * [The cypherpunk revolution](http://projects.csmonitor.com/cypherpunk) - the history of cryptography
-* [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) - [jimmy song twitter](https://twitter.com/jimmysong?s=09) - [Bitcoin Tech Talk](https://bitcointechtalk.com/)
+* [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) - [jimmy song twitter](https://twitter.com/jimmysong?s=09) - [Bitcoin Tech Talk](https://bitcointechtalk.com/) - Jimmy song gives regular technical news about bitcoin and other projects.  
 * [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [rustyrussels remarkably unreliable guide to bitcoin storage](https://github.com/rustyrussell/bitcoin-storage-guide)
-* [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning)
+* [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning) - project aiming to solve the scaling problem
 * [Bitcoin-Treff.de](http://bitcoin-treff.de/) - buy bitcoins face to face without fees in germany.  
 * [Honigdachs - Der Bitcoin-Podcast aus Leipzig](https://coinspondent.de/news-nachrichten/bitcoin-podcasts/honigdachs-der-bitcoin-podcast-aus-leipzig/) German language bitcoin podcast
 * [pegs blockchain article](http://ehion.com/~ameba/site/blockchain/) Our submission to more automation and control, or the path to a more free and decentralised world? - several years old now
@@ -100,9 +97,9 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 ### wallet software
 
 * [Electrum Bitcoin Wallet](https://electrum.org/#home) - [Cold Storage — Electrum 2.10 documentation](http://docs.electrum.org/en/latest/coldstorage.html#create-a-watching-only-version-of-your-wallet) 
-* [MyEtherWallet.com](https://www.myetherwallet.com/)
-* [NEON](http://neonwallet.com/)
-* [MyZenWallet.io](https://myzenwallet.io/)
+* [MyEtherWallet.com](https://www.myetherwallet.com/) - javascript based Ethereum wallet.
+* [NEON](http://neonwallet.com/) - NEO wallet
+* [MyZenWallet.io](https://myzenwallet.io/) - Zencash wallet.
 
 ### books
 
