@@ -109,6 +109,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### projects
 
+* [statoshi.info](https://statoshi.info/) - web interface to a running instance of Jameson Lopp's statoshi software - realtime bitcoin node statistics 
 * [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning) - project aiming to solve the scaling problem
 
