@@ -57,7 +57,6 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## unsorted
 
-* [Backfeed - Spreading Consensus](http://backfeed.cc/)
 * [Triple Entry Accounting](http://iang.org/papers/triple_entry.html) - Ian Grigg
 * [EOS - an Introduction](http://iang.org/papers/EOS_An_Introduction.pdf) - Ian Grigg
 * [ssbc/patchwork: A decentralized messaging and sharing app built on top of Secure Scuttlebutt (SSB).](https://github.com/ssbc/patchwork)
@@ -68,7 +67,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 ## privacy/security tools
 
 * [Diceware Secure Passphrase and Password Generator](https://www.rempe.us/diceware/#eff)
-* [KeePass Password Safe](https://keepass.info/)
+* [KeePass Password Safe](https://keepass.info/) - Software for managing passwords
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) - [Tomb :: File Encryption on GNU/Linux](https://www.dyne.org/software/tomb/)
 * [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
 * [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook)
@@ -95,9 +94,10 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### buying and selling
 
-* [LocalBitcoins](https://localbitcoins.com/) - escrow service and face-to-face meeting platform.
-* [Bitcoin-Treff.de](http://bitcoin-treff.de/) - buy bitcoins face to face without fees in germany.
-* mycelium - mobile wallet with 'marketplace' function allowing face-to-face meetings (with fees)
+* [LocalBitcoins](https://localbitcoins.com/) - bitcoin escrow service and face-to-face meeting platform.
+* [Bitcoin-Treff.de](http://bitcoin-treff.de/) - buy bitcoins face to face without fees or id checks in germany.
+* mycelium - mobile bitcoin wallet with 'marketplace' function allowing face-to-face meetings (with fees)
+* Crypto-to-crypto:  bittrex, shapeshift.io [flyp.me](https://flyp.me) 
 * please add links to exchanges - kraken, bitstamp, coinbase, coinjar, etc.  or even better write comments about them.
 
 ### wallet software
@@ -109,9 +109,12 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ### projects
 
-* [statoshi.info](https://statoshi.info/) - web interface to a running instance of Jameson Lopp's statoshi software - realtime bitcoin node statistics 
+* [statoshi.info](https://statoshi.info/) - web interface to a running instance of Jameson Lopp's statoshi software - realtime bitcoin node statistics - allows you to see what is happenning on the bitcoin network
 * [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning) - project aiming to solve the scaling problem
+* [Backfeed - Spreading Consensus](http://backfeed.cc/) - social collabouration consensus software project.  been around for a while.  Anyone have opinions on it?
+* [Johoe Mempool size statistics](https://jochen-hoenicke.de/queue/#24h) - Statistics showing unconfirmed transactions and fees on the bitcoin network
+* [pineapple fund](https://pineapplefund.org/) - Project to give money to charities run by an individual who has more bitcoin than they need.
 
 ### books
 
