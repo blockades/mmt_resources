@@ -27,6 +27,9 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 * [Bail bloc](https://bailbloc.thenewinquiry.com/about.html) - using Monero mining to pay bail for low-income people in New York.
 
+## Workshop resources
+* [An Introduction to Crypto Workbook](https://drive.google.com/open?id=11fJfWa5a6FX8h-2zGI5ZZFm7bNKGN6L1wWhnfrUOMQg) - workbook on how to setup KeePass, myEtherWallet, NEON wallet, Samourai Wallet and more... An ongoing project.
+
 ## Programming resources
 
 * [Open Source Guides | Learn how to launch and grow your project.](https://opensource.guide/)
