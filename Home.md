@@ -9,7 +9,7 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## Sections
 
-* [Guides](./Guides.md) - how-tos for getting set up with crypto/ various tech
+* [Guides](https://github.com/blockades/mmt_resources/wiki/Guides) - how-tos for getting set up with crypto/ various tech
 * [Trading](./Trading.md) - tools and links for trading crypto
 * [Tools](./Tools.md) - general programming / crypto links
 * [Projects](./Projects.md) - other projects in our neighbourhood
