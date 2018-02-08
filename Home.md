@@ -10,20 +10,14 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 ## Sections
 
 * [Guides](https://github.com/blockades/mmt_resources/wiki/Guides) - how-tos for getting set up with crypto/ various tech
-* [Trading](./Trading.md) - tools and links for trading crypto
-* [Tools](./Tools.md) - general programming / crypto links
-* [Projects](./Projects.md) - other projects in our neighbourhood
-* [Reading](./Reading.md) - material that's learning, news
-* [Onboarding](./Onboarding.md) - things you need to know when joining MMT
-  - [People](./People.md) - the people participating in MMT
+* [Trading](https://github.com/blockades/mmt_resources/wiki/Trading) - tools and links for trading crypto
+* [Tools](https://github.com/blockades/mmt_resources/wiki/Tools) - general programming / crypto links
+* [Projects](https://github.com/blockades/mmt_resources/wiki/Projects) - other projects in our neighbourhood
+* [Reading](https://github.com/blockades/mmt_resources/wiki/Reading) - material that's learning, news
+* [Onboarding](https://github.com/blockades/mmt_resources/wiki/Onboarding) - things you need to know when joining MMT
+  - [People](https://github.com/blockades/mmt_resources/wiki/People) - the people participating in MMT
 
 
 ---
-
-_misc : don't know where this goes_
-
-## Models and examples
-
-* [Bail bloc](https://bailbloc.thenewinquiry.com/about.html) - using Monero mining to pay bail for low-income people in New York.
 
 

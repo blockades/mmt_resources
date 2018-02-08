@@ -8,6 +8,7 @@
 
 ### other
 
+* [Bail bloc](https://bailbloc.thenewinquiry.com/about.html) - using Monero mining to pay bail for low-income people in New York.
 * [statoshi.info](https://statoshi.info/) - web interface to a running instance of Jameson Lopp's statoshi software - realtime bitcoin node statistics - allows you to see what is happenning on the bitcoin network
 * [mimblewimble whitepaper](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt) - [Silly Sounding Tech Could Seriously Reform Bitcoin - CoinDesk](https://www.coindesk.com/mimblewimble-silly-sounding-tech-seriously-reform-bitcoin/) - [mimblewimble/grin - github](https://github.com/mimblewimble/grin/blob/master/doc/intro.md)
 * [Lightning Network](http://lightning.network/) [ElementsProject/lightning: c-lightning — a Lightning Network implementation in C](https://github.com/ElementsProject/lightning) - project aiming to solve the scaling problem
