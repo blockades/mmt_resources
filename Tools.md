@@ -8,6 +8,11 @@
 * [MyZenWallet.io](https://myzenwallet.io/) - Zencash wallet.
 
 
+## collaboration tools
+
+* [HackMD - Collaborative markdown notes](https://hackmd.io/)
+* [GNU Screen](https://www.gnu.org/software/screen/) is a terminal multiplexer which, amoung other things, allow muliple users to share the same terminal which can be useful for demonstrating things or helping each other with problems.  See this [multiuser screen documentation](http://aperiodic.net/screen/multiuser)
+
 ## git 
 
 * [Github tutorial](https://try.github.io/levels/1/challenges/1)
