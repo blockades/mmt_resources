@@ -24,9 +24,9 @@
 
 [GNU Screen](https://www.gnu.org/software/screen/) is a terminal multiplexer which, among other things, allow multiple users to share the same terminal which can be useful for demonstrating things or helping each other with problems.  See this [multiuser screen documentation](http://aperiodic.net/screen/multiuser)
 
-This can be combined with reverse ssh tunnelling (which sounds more complicated than it is) to allow people to access a local machine without worrying about setting up user accounts, forwarding ports, and not having a static IP address.  
+This can be combined with reverse ssh tunnelling (which sounds more complicated than it is) from some common remote server to allow people to access a local machine without worrying about setting up user accounts, forwarding ports, and not having a static IP address.  
 
-So imagine i cannot manage to install our latest software project on my local computer and i want help from someone, but i want them to show me in a way that i see what is going on.  If we all have ssh access to a common remote server, I can create a reverse ssh tunnel to it like this: 
+So imagine i cannot manage to install our latest software project on my local computer and i want help from someone, but i want them to do it in a way that i see what is going on.  If we all have ssh access to a common remote server, I can create a reverse ssh tunnel to it like this: 
 
 `localcomputer$ ssh -R 2000:localhost:22 user@remoteserver`
 
@@ -35,14 +35,15 @@ I can then initiate a named screen session for other users to connect to with
 
 `screen -d -m -S multisession`
 
-and connect to it with:
+and connect to it myself with:
 
 - `screen -r multisession`
 - then do `Ctrl-A :multisession on`
-- then do `Ctrl-A :acladd username` (these commands can be added to `.screenrc` to save typing them every time)
+- then do `Ctrl-A :acladd username` for each additional user (these commands can be added to `.screenrc` to save typing them every time)
 - `aclchg` can be used instead of `acladd` to use specific permissions eg: readonly (they can see the screen but not type commands)
 - Then invite other users to connect with `screen -x username/multiuser` where `username` is the user who initiated the screen session to connect to.
 - Then ssh back to localhost effectively taking connected users along... `ssh -p2000 localuser@localhost`
+- Combined with mumble this could be a nice way to fix stuff interactively or demonstrate how to do something
 
 ## ruby programming 
 
