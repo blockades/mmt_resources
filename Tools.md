@@ -43,6 +43,7 @@ and connect to it myself with:
 - `aclchg` can be used instead of `acladd` to use specific permissions eg: readonly (they can see the screen but not type commands)
 - Then invite other users to connect with `screen -x username/multiuser` where `username` is the user who initiated the screen session to connect to.
 - Then ssh back to localhost effectively taking connected users along... `ssh -p2000 localuser@localhost`
+- Another handy tool, [ngrok](https://ngrok.com) can be used to expose a website served on localhost by doing `ngrok http 80` [see documentation](https://ngrok.com/docs).  ngrok could also be used as the remote server to expose ssh (`ngrok tcp 22`) but this requires signing up for an ngrok account. 
 - Combined with mumble this could be a nice way to fix stuff interactively or demonstrate how to do something
 
 ## ruby programming 
