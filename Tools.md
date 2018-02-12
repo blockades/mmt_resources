@@ -4,6 +4,7 @@
 
 * [Electrum Bitcoin Wallet](https://electrum.org/#home) - [Cold Storage — Electrum 2.10 documentation](http://docs.electrum.org/en/latest/coldstorage.html#create-a-watching-only-version-of-your-wallet) 
 * [MyEtherWallet.com](https://www.myetherwallet.com/) - javascript based Ethereum wallet.
+* [MyCrypto.com](https://mycrypto.com/) - javascript based Ethereum wallet (fork of MyEtherWallet - most of the original devs).
 * [NEON](http://neonwallet.com/) - NEO wallet
 * [MyZenWallet.io](https://myzenwallet.io/) - Zencash wallet.
 
