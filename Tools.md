@@ -22,7 +22,7 @@
 
 ### Terminal sharing
 
-[GNU Screen](https://www.gnu.org/software/screen/) is a terminal multiplexer which, among other things, allow multiple users to share the same terminal which can be useful for demonstrating things or helping each other with problems.  See this [multiuser screen documentation](http://aperiodic.net/screen/multiuser)
+[GNU Screen](https://www.gnu.org/software/screen/) is a terminal multiplexer which, among other things, allow multiple users to share the same terminal which can be useful for demonstrating things or helping each other with problems.  See this [multiuser screen documentation](http://aperiodic.net/screen/multiuser).  You can also do this with [tmux](https://github.com/tmux/tmux/wiki).
 
 This can be combined with reverse ssh tunnelling (which sounds more complicated than it is) from some common remote server to allow people to access a local machine without worrying about setting up user accounts, forwarding ports, and not having a static IP address.  
 
