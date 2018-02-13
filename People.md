@@ -4,7 +4,7 @@
 
 name           | time involvement | background
 ---------------|------------------|-------------------------------
-Dan Hassan     |                  |
+Dan Hassan     | Daily            | dan.dyne.org for more info
 Kieran         |                  |
 Nikolia        |                  |
 Peg            |                  |
