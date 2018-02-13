@@ -17,10 +17,10 @@ Get someone to help set you up or ask if there's anything you're unsure about / 
 * [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page)
   - setup guide: https://hackmd.io/MwMw7CBMCG3AtAUxAEwBzwCxoKwCN49pEUkA2TSHFaMMFMgTiA==#
   - ask for the server name
-* Scuttlebutt ?
+* Scuttlebutt - this is used by several members of the team as the primary mode of async chat
   - [Patchwork](https://www.github.com/ssbc/patchwork/releases) - installer, get a pub invite from [here](https://github.com/ssbc/scuttlebot/wiki/Pub-Servers)
   - read about the project: [https://www.scuttlebutt.nz](scuttlebutt.nz)
-* Signal ?
+* Signal - we have an mmt group and this tends to be used for adhoc logistics and a fallback for when the keybase app is not working
 * Github - code, this wiki
 
 * [Matrix.org](https://matrix.org/)  Yet another open network for secure, decentralized communication.
