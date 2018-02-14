@@ -11,7 +11,7 @@
 ## privacy/ security tools
 
 * [Diceware Secure Passphrase and Password Generator](https://www.rempe.us/diceware/#eff)
-* [KeePassXC Password Safe]https://keepassxc.org/download/) - Software for managing passwords
+* [KeePassXC Password Safe](https://keepassxc.org/download/) - Software for managing passwords
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) - [Tomb :: File Encryption on GNU/Linux](https://www.dyne.org/software/tomb/)
 * [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
 * [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook)
