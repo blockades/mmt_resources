@@ -1,0 +1,7 @@
+* [Guides](./Guides)
+* [Trading](./Trading)
+* [Tools](./Tools)
+* [Projects](./Projects)
+* [Reading](./Reading)
+* [Onboarding](./Onboarding)
+  - [People](./People)
