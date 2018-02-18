@@ -9,15 +9,11 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## Sections
 
-* [Guides](https://github.com/blockades/mmt_resources/wiki/Guides) - how-tos for getting set up with crypto/ various tech
-* [Trading](https://github.com/blockades/mmt_resources/wiki/Trading) - tools and links for trading crypto
-* [Tools](https://github.com/blockades/mmt_resources/wiki/Tools) - general programming / crypto links
-* [Projects](https://github.com/blockades/mmt_resources/wiki/Projects) - other projects in our neighbourhood
-* [Reading](https://github.com/blockades/mmt_resources/wiki/Reading) - material that's learning, news
-* [Onboarding](https://github.com/blockades/mmt_resources/wiki/Onboarding) - things you need to know when joining MMT
-  - [People](https://github.com/blockades/mmt_resources/wiki/People) - the people participating in MMT
-
-
----
-
+* [Guides](./Guides) - how-tos for getting set up with crypto/ various tech
+* [Trading](./Trading) - tools and links for trading crypto
+* [Tools](./Tools) - general programming / crypto links
+* [Projects](./Projects) - other projects in our neighbourhood
+* [Reading](./Reading) - material that's learning, news
+* [Onboarding](./Onboarding) - things you need to know when joining MMT
+  - [People](./People) - the people participating in MMT
 
