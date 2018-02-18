@@ -11,7 +11,7 @@ Read about people currently involved in the project : [people](./People.md)
 The systems we're currently using to coordinate in MMT.
 Get someone to help set you up or ask if there's anything you're unsure about / missing
 
-* [Loomio group](https://www.loomio.org/g/Pj0av1Vg/mmt)
+
 * [Keybase](https://keybase.io/)
   - [understanding following and the web of trust](https://keybase.io/docs/server_security/following)
 * [Mumble, the open source VoIP solution](https://wiki.mumble.info/wiki/Main_Page)
@@ -25,4 +25,13 @@ Get someone to help set you up or ask if there's anything you're unsure about / 
 
 * [Matrix.org](https://matrix.org/)  Yet another open network for secure, decentralized communication.
 
+
+### On hold
+
+These are tools that have been used but we have consciously pruned to reduce overhead
+
+* [Loomio group](https://www.loomio.org/g/Pj0av1Vg/mmt)
+  - historically have been using this to discuss + collect
+  - a lot of people are in this space already
+  - will use this tool in future for e.g. governance discussions
 
