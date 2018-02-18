@@ -2,7 +2,7 @@
 
 ## Our guides
 
-* [Crypto Instructions](./Cryptoguide)
+* [Crypto Instructions](./Cryptoguide.md)
   - _NOTE: This is currently in the process of being tidied from a bit of a mess of different versions, putting together what will hopefully be the best of both worlds from the following two resources_ 
   - [Introduction to Cryptocurrency Workbook](https://docs.google.com/document/d/11fJfWa5a6FX8h-2zGI5ZZFm7bNKGN6L1wWhnfrUOMQg/edit#heading=h.q9r9wfywrj12) used at the workshop at Afrotech fest London.
   - [Old Crypto Instructions hackmd](https://hackmd.io/s/ryu1mKfXf) keeping this link for reference while updating, but please dont continue to edit it.
