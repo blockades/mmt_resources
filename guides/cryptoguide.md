@@ -477,36 +477,18 @@ have different wallets. Make sure you do your research.
 
 ## Suggested Reading
 
-Cox, James - Bitcoin and Digital Currencies - The new World of Digital Freedom
-
-http://gen.lib.rus.ec/book/index.php?md5=31EF53C1A9F74CCD3C2CC2B9F1474AC2
+- [Cox, James - Bitcoin and Digital Currencies - The new World of Digital Freedom](http://gen.lib.rus.ec/book/index.php?md5=31EF53C1A9F74CCD3C2CC2B9F1474AC2)
 
 This book puts bitcoin into context of the history of money, which suddenly
 makes it seem like not such a crazy idea.  Or rather, it is not nearly as crazy
 as the monetary system we currently rely on.
 
-Nakamoto, Satoshi, 2008. "Bitcoin: A Peer-to-Peer Electronic Cash System." 
-http://Bitcoin.org/Bitcoin.pdf
-
-Andreas M. Antonopoulos-Mastering Bitcoin. Programming the Open
-Blockchain-O’Reilly (2017)
-
-http://gen.lib.rus.ec/book/index.php?md5=C145F63D1B1DFCAFE4FB668EE1870D43
-
-more recent and a very good technical introduction.
-
- Swan, Melanie, 2015 (O'Reilly)- The Blockchain
-
-http://gen.lib.rus.ec/book/index.php?md5=B95D1E4464D572D397F0F60C47553391
-
- Frisby, Dominic, Bitcoin - The Future of Money? 
-
-http://gen.lib.rus.ec/book/index.php?md5=81336BF1C30AB56903ADE8222898E40F
-
-A pretty fantastical, and hyping it all up a bit but anyway readable
-
-Greenfield, A. (2017) Radical Technologies: The design of everyday life
-https://www.versobooks.com/books/2453-radical-technologies 
+- [Nakamoto, Satoshi, 2008. "Bitcoin: A Peer-to-Peer Electronic Cash System."](http://Bitcoin.org/Bitcoin.pdf)
+- [Andreas M. Antonopoulos-Mastering Bitcoin. Programming the Open
+Blockchain-O’Reilly 2017)[http://gen.lib.rus.ec/book/index.php?md5=C145F63D1B1DFCAFE4FB668EE1870D43] more recent and a very good technical introduction.
+- (Swan, Melanie, 2015 (O'Reilly)- The Blockchain)[http://gen.lib.rus.ec/book/index.php?md5=B95D1E4464D572D397F0F60C47553391]
+- [Frisby, Dominic, Bitcoin - The Future of Money?](http://gen.lib.rus.ec/book/index.php?md5=81336BF1C30AB56903ADE8222898E40F) pretty fantastical, and hyping it all up a bit but anyway readable
+- [Greenfield, A. (2017) Radical Technologies: The design of everyday life](https://www.versobooks.com/books/2453-radical-technologies) 
 
 ----
 
