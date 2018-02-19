@@ -4,7 +4,7 @@
 
 ...iterative
 
-Read about people currently involved in the project : [people](https://github.com/blockades/mmt_resources/wiki/People)
+Read about people currently involved in the project : [people](./People)
 
 ## Tools
 
