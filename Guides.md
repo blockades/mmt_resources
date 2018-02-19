@@ -10,7 +10,7 @@
   - Please add notes to this document as you go along so we can all benefit from your insights and learnings!
 
 * Interviewing:
-  - [tips from phonebox](https://hackmd.io/AwEwxgRgLAHMCGBaA7AZimRUCsBGKiM8EuiwYUApqiDMlAEwBmuQA===?edit#)
+  - [tips from phonebox] - [wiki](./interviews_primer_phonebox) | [hackmd](https://hackmd.io/AwEwxgRgLAHMCGBaA7AZimRUCsBGKiM8EuiwYUApqiDMlAEwBmuQA===?edit#)
 
 * [Mumble setup](https://hackmd.io/MwMw7CBMCG3AtAUxAEwBzwCxoKwCN49pEUkA2TSHFaMMFMgTiA==#)
 
