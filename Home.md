@@ -9,6 +9,8 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 ## Sections
 
+You can also click the `Pages` link to the right to expand a list of more resources.
+
 * [Guides](./Guides) - how-tos for getting set up with crypto/ various tech
 * [Trading](./Trading) - tools and links for trading crypto
 * [Tools](./Tools) - general programming / crypto links
