@@ -12,7 +12,7 @@
 
 Bitcoin
 * [oxt.me](https://oxt.me) - bitcoin explorer for both types of bitcoin address (bech32 and standard)
-* [blockchain.info](https://blockchain.info - bitcoin explorer for standard bitcoin addresses only
+* [blockchain.info](https://blockchain.info) - bitcoin explorer for standard bitcoin addresses only
 
 ## privacy/ security tools
 
