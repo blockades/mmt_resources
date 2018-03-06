@@ -2,6 +2,8 @@
 
 ## Our guides
 
+### :warning: (06/03/18) :warning: We are in the process of migrating our guides [here](https://github.com/blockades/mmt-guides) 
+
 * [Crypto Instructions](./cryptoguide)
   - _NOTE: This is currently in the process of being tidied from a bit of a mess of different versions, putting together what will hopefully be the best of both worlds from the following two resources_ 
   - [Introduction to Cryptocurrency Workbook](https://docs.google.com/document/d/11fJfWa5a6FX8h-2zGI5ZZFm7bNKGN6L1wWhnfrUOMQg/edit#heading=h.q9r9wfywrj12) used at the workshop at Afrotech fest London.
