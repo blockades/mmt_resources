@@ -10,9 +10,18 @@
 
 ## blockchain explorers
 
-Bitcoin
+### Bitcoin
+
 * [oxt.me](https://oxt.me) - bitcoin explorer for both types of bitcoin address (bech32 and standard)
 * [blockchain.info](https://blockchain.info) - bitcoin explorer for standard bitcoin addresses only
+
+### Ethereum
+
+* [etherchain.org - The Ethereum Blockchain Explorer](https://www.etherchain.org/)
+
+### Neo
+
+* [neotracker.io](https://neotracker.io/)
 
 ## privacy/ security tools
 
@@ -21,6 +30,12 @@ Bitcoin
 * [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) - [Tomb :: File Encryption on GNU/Linux](https://www.dyne.org/software/tomb/)
 * [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
 * [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook)
+
+## Backing up keys to paper
+
+* [qrencode](https://fukuchi.org/works/qrencode/index.html.en) Command line tool and library with bindings for several programming languages to generate QR codes.  Simple usage:  `cat keyfile | qrencode -o key.png`.  Available in most linux distribution repos. 
+* [QR Code Generator](https://www.qr-code-generator.com/) Online service to generate QR codes.  Trustworthyness unknown... 
+* [PaperBack](http://ollydbg.de/Paperbak/#1) A bit more old-school, a program that allows you to print data to paper designed to be restored by a scanner.  500kb can fit on an A4 page. 
 
 ## collaboration tools
 
