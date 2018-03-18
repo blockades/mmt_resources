@@ -33,9 +33,20 @@
 
 ## Backing up keys to paper
 
+It is possible to create and print a QR code of a [secrets shard](https://secrets.dyne.org/), any kind of key, or other important data
+
 * [qrencode](https://fukuchi.org/works/qrencode/index.html.en) Command line tool and library with bindings for several programming languages to generate QR codes.  Simple usage:  `cat keyfile | qrencode -o key.png`.  Available in most linux distribution repos. 
 * [QR Code Generator](https://www.qr-code-generator.com/) Online service to generate QR codes.  Trustworthyness unknown... 
 * [PaperBack](http://ollydbg.de/Paperbak/#1) A bit more old-school, a program that allows you to print data to paper designed to be restored by a scanner.  500kb can fit on an A4 page. 
+
+### Paper wallets
+
+Bitcoin wallets can be generated and printed with QR codes for the public and private keys.  For security reasons is recommended to only use them for a single transaction, for example, to give as a gift, and when the reciever gets the gift they transfer it to another address. 
+
+* [Paper wallet article on Bitcoin Wiki](https://en.bitcoin.it/wiki/Paper_wallet)
+* [Bitcoin address utility](https://github.com/casascius/Bitcoin-Address-Utility/) is a program which allows you to create such paper wallets.
+* There are also several websites which offer to generate paper wallets.  
+
 
 ## collaboration tools
 
