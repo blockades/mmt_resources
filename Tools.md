@@ -29,7 +29,7 @@ These are websites which allow you to get information about addresses and transa
 
 * [neotracker.io](https://neotracker.io/)
 
-## privacy/ security tools
+## privacy and security tools
 
 ### Password management
 * [KeePassXC Password Safe](https://keepassxc.org/download/) - Well-established multi-platform software for managing passwords
@@ -41,7 +41,14 @@ These are websites which allow you to get information about addresses and transa
 * [dyne/Tomb: the Crypto Undertaker](https://www.dyne.org/software/tomb/) file encryption software with some great features. [tomb on github](https://github.com/dyne/Tomb) - [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
 * [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook) - guide to hosting an event to help each other setup encryption software and share public keys. 
 
-## Backing up keys to paper
+### Secret sharing / Social backups
+
+Encryption keys or other secret information can be securely backed up using 'sharding' and socially sharing the 'shards'.  These are given to, for example, 5 friends, any three of which are able to re-combine them and retrieve the secret.  The idea comes from a paper by [Adi Shamir](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing), "How to share a secret" in 1979. 
+
+* [dyne.org Secrets](https://secrets.dyne.org/) a good implementation written in Clojure as well as a free web-based service and great documentation.  
+* [ssss](http://point-at-infinity.org/ssss/) - a command line implementation of Shamirs Secret Sharing Scheme written in C.
+
+### Backing up keys to paper
 
 It is possible to create and print a QR code of a [secrets shard](https://secrets.dyne.org/), any kind of key, or other important data.  You can then think of an ingenious physical hiding place...
 
