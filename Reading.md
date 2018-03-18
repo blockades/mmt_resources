@@ -6,7 +6,6 @@
 * [CoinDesk](http://www.coindesk.com/)
 * [Cointelegraph](https://cointelegraph.com/) 
 * [Off Chain with Jimmy Song - YouTube channel ](https://www.youtube.com/channel/UCEFJVYNiPp8xeIUyfaPCPQw) - [jimmy song twitter](https://twitter.com/jimmysong?s=09) - [Bitcoin Tech Talk](https://bitcointechtalk.com/) - Jimmy song gives regular technical news about bitcoin and other projects.  
-* [rustyrussels remarkably unreliable guide to bitcoin storage](https://github.com/rustyrussell/bitcoin-storage-guide)
 * [Unenumerated](http://unenumerated.blogspot.de/) nick szabo's blog
 
 ## Articles
@@ -18,7 +17,8 @@
 * [Finland Turns to Blockchain to Help Unbanked Refugees](https://www.cryptocoinsnews.com/finns-turn-to-blockchain-to-help-unbanked-refugees-enter-the-digital-economy/)
 * [Honigdachs - Der Bitcoin-Podcast aus Leipzig](https://coinspondent.de/news-nachrichten/bitcoin-podcasts/honigdachs-der-bitcoin-podcast-aus-leipzig/) German language bitcoin podcast
 * [pegs blockchain article](http://ehion.com/~ameba/site/blockchain/) Our submission to more automation and control, or the path to a more free and decentralised world? - several years old now
-
+* [Jameson Lopps bitcoin resources](https://lopp.net/bitcoin.html) a vast collections of articles, tutorials and films related to Bitcoin.   
+* [rustyrussels remarkably unreliable guide to bitcoin storage](https://github.com/rustyrussell/bitcoin-storage-guide) - a guide to storing bitcoin for the ultra-paranoid.  
 
 ## Books
 
