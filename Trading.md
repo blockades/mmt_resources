@@ -14,7 +14,6 @@ see wallets under [Tools](./Tools.md#wallets)
 
 Note:  These are links to some known exchanges.  Being listed here does not imply they are recommended.
 
-### Europe
 * [kraken](https://www.kraken.com) well established european exchange.
 * [bitstamp](https://www.bitstamp.net) Luxembourg based exchange.
 * [coinbase](https://www.coinbase.com) Very popular San Fransisco based exchange. 
