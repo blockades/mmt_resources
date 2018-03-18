@@ -2,22 +2,28 @@
 
 ## wallets
 
-* [Electrum Bitcoin Wallet](https://electrum.org/#home) - [Cold Storage — Electrum 2.10 documentation](http://docs.electrum.org/en/latest/coldstorage.html#create-a-watching-only-version-of-your-wallet) 
+* [Electrum Bitcoin Wallet](https://electrum.org/#home) - [Cold Storage — Electrum 2.10 documentation](http://docs.electrum.org/en/latest/coldstorage.html#create-a-watching-only-version-of-your-wallet) - Actively developed open source bitcoin wallet.
+* [Samourai Bitcoin Wallet](https://samouraiwallet.com/) - Open source mobile bitcoin wallet with good security features. 
 * [MyEtherWallet.com](https://www.myetherwallet.com/) - javascript based Ethereum wallet.
 * [MyCrypto.com](https://mycrypto.com/) - javascript based Ethereum wallet (fork of MyEtherWallet - most of the original devs).
 * [NEON](http://neonwallet.com/) - NEO wallet
 * [MyZenWallet.io](https://myzenwallet.io/) - Zencash wallet.
 
-## blockchain explorers
+## blockchain explorers and statistics tools
+
+These are websites which allow you to get information about addresses and transactions on the blockchain without needing a host your own node. 
 
 ### Bitcoin
 
 * [oxt.me](https://oxt.me) - bitcoin explorer for both types of bitcoin address (bech32 and standard)
 * [blockchain.info](https://blockchain.info) - bitcoin explorer for standard bitcoin addresses only
+* [Johoe's Bitcoin Mempool statistics](https://jochen-hoenicke.de/queue/) online tool which allows you to see unconfirmed bitcoin transactions and current fees.  Useful for determining 'quiet times' for making cheaper/faster transactions or when manually choosing fees.   
+* [Statoshi.info](http://statoshi.info/) bitcoin node statistics software developed by Jameson Lopp.
 
 ### Ethereum
 
-* [etherchain.org - The Ethereum Blockchain Explorer](https://www.etherchain.org/)
+* [etherchain.org - Ethereum Blockchain Explorer](https://www.etherchain.org/)
+* [ethstats.net](https://ethstats.net/) ethereum live statistics. 
 
 ### Neo
 
@@ -25,15 +31,19 @@
 
 ## privacy/ security tools
 
-* [Diceware Secure Passphrase and Password Generator](https://www.rempe.us/diceware/#eff)
-* [KeePassXC Password Safe](https://keepassxc.org/download/) - Software for managing passwords
-* [dyne/Tomb: the Crypto Undertaker](https://github.com/dyne/Tomb) - [Tomb :: File Encryption on GNU/Linux](https://www.dyne.org/software/tomb/)
-* [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
-* [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook)
+### Password management
+* [KeePassXC Password Safe](https://keepassxc.org/download/) - Well-established multi-platform software for managing passwords
+* [Diceware Secure Passphrase and Password Generator](https://www.rempe.us/diceware/#eff) - online password generator
+* [Pass: The Standard Unix Password Manager](https://www.passwordstore.org/) barebones simple command line password manager using [gpg](https://gnupg.org/) with optional [tomb integration](https://github.com/roddhjav/pass-tomb#readme)
+
+### Encryption
+* [GNU Privacy guard](https://gnupg.org/) - encryption tool for files and email.  Can be integrated into most email clients.  
+* [dyne/Tomb: the Crypto Undertaker](https://www.dyne.org/software/tomb/) file encryption software with some great features. [tomb on github](https://github.com/dyne/Tomb) - [dans tomb guide on scuttlebutt](https://viewer.scuttlebot.io/%25S9KShHdAxUKhhLQxVf9R8fVcU4RdzfJZ06w8fmRLkOE%3D.sha256)
+* [CryptoParty handbook](https://www.cryptoparty.in/learn/handbook) - guide to hosting an event to help each other setup encryption software and share public keys. 
 
 ## Backing up keys to paper
 
-It is possible to create and print a QR code of a [secrets shard](https://secrets.dyne.org/), any kind of key, or other important data
+It is possible to create and print a QR code of a [secrets shard](https://secrets.dyne.org/), any kind of key, or other important data.  You can then think of an ingenious physical hiding place...
 
 * [qrencode](https://fukuchi.org/works/qrencode/index.html.en) Command line tool and library with bindings for several programming languages to generate QR codes.  Simple usage:  `cat keyfile | qrencode -o key.png`.  Available in most linux distribution repos. 
 * [QR Code Generator](https://www.qr-code-generator.com/) Online service to generate QR codes.  Trustworthyness unknown... 
@@ -45,7 +55,7 @@ Bitcoin wallets can be generated and printed with QR codes for the public and pr
 
 * [Paper wallet article on Bitcoin Wiki](https://en.bitcoin.it/wiki/Paper_wallet)
 * [Bitcoin address utility](https://github.com/casascius/Bitcoin-Address-Utility/) is a program which allows you to create such paper wallets.
-* There are also several websites which offer to generate paper wallets.  
+* There are also several websites which offer to generate paper wallets.  Trustworthyness unknown...
 
 
 ## collaboration tools
