@@ -18,6 +18,7 @@ These are websites which allow you to get information about addresses and transa
 * [oxt.me](https://oxt.me) - bitcoin explorer for both types of bitcoin address (bech32 and standard)
 * [blockchain.info](https://blockchain.info) - bitcoin explorer for standard bitcoin addresses only
 * [Johoe's Bitcoin Mempool statistics](https://jochen-hoenicke.de/queue/) online tool which allows you to see unconfirmed bitcoin transactions and current fees.  Useful for determining 'quiet times' for making cheaper/faster transactions or when manually choosing fees.   
+* [WhatTheFee.io](https://whatthefee.io/) tool to estimate current bitcoin fees.
 * [Statoshi.info](http://statoshi.info/) bitcoin node statistics software developed by Jameson Lopp.
 
 ### Ethereum
