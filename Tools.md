@@ -46,6 +46,7 @@ These are websites which allow you to get information about addresses and transa
 
 Encryption keys or other secret information can be securely backed up using 'sharding' and socially sharing the 'shards'.  These are given to, for example, 5 friends, any three of which are able to re-combine them and retrieve the secret.  The idea comes from a paper by [Adi Shamir](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing), "How to share a secret" in 1979. 
 
+* [truename](https://github.com/kgibb8/truename-index) a user friendly implementation wrapped in a single `index.html` file written in Node and React. Simply open the file in your browser of choice.
 * [dyne.org Secrets](https://secrets.dyne.org/) a good implementation written in Clojure as well as a free web-based service and great documentation.  
 * [ssss](http://point-at-infinity.org/ssss/) - a command line implementation of Shamirs Secret Sharing Scheme written in C.
 
