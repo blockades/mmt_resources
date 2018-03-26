@@ -11,11 +11,11 @@ To edit this list, click on the 'edit' button above.  Alternatively you can clon
 
 You can also click the `Pages` link to the right to expand a list of more resources.
 
-* [Guides](./Guides) - how-tos for getting set up with crypto/ various tech
-* [Trading](./Trading) - tools and links for trading crypto
-* [Tools](./Tools) - general programming / crypto links
-* [Projects](./Projects) - other projects in our neighbourhood
-* [Reading](./Reading) - material that's learning, news
-* [Onboarding](./Onboarding) - things you need to know when joining MMT
-  - [People](./People) - the people participating in MMT
+* [Guides](./Guides.md) - how-tos for getting set up with crypto/ various tech
+* [Trading](./Trading.md) - tools and links for trading crypto
+* [Tools](./Tools.md) - general programming / crypto links
+* [Projects](./Projects.md) - other projects in our neighbourhood
+* [Reading](./Reading.md) - material that's learning, news
+* [Onboarding](./Onboarding.md) - things you need to know when joining MMT
+  - [People](./People.md) - the people participating in MMT
 

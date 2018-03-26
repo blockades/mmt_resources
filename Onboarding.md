@@ -4,7 +4,7 @@
 
 ...iterative
 
-Read about people currently involved in the project : [people](./People)
+Read about people currently involved in the project : [people](./People.md)
 
 ## Tools
 
