@@ -9,7 +9,8 @@ You can use this for anything you find interesting that you think others might a
 
 ## Sections
 
-* [Guides](./Guides.md) - how-tos for getting set up with crypto/ various tech
+* [Guides](./guides) - how-tos for getting set up with crypto/ various tech
+* [Experiments](./experiments) - learn about and from MMT's experiments with crypto and more
 * [Trading](./Trading.md) - tools and links for trading crypto
 * [Tools](./Tools.md) - general programming / crypto links
 * [Projects](./Projects.md) - other projects in our neighbourhood
