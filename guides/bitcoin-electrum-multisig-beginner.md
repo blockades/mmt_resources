@@ -1,4 +1,4 @@
-# MMT: Let's create a bitcoin multisig wallet (async)
+# MMT: Let's create a bitcoin multisig wallet using electrum (async)
 
 **Notes**
   - THIS IS IN DRAFT MODE :boom:
