@@ -55,7 +55,12 @@ This guide is an opinionated guide on how to smoothly transition your Bitcoin (o
 
 ## 1. Setup a Kraken Account
 
-We recommend you setup using KeePassXC or another password manager [(as mentioned above)](#L25).
+In this section you will need:
+* KeePassXC or another password manager [(as mentioned above)](#L25).
+* An internet connection
+* Some personal details (see below)
+
+**Steps**:
 
 * Navigate to [https://www.kraken.com](https://www.kraken.com)
 * Create an account, setup two factor authentication (either using SMS or we recommend [Authy](https://authy.com/).
@@ -69,17 +74,19 @@ The required details for Tier 1 & 2 are:
 * Phone Number
 * Address
 
-This will enable you to withdraw up to $2000.00 a day, with a monthly withdrawl limit of $20,000.00.
+_This will enable you to withdraw up to $2000.00 a day, with a monthly withdrawl limit of $20,000.00._
 
 If you need to withdraw more quickly, you'll have to complete the latter stages of verification which will require proof of identity. **This is not necessary for this guide**.
 
-:warning: Do **not** do this through an anonymising proxy service such as Tor. Kraken will detect this and you will never pass the second stage of verification, meaning you have to recreate a new account. I have not tried using a VPN service such as OpenVPN or ProtonVPN. It may be that these work if you want to add a layer of security.
+:warning: Do **not** do this through an anonymising proxy service such as Tor. Kraken will detect this and you will never pass the second stage of verification, meaning you have to create a new account. This has not been tried using a VPN service such as OpenVPN or ProtonVPN. It may be that these work if you want to add an extra layer of security. Please let us know if it works!
 
 ---
 
 ## 2. Install Revolut
 
 In this section we'll simply follow the Revolut install/sign-up steps.
+
+**Steps**:
 
 * Navigate to [https://www.revolut.com](https://www.revolut.com) on your smart phone.
 * Hit 'Get the App', enter your phone number and you will receive a download link to install the Revolut App.
@@ -93,9 +100,11 @@ In this section you will need:
 * Your Bitcoin Wallet with some Bitcoin
 * To be signed in to Kraken
 
+**Steps**:
+
 * On Kraken, navigate to the 'Funding' section, select 'Deposit', then Bitcoin (XBT) (or your relevant currency), and generate a new address.
 
-![]('./assets/kraken-generate-bitcoin-address.png')
+![](./assets/kraken-generate-bitcoin-address.png)
 
 * Navigate to your Bitcoin wallet (Electrum, Samourai, Copay), and send the amount you want to transform into EUR to the address Kraken gave you.
 
@@ -109,7 +118,11 @@ In this section you will need:
 
 ## 4. Exchange Bitcoin to Euros
 
-In this section we will create a sell order in Kraken to exchange your Bitcoin (XBT/BTC) for EUR.
+In this section you will need:
+* To be signed into Kraken
+* Have some Bitcoin in your Kraken account
+
+**Steps**:
 
 * Once you have received the funds in Kraken, navigate to 'Trade', select 'New Order', and input the amount of Bitcoin (XBT/BTC) you want to sell for EUR and create a sell order.
 * Wait for the transaction to clear. This shouldn't take longer than an hour. If the order fails you may have to cancel and try again.
@@ -118,22 +131,29 @@ In this section we will create a sell order in Kraken to exchange your Bitcoin (
 
 ## 5. Send Euros to Revolut
 
-In this section we'll need to create a destination withdrawl account in Kraken, so we'll need the account details from Revolut. These can be found by clicking the abacus icon in the _top-left_ corner of the Revolut App, selecting EUR and using the 'Local' details. You'll also need to find the office location for Revolut.
+In this section you will need:
+* A Kraken account
+* Some internetz
+* Revolut installed on your smart phone
 
-```
-Revolut Limited
-Level 39, One Canada Square
-E14 5AB London, United Kingdom
-```
+**Steps**:
 
-:bulb: Above address at time of writing 27/04/2018. Check with [Revolut](https://www.revolut.com) see if this has changed.
+We'll need to create a destination withdrawl account in Kraken, so lets get the account details from Revolut. 
+
+* Click the abacus icon in the _top-left_ corner of the Revolut App, select EUR and copy the 'local' details.
+* Find the most up to date office location for Revolut. Below is their current address.
+
+  > Revolut Limited
+  > Level 39, One Canada Square
+  > E14 5AB London, United Kingdom
+  > :bulb: Address at time of writing (27/04/2018). Check with [Revolut](https://www.revolut.com) to see if this has changed.
 
 * In Kraken 'Funding', select 'Withdraw', select 'EUR' and 'Add Account'.
 * Set description as 'Revolut'
 * Enter the relevant account details Revolut gave to you.
 * Once saved, select Revolut in the dropdown on [the EUR withdrawl page](https://www.kraken.com/u/funding/withdraw?asset=ZEUR). Enter the amount of currency you want to send and hit 'Send'!
 
-![]('./assets/kraken-sepa-withdrawl.png')
+![](./assets/kraken-sepa-withdrawl.png)
 
 :bulb: Kraken will send you a confirmation email within an hour or two. You will need to click the link to confirm the withdrawl.
 
@@ -145,7 +165,12 @@ Your money should arrive in Revolut within a day.
 
 ## 6. Exchange Euros to another currency
 
-In this section we will exchange the EUR we have sent to Revolut to GBP (or the currency of your choice). This is a simple process which Revolut was designed for.
+In this section you will need:
+* Revolut account with some EUR
+
+Lets exchange the EUR we have sent to Revolut to GBP (or the currency of your choice). This is a simple process which Revolut was designed for.
+
+**Steps**:
 
 * First you will have to add your destination currency in Revolut, in the _top-left_ corner select the abacus icon, add an account and select GBP.
 * On the home screen, select the EUR account in the top navigation tab, and hit the exchange spinner icon in the middle.
@@ -158,7 +183,13 @@ In this section we will exchange the EUR we have sent to Revolut to GBP (or the 
 
 ## 7. Send currency to a bank account
 
-In this final section we'll send money from your Revolut account to a bank account of your choice. This again is a simple process and easy to repeat.
+In this section you'll need:
+* A bank account
+* A Revolut account with matching fiat currency to your bank account's default currency
+
+Lets send money from your Revolut account to a bank account of your choice. This again is a simple process and easy to repeat.
+
+**Steps**:
 
 * Go to Revolut, hit the 'Payments' tab, and in the 'Out' submenu. Select 'To bank account'. This will take you to the 'Bank Transfer' page.
 * Add a new beneficiary. Depending on the context, you will want to select 'Myself', 'Another Person' or 'a Business'.
