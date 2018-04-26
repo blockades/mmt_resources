@@ -4,7 +4,7 @@ This guide is an opinionated guide on how to smoothly transition your Bitcoin (o
 
 **What you will need:**
 * a computer :computer:
-* a smart phone
+* a smart phone :phone:
 * a delivery address :house:
 * some bitcoin :dollar:
 * some waiting time :clock1:
@@ -37,9 +37,32 @@ This guide is an opinionated guide on how to smoothly transition your Bitcoin (o
 
 ## 1. Setup a Kraken Account
 
+We recommend you setup using KeePassXC or another password manager [(as mentioned above)](#L25).
+
+* Navigate to [https://www.kraken.com](https://www.kraken.com)
+* Create an account, setup two factor authentication (either using SMS or we recommend [Authy](https://authy.com/).
+
+We'll need to get you verified up to Tier 2 in order to withdraw fiat currency. Kraken will verify the identity of the user by cross referencing a name with an address.
+
+The required details for Tier 1 & 2 are:
+* Full Name
+* Date of Birth
+* Country of Residence
+* Phone Number
+* Address
+
+This will enable you to withdraw up to $2000.00 a day, with a monthly withdrawl limit of $20,000.00.
+
+If you need to withdraw more quickly, you'll have to complete the latter stages of verification which will require proof of identity. **This is not necessary for this guide**.
+
+**NOTE:** :warning: Do **not** do this through an anonymising proxy service such as Tor. Kraken will detect this and you will never pass the second stage of verification, meaning you have to recreate a new account. I have not tried using a VPN service such as OpenVPN or ProtonVPN. It may be that these work if you want to add a layer of security.
+
 ---
 
 ## 2. Install Revolut
+
+* Navigate to [https://www.revolut.com](https://www.revolut.com) on your smart phone.
+* Hit 'Get the App', enter your phone number and install the Revolut App.
 
 ---
 
