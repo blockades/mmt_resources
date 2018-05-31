@@ -1,5 +1,7 @@
 # Withdrawl of BTC funds using Kraken and Revolut
 
+**UPDATE**: This method is sadly no longer working as Revolut are no longer accepting transfers from Kraken.
+
 This is an opinionated guide on how to smoothly transition your Bitcoin (or other crypto-currencies) into `GBP` or another fiat currency (see table below for a list of currencies Revolut will change into). **No conventional bank accounts required**.
 
 **What you will need:**
