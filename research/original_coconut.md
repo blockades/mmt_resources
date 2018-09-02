@@ -1,3 +1,6 @@
+
+## Using secret sharing
+
 To give you an example of how this works, lets imagine that I am one of the multisig signers. 
 
 I setup a wallet which generates a seed:
