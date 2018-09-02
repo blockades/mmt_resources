@@ -11,7 +11,7 @@ You can use this for anything you find interesting that you think others might a
 
 * [Guides](./guides) - how-tos for getting set up with crypto/ various tech
 * [Research](./research) - a selection of some of our ssb posts with research for dark crystal
-* [Experiments](./experiments) - learn about and from MMT's experiments with crypto and more
+* [Experiments](./experiments) - learn about and from MMT's experiments 
 * [Trading](./Trading.md) - tools and links for trading crypto
 * [Tools](./Tools.md) - general programming / crypto links
 * [Projects](./Projects.md) - other projects in our neighbourhood
