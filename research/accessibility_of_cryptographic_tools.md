@@ -107,8 +107,9 @@ At the end of this both of my friends were starting to feel much more used to th
 Bleep also made a bunch of notes which has started to form as a repository for the steps to start diffusing the knowledge. Some of this material can be found in the #MMT #github repo wiki here"
 
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
-Run by Dre (advisor), Lyn, Kieran.
+Run by Dre (advisor), Lyn, Kieran.  [Full report here](./afrotech_review.md)
 
+![afrotech-1_sm](./img/afrotech-1_sm.jpg)
 The workshop was designed to enourage adoption of a password manager, to attempt to work out the barriers to using this technology, and alert us to who was already using a password manager in the space.
 
 - There was only one other person, other than us (the workshop hosts), who was using a password manager (1Password).
@@ -126,7 +127,6 @@ The workshop was designed to enourage adoption of a password manager, to attempt
     - What happens if someone hacks my cloud account?
     - What happens in the event of a data-leak by my cloud provider? This has happened before, see major Dropbox leak in 2012. Data beaches happen on a daily basis, often without the service provider knowing.
 
-[full report](./afrotech_review.md)
 
 ### Sharding workshop at mmt event in New Zealand
 
