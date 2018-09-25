@@ -27,12 +27,6 @@ Many users reported that they would not trust cloud based services.  Those invol
 - Disk encryption: Veracrypt, Dmcrypt, EncFS, Ecryptfs, Tomb
 - Keybase
 
-### Most commonly used methods to backup keys
-
-This was only of users of encryption software other than encrypted mobile messaging services, since such services typically do not give the user total responsibility for key management. For example, in the case of a lost device, keys can often be regenerated with a by a device with a new sim card with the same number.  Access to the old messages are lost but the users identity appears to persist. 
-
-![how do you backup you encryption keys](./img/how_backup_encryption_keys.jpg)
-
 ### Password managers people use
 
 By far the majority (33 users) did not use a password manager.
@@ -53,7 +47,8 @@ By far the majority (33 users) did not use a password manager.
 ### Problems encountered using password managers
 
 - Forgot/lost master password
-- Lost database file
+- Lost database file 
+- Difficulties when changing to a new computer/operating system
 
 ### Reasons for / for not using cloud service
 
@@ -66,6 +61,14 @@ By far the majority (33 users) did not use a password manager.
 - They're too expensive
 - Don't trust them
 - Don't know of a good provider
+
+### Most commonly used methods to backup keys
+
+This was only of users of encryption software other than encrypted mobile messaging services, since such services typically do not give the user total responsibility for key management. For example, in the case of a lost device, keys can often be regenerated with a by a device with a new sim card with the same number.  Access to the old messages are lost but the users identity appears to persist. 
+
+![how do you backup you encryption keys](./img/how_backup_encryption_keys.jpg)
+
+Almost half of users simply did not back up their keys. Of those who did, most used external storage, such as a USB stick hard disk, or second computer, which they kept at home. None used a cloud service.
 
 ## Secure-scuttlebutt dead accounts survey
 
