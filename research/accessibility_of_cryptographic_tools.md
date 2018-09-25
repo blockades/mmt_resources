@@ -1,5 +1,10 @@
 # Accessibility of Cryptographic Tools
 
+This is a collection of findings from:
+- Interviews with groups and individuals about issues around passwords, keys and encryption
+- Our survey of deprecated accounts on SSB
+- Feedback and reflections on workshops we have run over the last two years.
+
 ## Questions put forward to groups
 
 - What encryption tools do you currently use?  If you don't use encryption, why not?
@@ -9,14 +14,14 @@
 
 ### Summary of findings 
 
-What we found was that most groups who did not use encryption had barriers because of lack of knowledge of how to set up the software.  But of groups who did use encryption, most reported at some point having had a problem with a lost password or key, and that key and password management was the most common source of problems.
+What we found was that most groups who did not use encryption had barriers because of lack of knowledge of how to set up the software.  But of groups who did use encryption, most reported at some point having had a problem with a lost key or password, and that key and password management was the most common source of problems.
 
-### Encryption tools used  
-Encrypted mobile messaging services
-OpenSSH
-PGP/GPG, Enigmail, Pretty Easy Privacy
-Disk encryption: Veracrypt, Dmcrypt, EncFS, Ecryptfs, Tomb
-Keybase
+### Encryption tools people use  
+- Encrypted mobile messaging services - by far the most popular
+- OpenSSH
+- PGP/GPG, Enigmail, Pretty Easy Privacy
+- Disk encryption: Veracrypt, Dmcrypt, EncFS, Ecryptfs, Tomb
+- Keybase
 
 ### Most commonly used methods to backup keys
 
@@ -30,7 +35,9 @@ TODO: make pi chart with R
 - Private remote server
 - Using a cloud service
 
-### Password managers used
+### Password managers people use
+
+By far the majority did not use a password manager.
 
 - Web browser extensions
 - Dashlane
@@ -80,12 +87,11 @@ Full details can be found on secure scuttlebutt under #deprecatedSSBAccounts
 
 ### Workshops at Work.Life, London fields https://work.life/locations/london-fields/, 
 Lead by dan, assisted by keiran, 8 workshops over 3 months, teaching setup and use of Keepass, and public key cryptography at entry level.
-(image?)
 
 #### Reflections from the first three workshops:
 
 So, the workshops aimed to teach people how to manage their private keys securely. This workshop could also have been called 'How to use a password manager' (totes not sexy and would have had attendee population of 0 I am guessing ;) )
-      
+
 ##### Workshop 1
 
 About 20-30 people turned up. I went WAY too deep into 'what's a blockchain'. I didn't create space for a lunch break -- overall was a bit of a disaster, though people were very nice about it, and there was some learning that happened.
@@ -109,8 +115,11 @@ Bleep also made a bunch of notes which has started to form as a repository for t
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
 Run by Dre (advisor), Lyn, Kieran.  [Full report here](./afrotech_review.md)
 
+
 ![afrotech-1_sm](./img/afrotech-1_sm.jpeg)
-The workshop was designed to enourage adoption of a password manager, to attempt to work out the barriers to using this technology, and alert us to who was already using a password manager in the space.
+
+
+The workshop was designed to encourage adoption of a password manager, to attempt to work out the barriers to using this technology, and alert us to who was already using a password manager in the space.
 
 - There was only one other person, other than us (the workshop hosts), who was using a password manager (1Password).
 - Adoption was limited, primarily due to attendee's not coming prepared. Out of the 40+ attendees, there were only 4 computers at the workshop.
@@ -129,6 +138,8 @@ The workshop was designed to enourage adoption of a password manager, to attempt
 
 
 ### Sharding workshop at mmt event in New Zealand
+
+[Full report here](./mmt_retreat_sharding_secrets_workshop.md)
 
 ### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
 ![shard_workshop](./img/shard_workshop.jpg)
@@ -164,7 +175,7 @@ When asked 'How painful is key management', more than half of those surveyed rat
 # Posts off ssb 
 
 i think this was dan:
-    
+
 I used to use Dashlane which is awesome but it got too expensive (i got some promotional plan for 3 years for cheap). Then i switched to keepass archive that i sync to my machines with other stuff. 
 
 That saying to introduce new people to password managers i tell them a story.
@@ -184,7 +195,6 @@ By that time I have their attention and everyone wants password manager.
 I don't recommend keypass it is too much hustle to sync to mobile. Luckily there is newish open-source project https://bitwarden.com/ - you can start using their servers for free if you want more functionality you can pay them something (very cheap compared to commercial services) but you can also selfhost your server. It is much more approachable than other solutions.
 
 I would pick that nowdays not keepass.
-
 
 
 
