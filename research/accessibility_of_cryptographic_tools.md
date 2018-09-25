@@ -16,6 +16,10 @@ This is a collection of findings from:
 
 What we found was that most groups who did not use encryption had barriers because of lack of knowledge of how to set up the software.  But of groups who did use encryption, most reported at some point having had a problem with a lost key or password, and that key and password management was the most common source of problems.
 
+Of the users who used cloud-based backup services, none used them to backup keys, only passwords to web services. 
+
+Many users reported that they would not trust cloud based services.  Those involved in activism were particularly cautious. 
+
 ### Encryption tools people use  
 - Encrypted mobile messaging services - by far the most popular
 - OpenSSH
