@@ -29,24 +29,26 @@ Many users reported that they would not trust cloud based services.  Those invol
 
 ### Most commonly used methods to backup keys
 
+This was only of users of encryption software other than encrypted mobile messaging services, since such services typically do not give the user total responsibility for key management. For example, in the case of a lost device, keys can often be regenerated with a by a device with a new sim card with the same number.  Access to the old messages are lost but the users identity appears to persist. 
+
 ![how do you backup you encryption keys](./img/how_backup_encryption_keys.jpg)
 
 ### Password managers people use
 
-By far the majority did not use a password manager.
+By far the majority (33 users) did not use a password manager.
 
-- Web browser extensions
-- Dashlane
-- 1Password
-- KeePass
-- Lastpass
-- MasterPassword
-- Bitwarden
-- passbolt
-- pwsafe
-- PasswordBox
-- GNOME Keyring Manager / Seahorse
-- Pass (passwordstore.org)
+- Dashlane (Local installation with cloud sync) - 1 user
+- 1Password (Local installation with cloud sync) - 1 user
+- KeePass / KeePassX / KeePassXC (Local installation) - 5 users
+- Lastpass (Cloud based) - 2 users
+- MasterPassword (Deterministic) - 1 user
+- Bitwarden (Cloud based) - 1 user
+- passbolt (Team-focused, self hosted) - 1 user (who also had a personal password manager)
+- pwsafe (Local installation) - 1 user
+- PasswordBox (Browser extension, functionality unknown) - 1 user
+- GNOME Keyring Manager / Seahorse - 2 users
+- Pass (passwordstore.org) (Local installation with git sync) - 3 users
+- Other browser extensions - 5 users
 
 ### Problems encountered using password managers
 
