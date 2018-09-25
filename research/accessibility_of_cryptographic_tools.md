@@ -109,7 +109,7 @@ Bleep also made a bunch of notes which has started to form as a repository for t
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
 Run by Dre (advisor), Lyn, Kieran.  [Full report here](./afrotech_review.md)
 
-![afrotech-1_sm](./img/afrotech-1_sm.jpg)
+![afrotech-1_sm](./img/afrotech-1_sm.jpeg)
 The workshop was designed to enourage adoption of a password manager, to attempt to work out the barriers to using this technology, and alert us to who was already using a password manager in the space.
 
 - There was only one other person, other than us (the workshop hosts), who was using a password manager (1Password).
