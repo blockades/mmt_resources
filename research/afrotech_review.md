@@ -48,3 +48,9 @@ Of those 3, 2 successfully emailed us (the facilitators) with their public addre
 As a group (3 workshop facilitators) we agreed we would not run this workshop again at this scale. Having 40+ people means drawing effective conclusions about people's experience using the technology is limited. Our original scope is one we would be strict about keeping to, and would communicate more clearly with the organisers in future.
 
 However, drawing from the experiences of those involved, it was clear that some conclusions could be made about people's concerns with the technology and the approach.
+
+## Pictures
+
+![afrotech-1.jpg](./img/afrotech-1.jpeg)
+![afrotech-2.jpg](./img/afrotech-2.jpeg)
+![afrotech-3.jpg](./img/afrotech-3.png)
