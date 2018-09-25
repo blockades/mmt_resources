@@ -108,8 +108,26 @@ Bleep also made a bunch of notes which has started to form as a repository for t
 
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
 Run by Dre (advisor), Lyn, Kieran.
-(add image)
+
+The workshop was designed to enourage adoption of a password manager, to attempt to work out the barriers to using this technology, and alert us to who was already using a password manager in the space.
+
+- There was only one other person, other than us (the workshop hosts), who was using a password manager (1Password).
+- Adoption was limited, primarily due to attendee's not coming prepared. Out of the 40+ attendees, there were only 4 computers at the workshop.
+- Those with a computer and the capacity to install KeePass were encouraged to do so. Feedback from users reflected on the following:
+  * Single source of failure
+    - What if I lose or forget my password?
+    - What happens if I become incapacitated?
+
+  * Internet Connection
+    - "Isn't relying on the internet to access my passwords a problem?"
+    - In the context a client-side need for a password (such as a crypto wallet), isn't it problematic to rely on the internet to gain access?
+
+  * Data Security / Integrity
+    - What happens if someone hacks my cloud account?
+    - What happens in the event of a data-leak by my cloud provider? This has happened before, see major Dropbox leak in 2012. Data beaches happen on a daily basis, often without the service provider knowing.
+
 [full report](./afrotech_review.md)
+
 ### Sharding workshop at mmt event in New Zealand
 
 ### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
