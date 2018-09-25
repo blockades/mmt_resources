@@ -135,6 +135,8 @@ The workshop was designed to encourage adoption of a password manager, to attemp
 
 ### Sharding workshop at mmt event in New Zealand
 
+![sharding2](./img/sharding2.jpg)
+
 [Full report here](./mmt_retreat_sharding_secrets_workshop.md)
 
 ### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
