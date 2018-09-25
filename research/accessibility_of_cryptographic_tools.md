@@ -109,10 +109,10 @@ Bleep also made a bunch of notes which has started to form as a repository for t
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
 Run by Dre (advisor), Lyn, Kieran.
 (add image)
+[full report](./afrotech_review.md)
+### Sharding workshop at mmt event in New Zealand
 
-### Sharding workshop in nz
-
-### Sharding workshop Network Convergence, Catalonia https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
+### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
 ![shard_workshop](./img/shard_workshop.jpg)
 
 ### Events at space4, London http://space4.tech/
