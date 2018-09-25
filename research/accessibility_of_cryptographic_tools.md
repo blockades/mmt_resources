@@ -29,15 +29,7 @@ Many users reported that they would not trust cloud based services.  Those invol
 
 ### Most commonly used methods to backup keys
 
-TODO: make pi chart with R 
-
-- External storage media kept at home
-- External storage media kept with a friend or family member
-- External storage media kept elsewhere
-- Hard copy
-- No backup
-- Private remote server
-- Using a cloud service
+![how do you backup you encryption keys](./img/how_backup_encryption_keys.jpg)
 
 ### Password managers people use
 
