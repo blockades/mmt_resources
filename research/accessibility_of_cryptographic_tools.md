@@ -1,5 +1,7 @@
 # Accessibility of Cryptographic Tools
 
+![key_cupboard](./img/key_cupboard.jpg)
+
 This is a collection of findings from:
 - Interviews with groups and individuals about issues around passwords, keys and encryption
 - Our survey of deprecated accounts on SSB
