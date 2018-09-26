@@ -51,17 +51,17 @@ In the case of disk encryption, people were understandably unwilling to reinstal
 
 By far the majority (33 users) did not use a password manager.
 
-- Dashlane (Local installation with cloud sync) - 1 user
-- 1Password (Local installation with cloud sync) - 1 user
-- KeePass / KeePassX / KeePassXC (Local installation) - 5 users
-- Lastpass (Cloud based) - 2 users
-- MasterPassword (Deterministic) - 1 user
-- Bitwarden (Cloud based) - 1 user
-- passbolt (Team-focused, self hosted) - 1 user (who also had a personal password manager)
-- pwsafe (Local installation) - 1 user
-- PasswordBox (Browser extension, functionality unknown) - 1 user
-- GNOME Keyring Manager / Seahorse - 2 users
-- Pass (passwordstore.org) (Local installation with git sync) - 3 users
+- [Dashlane](https://www.dashlane.com/) (Local installation with cloud sync) - 1 user
+- [1Password](https://1password.com/) (Local installation with cloud sync) - 1 user
+- [KeePass / KeePassX / KeePassXC](https://keepassxc.org/) (Local installation) - 5 users
+- [Lastpass](https://lastpass.com) (Cloud based) - 2 users
+- [MasterPassword](https://masterpassword.app/) (Deterministic) - 1 user
+- [Bitwarden](https://bitwarden.com/) (Cloud based) - 1 user
+- [passbolt](https://www.passbolt.com/) (Team-focused, self hosted) - 1 user (who also had a personal password manager)
+- [pwsafe](https://pwsafe.org/) (Local installation) - 1 user
+- [PasswordBox](https://passwordbox.en.softonic.com) (Browser extension, functionality unknown) - 1 user
+- [GNOME Keyring Manager / Seahorse](https://wiki.gnome.org/Projects/GnomeKeyring) - 2 users
+- [GNU Pass](http://www.passwordstore.org) (Local installation with git sync) - 3 users
 - Other browser extensions - 5 users
 
 ### Problems encountered using password managers
