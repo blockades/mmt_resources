@@ -17,18 +17,35 @@ This is a collection of findings from:
 
 ### Summary of findings 
 
-What we found was that most groups who did not use encryption had barriers because of lack of knowledge of how to set up the software.  But of groups who did use encryption, most reported at some point having had a problem with a lost key or password, and that key and password management was the most common source of problems.
+We spoke to members of our extended friendship networks, groups we have contact with, some of whom are involved in political activism, participants of the workshops we have run, and users of the scuttlebutt network.
 
-Of the users who used cloud-based backup services, none used them to backup keys, only passwords to web services. 
+What we found was that most groups and individuals who did not use encryption did so because of lack of knowledge of how to set up the software, and a lack of time to invest to learn how.  But of groups who did use encryption, most reported at some point having had a problem with a lost key or password, and that key and password management was the most common source of problems.
+
+Of the users who used cloud-based backup services, none used them to backup keys or certificates, only passwords to web services. 
 
 Many users reported that they would not trust cloud based services.  Those involved in activism were particularly cautious. 
 
 ### Encryption tools people use  
 - Encrypted mobile messaging services - by far the most popular
 - OpenSSH
-- PGP/GPG, Enigmail, Pretty Easy Privacy
-- Disk encryption: Veracrypt, Dmcrypt, EncFS, Ecryptfs, Tomb
-- Keybase
+- PGP/GPG, Enigmail, Pretty Easy Privacy (primarily for encrypted email but also used for file encryption, password encryption, and signing git commits).
+- Disk encryption software including: Veracrypt / Truecrypt, Dmcrypt, EncFS, Ecryptfs, Tomb
+- Keybase, which combines a multi-service key directory, a cross platform messaging service, encrypted storage and encrypted git hosting.
+
+### Encryption software people would like to use but currently do not
+
+- Email encryption
+- Disk or file encryption
+
+### Reasons for not using them
+
+A reason that kept coming up was time.  "I dont have time to set it up", "It probably takes ages", "I've been meaning to do it but never got around it".
+
+Another was lack of knowledge, the assumption that one needs to be extremely technically proficient to use such tools, and a fear of loss of access to data if a mistake was made.
+
+Some users had taken the time to get a working GPG encrypted email configuration but now used a newer device and had not set it up again or copied across their keys.  One user had published a key to a public keyserver without an expiry date, and then lost the corresponding private key.They explained that they did not set an expiry date because it seemed more valuable to have a key which could be used indefinately. 
+
+In the case of disk encryption, people were understandably unwilling to reinstall their operating system in order to get it set up.  Again, fear of loosing access to their data was also an issue. 
 
 ### Password managers people use
 
@@ -50,20 +67,24 @@ By far the majority (33 users) did not use a password manager.
 ### Problems encountered using password managers
 
 - Forgot/lost master password
+- No longer can access services from other devices
 - Lost database file 
 - Difficulties when changing to a new computer/operating system
+- No problems encountered
+- Installation/setup problems
 
-### Reasons for / for not using cloud service
+### Reasons for / for not using password managers backed by cloud service
 
 #### For using
 - Easy of use
+- Good solution for accessing from multiple devices
 - Less likely to get lost
-- Not having to make personal backups
+- Not having to make personal backups, or manually sync across devices
 
 #### For not using
-- They're too expensive
-- Don't trust them
-- Don't know of a good provider
+- Too expensive / not found a good free provider
+- Lack of trust in them
+- Don't know of a reputably secure provider
 
 ### Most commonly used methods to backup keys
 
