@@ -66,12 +66,7 @@ By far the majority (33 users) did not use a password manager.
 
 ### Problems encountered using password managers
 
-- Forgot/lost master password
-- No longer can access services from other devices
-- Lost database file 
-- Difficulties when changing to a new computer/operating system
-- No problems encountered
-- Installation/setup problems
+![Problems using password managers](./img/password_manager_problems.png)
 
 ### Reasons for / for not using password managers backed by cloud service
 
