@@ -194,7 +194,7 @@ The whole process took about 2 hours."
 
 We found that although some people use password generators to generate random password strings from within their password manager, not many people use password generators to create strong, memorable master passwords. 
 
-We looked at some different tools for doing this, and also developed an [n-gram based pronounceable non-dictionary word generator](https://github.com/ameba23/ngram-pwgen). (fork to blockades)
+We looked at some different tools for doing this, and also developed an [n-gram based pronounceable non-dictionary word generator](https://github.com/blockades/ngram-pwgen).
 
 * [Diceware](https://www.rempe.us/diceware/#eff) - Strong memorable password generator 
 * [Strong Random Password Generator](http://passwordsgenerator.net/) - Generates a password together with some words to help you remember it
