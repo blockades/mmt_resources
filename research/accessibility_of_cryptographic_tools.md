@@ -9,7 +9,8 @@ This is a collection of findings from:
 
 ## Questions put forward to groups
 
-- What encryption tools do you currently use?  If you don't use encryption, why not?
+- What encryption tools do you currently use? 
+- What encryption tools do you not currently use but would like to?  What are the reasons?
 - How do you back up your keys and passwords?
 - Have you ever lost a key or password?  Why?
 - Would you consider using a cloud service to backup keys or passwords?  Why?
@@ -168,6 +169,20 @@ Similarly I was cautious about pasting the seed into dyne.org 'secrets' web-base
 
 The whole process took about 2 hours."
 
+## Password Generators
+
+We found that although some people use password generators to generate random password strings from within their password manager, not many people use password generators to create strong, memorable master passwords. 
+
+We looked at some different tools for doing this, and also developed an [n-gram based pronounceable non-dictionary word generator](https://github.com/ameba23/ngram-pwgen). (fork to blockades)
+
+* [Diceware](https://www.rempe.us/diceware/#eff) - Strong memorable password generator 
+* [Strong Random Password Generator](http://passwordsgenerator.net/) - Generates a password together with some words to help you remember it
+* [passwds.ninja](https://passwds.ninja/) - Generates pronouncable strings based on a template of where vowels and consonants should be.
+* [securepasswords](https://www.npmjs.com/package/securepasswords) - node module for a password generator which is supposed to create passwords which are easy to type on english and german keyboards
+* [Electronic Frontier Foundation wordlists](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) along with an interesting explanation. These wordlists are used by [rempe.us/diceware/#eff](https://www.rempe.us/diceware/#eff)
+* [XKPasswd - Secure Memorable Passwords](https://xkpasswd.net/s/) - a password generator with plenty of nice features.
+* [Secrets of the Dark](https://direclown.wordpress.com/tag/javascript/) - a review of some password generators
+* [Strong Pass - Secure Deterministic Password Generator](https://www.rempe.us/strongpass/) - this is actually a barebones deterministic password manager.
 
 ## Similar research
 
