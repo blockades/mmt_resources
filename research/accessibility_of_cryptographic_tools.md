@@ -107,8 +107,8 @@ Full details can be found on secure scuttlebutt under #deprecatedSSBAccounts
 
 # Feedback from our workshops on setting up password managers
 
-### Workshops at Work.Life, London fields https://work.life/locations/london-fields/, 
-Lead by dan, assisted by keiran, 8 workshops over 3 months, teaching setup and use of Keepass, and public key cryptography at entry level.
+### Workshops at [Work.Life, London fields](https://work.life/locations/london-fields) 
+Lead by dan, assisted by Kieran, 8 workshops over 3 months, teaching setup and use of 'Keepass'/'Bitwarden', and public key cryptography at entry level.
 
 #### Some Reflections from the first three workshops:
 
@@ -228,15 +228,3 @@ When asked 'How painful is key management', more than half of those surveyed rat
 
 -------
 
-# Posts off ssb 
-
-i think this was dan:
-
-
-
-%pk73nNx1mKnkciIsWFwkwlhIStFzz8+XzrvQaR5l218=.sha256
-
-       "The genesis of the project and the germination began when a friend runs a 'tools for the coming difficult times' blog (http://crucible.tools/) asked me to contribute a post about what I thought might be useful. It was around the time that #blockstream put #bitcoin in orbit (https://blockstream.com/satellite/) opening up the potential for participating in the #networkwithout needing internet access. I thought about the stories of people crossing borders fleeing Syria having their belongings stolen, as law (https://www.theguardian.com/world/2016/jan/26/danish-parliament-approves-plan-to-seize-assets-from-refugees) . So it got me thinking about #cryptocurrency as a means of mobility without material belongings. So I got to working thinking about this might work in practice."
-  
-%mT9ngzsXUJat6OD91gTPZt4L0RdpgNqfMkj//FiW+mo=.sha256 
-    
