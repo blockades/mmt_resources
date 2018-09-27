@@ -7,7 +7,11 @@ This is a collection of findings from:
 - Our survey of deprecated accounts on SSB
 - Feedback and reflections on workshops we have run over the last two years.
 
-## Questions put forward to groups
+## Participants interviewed
+
+We spoke to members of our extended friendship networks, groups we have contact with, some of whom are involved in political activism, participants of the workshops we have run, and users of the scuttlebutt network.  Therefore, these findings cannot be said to be representative of the general population.
+
+### Questions put forward
 
 - What encryption tools do you currently use? 
 - What encryption tools do you not currently use but would like to?  What are the reasons?
@@ -16,8 +20,6 @@ This is a collection of findings from:
 - Would you consider using a cloud service to backup keys or passwords?  Why?
 
 ### Summary of findings 
-
-We spoke to members of our extended friendship networks, groups we have contact with, some of whom are involved in political activism, participants of the workshops we have run, and users of the scuttlebutt network.
 
 What we found was that most groups and individuals who did not use encryption did so because of lack of knowledge of how to set up the software, and a lack of time to invest to learn how.  But of groups who did use encryption, most reported at some point having had a problem with a lost key or password, and that key and password management was the most common source of problems.
 
@@ -108,13 +110,31 @@ Full details can be found on secure scuttlebutt under #deprecatedSSBAccounts
 ### Workshops at Work.Life, London fields https://work.life/locations/london-fields/, 
 Lead by dan, assisted by keiran, 8 workshops over 3 months, teaching setup and use of Keepass, and public key cryptography at entry level.
 
-#### Reflections from the first three workshops:
+#### Some Reflections from the first three workshops:
 
 So, the workshops aimed to teach people how to manage their private keys securely. This workshop could also have been called 'How to use a password manager' (totes not sexy and would have had attendee population of 0 I am guessing ;) )
 
+I used to use Dashlane which is awesome but it got too expensive (i got some promotional plan for 3 years for cheap). Then i switched to keepass archive that I sync to my machines with other stuff. 
+
+That saying to introduce new people to password managers I tell them a story.
+
+Last year I programmed web application form for art/design competition. Many of my friends applied. It was few thousand applicants and you had to register to fill the form. Then I tell them that I got all of their personal data including email and password that they used to register. I tell them I can use this information to login to common services because most of people use only few passwords. 
+
+You should see their faces. I am the worst person in the room by then.
+
+In reality the application form was passwordless and used one time email token to login. Because I don't want to have anything to do with others people passwords! But nobody remembers that. 
+
+It works very well. After that I introduce them to [haveibeenpwned.com]https://haveibeenpwned.com/), a site which lets people check if you have an account which has been compromised in a data breach based on a repository of know data breaches (which is also a promotional site for password manager '1Password').
+
+By that time I have their attention and everyone wants password manager.
+
+I no longer recommend 'keepass' it is too much hassle to sync to mobile. Luckily there is newish open-source project [bitwarden](https://bitwarden.com/) - you can start using their servers for free if you want more functionality you can pay them something (very cheap compared to commercial services) but you can also self-host your server. It is much more approachable than other solutions.
+
+I would pick that nowdays not keepass.
+
 ##### Workshop 1
 
-About 20-30 people turned up. I went WAY too deep into 'what's a blockchain'. I didn't create space for a lunch break -- overall was a bit of a disaster, though people were very nice about it, and there was some learning that happened.
+About 20-30 people turned up. I went WAY too deep into explaining things. I didn't create space for a lunch break -- overall was a bit of a disaster, though people were very nice about it, and there was some learning that happened.
 It was about 45:55 women:men and about 25:75 #BIPOC : #Caucasian , about 20:80 #LGBQTI : #cis
 I think there was a really wide range of expectations and reasons people were there and I didn't necessarily create a great container for learning.
 There was ALOT of me talking and ALOT of theory and not much practical doing. These were some of the biggest takeaways.
@@ -128,7 +148,7 @@ This workshop showed me that even with technically proficient people, this stuff
 
 ##### Workshop 3
 
-This with the same participants as workshop 2 and we went through the whole process again with #bitcoin #ethereum and #neo
+This with the same participants as workshop 2 and we went through the whole process again with Keepass.
 At the end of this both of my friends were starting to feel much more used to the concepts and the practicalities and we started to think about what this might look like in a different context with people at the social center.
 Bleep also made a bunch of notes which has started to form as a repository for the steps to start diffusing the knowledge. Some of this material can be found in the #MMT #github repo wiki here"
 
@@ -204,33 +224,13 @@ We looked at some different tools for doing this, and also developed an [n-gram 
 
 Frenkel, K (2014) "Key management a barrier to encryption adoption" https://www.cioinsight.com/security/slideshows/key-management-a-barrier-to-encryption-adoption.html - based on 'Global encryption trends study' by the Ponemon Institute 
 
-When asked 'How painful is key management', more than half of those surveyed rated the challenge of managing keys or certificates 7 on a scale of 1 to 10.  30% of organizations rated key management at 9 or 10 on the pain scale.
+When asked 'How painful is key management', more than half of those surveyed rated the challenge of managing keys or certificates 7 on a scale of 1 to 10.  30% of organizations rated key management at 9 or 10 on the pain scale.  Note however, that this was a study of enterprise users, which are not our target user group.
 
 -------
 
 # Posts off ssb 
 
 i think this was dan:
-
-I used to use Dashlane which is awesome but it got too expensive (i got some promotional plan for 3 years for cheap). Then i switched to keepass archive that i sync to my machines with other stuff. 
-
-That saying to introduce new people to password managers i tell them a story.
-
-Last year I programmed web application form for art/design competition. Many of my friends applied. It was few thousand applicants and you had to register to fill the form. Then i tell them that i got all of their personal data including email and password that they used to register. I tell them i can use this information to login to common services because most of people use only few passwords. 
-
-You should see their faces. I am the worst person in the room by then.
-
-In reality the application form was passwordless and used one time email token to login. Because i don't want to have anything to do with others people passwords! But nobody remembers that. 
-
-It works very well. After that i introduce them to
-
-https://haveibeenpwned.com/
-
-By that time I have their attention and everyone wants password manager.
-
-I don't recommend keypass it is too much hustle to sync to mobile. Luckily there is newish open-source project https://bitwarden.com/ - you can start using their servers for free if you want more functionality you can pay them something (very cheap compared to commercial services) but you can also selfhost your server. It is much more approachable than other solutions.
-
-I would pick that nowdays not keepass.
 
 
 
