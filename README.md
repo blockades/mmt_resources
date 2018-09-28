@@ -10,7 +10,7 @@ You can use this for anything you find interesting that you think others might a
 ## Sections
 
 * [Guides](./guides) - how-tos for getting set up with crypto/ various tech
-* [Research](./research) - a selection of some of our ssb posts with research for dark crystal
+* [Research](./research) - a selection of some of our research for dark crystal.  See also #darkcrystal or #dark-crystal on SSB.
 * [Experiments](./experiments) - learn about and from MMT's experiments 
 * [Trading](./Trading.md) - tools and links for trading crypto
 * [Tools](./Tools.md) - general programming / crypto links
