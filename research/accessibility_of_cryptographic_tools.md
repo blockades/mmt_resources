@@ -124,13 +124,13 @@ You should see their faces. I am the worst person in the room by then.
 
 In reality the application form was passwordless and used one time email token to login. Because I don't want to have anything to do with others people passwords! But nobody remembers that. 
 
-It works very well. After that I introduce them to [haveibeenpwned.com]https://haveibeenpwned.com/), a site which lets people check if you have an account which has been compromised in a data breach based on a repository of know data breaches (which is also a promotional site for password manager '1Password').
+It works very well. After that I introduce them to [haveibeenpwned.com](https://haveibeenpwned.com/), a site which lets people check if you have an account which has been compromised in a data breach based on a repository of know data breaches (which is also a promotional site for password manager '1Password').
 
 By that time I have their attention and everyone wants password manager.
 
 I no longer recommend 'keepass' it is too much hassle to sync to mobile. Luckily there is newish open-source project [bitwarden](https://bitwarden.com/) - you can start using their servers for free if you want more functionality you can pay them something (very cheap compared to commercial services) but you can also self-host your server. It is much more approachable than other solutions.
 
-I would pick that nowdays not keepass.
+I would recommend that nowadays, not keepass.
 
 ##### Workshop 1
 

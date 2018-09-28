@@ -18,5 +18,5 @@ You can use this for anything you find interesting that you think others might a
 * [Reading](./Reading.md) - material that's learning, news
 * [Onboarding](./Onboarding.md) - things you need to know when joining MMT
   - [People](./People.md) - the people participating in MMT
-* [Meeting Minutes](./minutes) - links out to development meeting minutes
+* [Meeting Minutes](./minutes) - links out to development meeting minutes (up until May 2018, more recent ones are on Sandstorm)
 * [Writings](./writings) - links to writings from within the project ecosystem
