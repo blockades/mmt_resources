@@ -186,6 +186,8 @@ The workshop was designed to encourage adoption of a password manager, to attemp
 ### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
 ![shard_workshop](./img/shard_workshop.jpg)
 
+Here we presented and explored secret sharding concepts using a role playing game, and spoke to people about potential use cases, their own needs, and stories of lost keys. 
+
 ### Events at space4, London http://space4.tech/
 
 ### Guides used
