@@ -93,7 +93,7 @@ Almost half of users simply did not back up their keys. Of those who did, most u
 
 ### Limitations of the study
 
-Getting people to talk openly about their security habits can be difficult, especially if it is for research that will be published publicly. People involved in activism tend to be very cautious, and people who we didn't know personally were very unwilling to give much information away. There were some examples of issues with keys which we were unable to gain consent to publish here. 
+Getting people to talk openly about their security habits can be difficult, especially if it is for research that will be published publicly. People involved in activism tend to be very cautious, and people who we didn't know personally were very unwilling to give much information away. There were some examples of security problems which we were unable to gain consent to publish here. 
 
 ## Secure-scuttlebutt dead accounts survey
 
