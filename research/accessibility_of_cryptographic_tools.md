@@ -91,6 +91,10 @@ This was only of users of encryption software other than encrypted mobile messag
 
 Almost half of users simply did not back up their keys. Of those who did, most used external storage, such as a USB stick hard disk, or second computer, which they kept at home. None used a cloud service.
 
+### Limitations of the study
+
+Getting people to talk openly about their security habits can be difficult, especially if it is for research that will be published publicly. People involved in activism tend to be very cautious, and people who we didn't know personally were very unwilling to give much information away. There were some examples of issues with keys which we were unable to gain consent to publish here. 
+
 ## Secure-scuttlebutt dead accounts survey
 
 Secure scuttlebutt is a social network which relies on cryptographic keys for identity.  Unlike popular centralised services there is no password-reset functionality.  If a private key is lost, users can no longer use that identity.  So the responsibility of holding custody of the key is entirely up to the user.
