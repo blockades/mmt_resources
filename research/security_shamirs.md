@@ -3,7 +3,7 @@
 
 ## Security considerations for Shamir's secret sharing
 
-A bit of an update from Dark-Crystal. We are continuing to develop the identity recovery system. Parallel to this we are currently researching two areas.  Adopting secp256k1 keys, and security issues/vulnerabilities with Shamir's secret sharing and how to approach them.  This article is about the latter, and we hope that this will be useful for other projects considering using Shamir's scheme.
+A bit of an update from Dark-Crystal. We are continuing to develop the identity recovery system. Parallel to this we are currently researching two areas.  Adopting secp256k1 keys, and security issues/vulnerabilities with Shamir's secret sharing and how to approach them.  This article is about the latter, and is heavily inspired by a recent security review from [Dominic Tarr](https://github.com/dominictarr). We hope that this will be useful for other projects considering using Shamir's scheme.
 
 In general, Shamir's scheme is considered information-theoretically secure.  That is, individual shares contain absolutely no semantic information about the secret, making it 'post quantum' crytography.
 
@@ -13,15 +13,15 @@ However, it is not without its problems:
 
 ### The need for verification of individual shares
 
-Harn and Lin consider the situation in which 'cheaters' claiming to be holders of shares introduce 'fake' shares, causing the incorrect secret to be recovered. 
+Harn and Lin consider the situation in which 'cheaters' claiming to be holders of shares introduce 'fake' shares, causing the incorrect secret to be recovered.  Of course without having the other shares they have no control over the content of the 'incorrect' secret. 
 
-We also considered the possibility of genuine holders of shares might have a motivation for not wanting the secret to be recovered, and could maliciously modify their share.  Furthermore, the share might be modified by some accidental or external cause.
+We also considered the possibility that genuine holders of shares might have a motivation for not wanting the secret to be recovered, and could maliciously modify their share.  Furthermore, the shares might be modified by some accidental or external cause, and it is important to be able to determine which share is causing the problem.
 
 It might be very easy to determine that we have recovered the wrong secret.  Either because we have some idea of how we expect it to look, or as we have recently implemented in dark crystal, an identifier is added to the secret to allow the correct secret to be automatically recognised.  (We concatonated the secret with the last 16 bytes of its SHA256 hash). 
 
-However problem here, is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
+However, the problem here is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
-The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally they rely on publicly publishing some information to allow anybody to verify a given share, a zero-knowledge proof.
+The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally, they rely on publicly publishing some information which allows anybody to verify a given share, a zero-knowledge proof.
 
 Here are some possible solutions:
 
@@ -52,11 +52,12 @@ Anyone holding a share is able to determine the length of the secret.  Particula
 
 Suppose we loose trust in one person holding a shard. This might be because they had their computer stolen. Or maybe we had a really bad argument with them. Or maybe we found out they weren't the person they were claiming to be.
 
-In Shamir's original paper he states that one of the great advantages of the scheme is that it is possible to create as many distinct sets of shards as you like without needing to modify the secret. Each set of shards is incompatible with the other sets. Using Glenn Rempe's implementation, if we run the share method several times with the same secret, we get each time a different set of shards. When generating a new set, an extra check could be done to rule out the extremely improbable case that an identical set had been generated.
+In Shamir's original paper he states that one of the great advantages of the scheme is that it is possible to create as many distinct sets of shares as you like without needing to modify the secret. Each set of shares is incompatible with the other sets. Using Glenn Rempe's implementation, if we run the share method several times with the same secret, we get each time a different set of shares. When generating a new set, an extra check could be done to rule out the extremely improbable case that an identical set had been generated.
 
-This means in a conventional (shards written on pieces of paper) secret sharing scenario, we could simply give new shards to the custodians we do still trust and ask them to destroy the old ones. This would make the shard belonging to the untrusted person become useless.
+This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shards to the custodians we do still trust and ask them to destroy the old ones. This would make the shard belonging to the untrusted person become useless.
 
-In our case, we are using the Secure-Scuttlebutt's immutable log, we have no way of destroying a message. 
+In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. 
+
 
 Something like this:
 
@@ -74,9 +75,10 @@ PS. you'd better also look into how to securely delete files. I think this might
 
 having a dedicated virtual machine for secure computation. But my feeling is that as long as the secret is initially stored on disk, we are not really adding anything by having an ultra secure system of generating shares.
 
-### Conclusion
+## Conclusion
 
 We feel confident that we are able to address the issues we have explored in this article.  However we have focussed here mainly on technical limitations of the scheme.  There are many other social aspects which pose problems to our model, which we will explore in another article. 
+
 
 ## References (needs sorting out)
 
@@ -93,4 +95,8 @@ We feel confident that we are able to address the issues we have explored in thi
 - Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
 - https://zenroom.dyne.org/
 
+## See Also...
 
+- Our [list of applications and articles on Shamir's secret sharing](https://github.com/blockades/mmt_resources/blob/master/research/shamirs_secret_sharing_applications.md)
+- [Brainstorming Coconut-related scenarios](https://github.com/blockades/mmt_resources/blob/master/research/coconut_brainstorm.md) ('Coconut death' refers to a role playing game we did as part of our research where we tried to recover the keys of members of the group who had been hit by coconuts)
+- [Thoughts on verifying received shards in dark crystal](https://github.com/blockades/mmt_resources/blob/master/research/verifying_recived_shards.md)
