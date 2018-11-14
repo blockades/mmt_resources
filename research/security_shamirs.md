@@ -21,18 +21,28 @@ It might be very easy to determine that we have recovered the wrong secret.  Eit
 
 However problem here, is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
-The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.
+The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally they rely on publicly publishing some information to allow anybody to verify a given share, a zero-knowledge proof.
 
 
-Feldman... 
 
-#### Keeping a record of the encrypted share.  
+#### Publicly publishing the encrypted shares  
 
-This is what we were originally planning to do, but this only works if the encryption scheme used is deterministic.  That is to say encrypting the same message with the same key twice will reliably give the same output.  The problem here is that such encryption schemes are vulnerable to replay attacks.  Most modern asymmetric schemes introduce some random nonce to evade this problem. The scheme we are using (libsodium's secret box) typically takes a 24 byte random nonce.  So this is not a good option. 
+This is what we were originally planning to do, but this only helps in this context if the encryption scheme used is deterministic.  That is to say encrypting the same message with the same key twice will reliably give the same output.  The problem here is that such encryption schemes are vulnerable to replay attacks.  Most modern asymmetric schemes introduce some random nonce to evade this problem. The scheme we are using (libsodium's secret box) typically takes a 24 byte random nonce.  So this is not a good option.  However we actually already 'wrap' shares in a second level of encryption to to allow the secret owner to publish their own encrypted copy of the shard message with its associated metadata as a way to keep a personal record of what was sent to who. When we looked at other schemes for verifiable secret sharing we found they involved a similar practice, and we decided to use an existing well-documented scheme. 
 
-Storing the hash of each share somewhere public.
+#### Publicly publishing the hash of each share
 
-dfinity VSS (link)
+This is also something we considered, but feel that it gives custodians more unnecessary extra information and less accountability compared to other methods.
+
+#### Feldman's scheme 
+
+#### Schoenmakers scheme
+
+#### Implementations
+
+- https://github.com/songgeng87/PubliclyVerifiableSecretSharing - C implementation built on secp256k1 used by EOS
+- https://github.com/FabioTacke/PubliclyVerifiableSecretSharing - A Swift implementation 
+- https://github.com/dfinity/vss - Dfinity's NodeJS implentation built on BLS, and used for their distributed key generation
+
 
 ### Share size has a linear relationship to secret size
 
@@ -80,5 +90,10 @@ Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements K
 Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
 Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
 
+
+Feldman
+Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
+
 https://zenroom.dyne.org/
-https://github.com/FabioTacke/PubliclyVerifiableSecretSharing
+
+
