@@ -7,9 +7,9 @@ A bit of an update from Dark-Crystal. We are continuing to develop the identity 
 
 In general, Shamir's scheme is considered information-theoretically secure.  That is, individual shares contain absolutely no semantic information about the secret, making it 'post quantum' crytography.
 
-An interesting anecdote, the root key for ICANN DNS security, effectively the key which secures the naming system of the internet, is held by seven parties, based in Britain, the U.S., Burkina Faso, Trinidad and Tobago, Canada, China, and the Czech Republic. Cryptographer Bruce Schneier has alleged that they are holders of Shamir's secret shares.
+An interesting anecdote, the root key for ICANN DNS security, effectively the key which secures the naming system of the internet, is held by seven parties, based in Britain, the U.S., Burkina Faso, Trinidad and Tobago, Canada, China, and the Czech Republic. Cryptographer Bruce Schneier has alleged that they are holders of Shamir's secret shares, which indicates the scheme is taken quite seriously.
 
-However, we have identified several issues with it. 
+However, it is not without its problems:
 
 ### The need for verification of individual shares
 
@@ -22,6 +22,8 @@ It might be very easy to determine that we have recovered the wrong secret.  Eit
 However problem here, is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
 The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally they rely on publicly publishing some information to allow anybody to verify a given share, a zero-knowledge proof.
+
+Here are some possible solutions:
 
 #### Publicly publishing the encrypted shares  
 
