@@ -11,7 +11,7 @@ An interesting anecdote, the root key for ICANN DNS security, effectively the ke
 
 However, we have identified several issues with it. 
 
-### Introduction of 'fake' shares.  Malicious or accidental modification of existing shares.  
+### The need for verification of individual shares
 
 Harn and Lin consider the situation in which 'cheaters' claiming to be holders of shares introduce 'fake' shares, causing the incorrect secret to be recovered. 
 
@@ -22,8 +22,6 @@ It might be very easy to determine that we have recovered the wrong secret.  Eit
 However problem here, is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
 The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally they rely on publicly publishing some information to allow anybody to verify a given share, a zero-knowledge proof.
-
-
 
 #### Publicly publishing the encrypted shares  
 
@@ -78,22 +76,19 @@ having a dedicated virtual machine for secure computation. But my feeling is tha
 
 We feel confident that we are able to address the issues we have explored in this article.  However we have focussed here mainly on technical limitations of the scheme.  There are many other social aspects which pose problems to our model, which we will explore in another article. 
 
-## References
+## References (needs sorting out)
 
-https://crypto.stackexchange.com/questions/10904/post-quantum-threshold-secret-sharing
-shatter secrets
-Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. [link](https://link.springer.com/article/10.1007/s10623-008-9265-8)
-how not to share a secret
+- https://crypto.stackexchange.com/questions/10904/post-quantum-threshold-secret-sharing
+- shatter secrets
+- Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. [link](https://link.springer.com/article/10.1007/s10623-008-9265-8)
+- how not to share a secret
 
-Shamir, Adi (1979). "How to share a secret". Communications of the ACM. 22 (11): 612–613. doi:10.1145/359168.359176.
-Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109/AFIPS.1979.98.
-Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
-Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
-
-
-Feldman
-Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
-
-https://zenroom.dyne.org/
+- Shamir, Adi (1979). "How to share a secret". Communications of the ACM. 22 (11): 612–613. doi:10.1145/359168.359176.
+- Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109-/AFIPS.1979.98.
+- Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
+- Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
+- Feldman
+- Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
+- https://zenroom.dyne.org/
 
 
