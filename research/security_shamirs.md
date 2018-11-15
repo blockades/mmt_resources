@@ -21,7 +21,7 @@ It might be very easy to determine that we have recovered the wrong secret.  Eit
 
 However, the problem here is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
-The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Generally, they rely on publicly publishing some information which allows anybody to verify a given share, a zero-knowledge proof.
+The solution is to introduce some verification of shares, and a number of different methods of doing this have been proposed.  Typically, they rely on publicly publishing some information which allows verification of a given share.
 
 Here are some possible solutions:
 
@@ -35,14 +35,21 @@ This is also something we considered, but feel that it gives custodians more unn
 
 #### Feldman's scheme 
 
+This allows custodians to verify their own shares, using homomorphic encryption (an encryption scheme where computation can be done on encrypted data which when decrypted gives the same result as doing that computation on the original data) on top of Shamir's original scheme.
+
 #### Schoenmakers scheme
+
+More recently Berry Schoenmaker proposed a scheme which is publicly verifiable (originally introduced by Stadler, 1996).  That is, not only custodians, but anybody is able to verify that the correct shares were given.  The scheme is described in the context of an electronic voting application and focusses on validating the behaviour of the 'dealer' (the author of the secret).  But it can just as well be used to verify that returned shares have not been modified, which is what we are most interested in. 
 
 #### Implementations
 
+We are currently considering the following implementations:
+
 - https://github.com/songgeng87/PubliclyVerifiableSecretSharing - C implementation built on secp256k1 used by EOS
 - https://github.com/FabioTacke/PubliclyVerifiableSecretSharing - A Swift implementation 
-- https://github.com/dfinity/vss - Dfinity's NodeJS implentation built on BLS, and used for their distributed key generation
+- https://github.com/dfinity/vss - Dfinity's NodeJS implementation built on BLS, and used for their distributed key generation
 
+However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a lar
 
 ### Share size has a linear relationship to secret size
 
@@ -56,29 +63,15 @@ In Shamir's original paper he states that one of the great advantages of the sch
 
 This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shards to the custodians we do still trust and ask them to destroy the old ones. This would make the shard belonging to the untrusted person become useless.
 
-In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. 
-
-
-Something like this:
-
-Alice sends a request to Bob, "hi Bob, can you look after a secret share for me?"
-Bob replies "yes, encrypt it to this ephemeral public key bob_e". Bob's stores this key on disk, for now.
-Alice also generates an ephemeral key, alice_e and encrypts the share, sending bob alice_e.public, secretbox(share_bob, alice_e*bob_e) then deletes alice_e's private key. (note: alice sends the public key she used to bob, he'll need that to decrypt the share)
-
-Later, she wants to update the share - she sends a message to bob: "please delete that share" and bob deletes his ephemeral key. Now bob can't decrypt that share anymore! So if an attacker gets a hold of bob's device, they won't have that share either.
-
-If bob sent an array of ephemeral keys, then alice could update the share that many times without having to do another round trip.
-
-PS. you'd better also look into how to securely delete files. I think this might depend on the underlying storage architecture sometimes. Or it might be as easy as just writing 0's over the file.
+In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. A solution we are considering, is to use ephemeral keys which are used only for a particular share and can be deleted at will. 
 
 ### Secure computation
 
-having a dedicated virtual machine for secure computation. But my feeling is that as long as the secret is initially stored on disk, we are not really adding anything by having an ultra secure system of generating shares.
+Having a good system of encryption does not give us security if the host system is compromised. We are considering using a dedicated virtual machine for secure computation, such as Dyne.org's Zenroom. However there, are many more considerations one needs to make, especially if secret is initially stored on disk.  But this goes beyond the scope of assessing the security of Shamir's scheme. 
 
 ## Conclusion
 
-We feel confident that we are able to address the issues we have explored in this article.  However we have focussed here mainly on technical limitations of the scheme.  There are many other social aspects which pose problems to our model, which we will explore in another article. 
-
+We feel confident that we are able to address the issues we have explored in this article, although not all of them will be implemented in the next release. However, we have focussed here mainly on technical limitations of the scheme.  There are many other social aspects which pose threats to our model, which we will explore in another article. 
 
 ## References (needs sorting out)
 
@@ -91,7 +84,7 @@ We feel confident that we are able to address the issues we have explored in thi
 - Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109-/AFIPS.1979.98.
 - Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
 - Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
-- Feldman
+- Feldman, Paul (1987) "A practical scheme for non-interactive Verifiable Secret Sharing"
 - Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
 - https://zenroom.dyne.org/
 
