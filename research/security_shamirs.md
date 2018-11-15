@@ -3,9 +3,9 @@
 
 ## Security considerations for Shamir's secret sharing
 
-A bit of an update from Dark-Crystal. We are continuing to develop the identity recovery system. Parallel to this we are currently researching two areas.  Adopting secp256k1 keys, and security issues/vulnerabilities with Shamir's secret sharing and how to approach them.  This article is about the latter, and is heavily inspired by a recent security review from [Dominic Tarr](https://github.com/dominictarr). We hope that this will be useful for other projects considering using Shamir's scheme.
+A bit of an update from [Dark-Crystal](https://github.com/blockades). We are continuing to develop the identity recovery system. Parallel to this we are currently researching two areas.  Adopting secp256k1 keys, and security issues/vulnerabilities with Shamir's secret sharing and how to approach them.  This article is about the latter, and is heavily inspired by a recent security review from [Dominic Tarr](https://github.com/dominictarr). We hope that this will be useful for other projects considering using Shamir's scheme for identity recovery.
 
-In general, Shamir's scheme is considered information-theoretically secure.  That is, individual shares contain absolutely no semantic information about the secret, making it 'post quantum' crytography.
+In general, Shamir's scheme is considered information-theoretically secure.  That is, individual shares contain absolutely no semantic information about the secret, and it can be said to be 'post quantum' cryptography.
 
 An interesting anecdote, the root key for ICANN DNS security, effectively the key which secures the naming system of the internet, is held by seven parties, based in Britain, the U.S., Burkina Faso, Trinidad and Tobago, Canada, China, and the Czech Republic. Cryptographer Bruce Schneier has alleged that they are holders of Shamir's secret shares, which indicates the scheme is taken quite seriously.
 
@@ -15,7 +15,7 @@ However, it is not without its problems:
 
 Harn and Lin consider the situation in which 'cheaters' claiming to be holders of shares introduce 'fake' shares, causing the incorrect secret to be recovered.  Of course without having the other shares they have no control over the content of the 'incorrect' secret. 
 
-We also considered the possibility that genuine holders of shares might have a motivation for not wanting the secret to be recovered, and could maliciously modify their share.  Furthermore, the shares might be modified by some accidental or external cause, and it is important to be able to determine which share is causing the problem.
+This is not so much of a concern for us as we already have a way to validate who is a custodian.  However we also considered the possibility that genuine holders of shares might have a motivation for not wanting the secret to be recovered, and could maliciously modify their share.  Furthermore, the shares might be modified by some accidental or external cause, and it is important to be able to determine which share is causing the problem.
 
 It might be very easy to determine that we have recovered the wrong secret.  Either because we have some idea of how we expect it to look, or as we have recently implemented in dark crystal, an identifier is added to the secret to allow the correct secret to be automatically recognised.  (We concatonated the secret with the last 16 bytes of its SHA256 hash). 
 
@@ -35,7 +35,7 @@ This is also something we considered, but feel that it gives custodians more unn
 
 #### Feldman's scheme 
 
-This allows custodians to verify their own shares, using homomorphic encryption (an encryption scheme where computation can be done on encrypted data which when decrypted gives the same result as doing that computation on the original data) on top of Shamir's original scheme.
+Paul Feldman proposed a scheme in 1987 which allows custodians to verify their own shares, using homomorphic encryption (an encryption scheme where computation can be done on encrypted data which when decrypted gives the same result as doing that computation on the original data) on top of Shamir's original scheme.
 
 #### Schoenmakers scheme
 
@@ -49,7 +49,7 @@ We are currently considering the following implementations:
 - https://github.com/FabioTacke/PubliclyVerifiableSecretSharing - A Swift implementation 
 - https://github.com/dfinity/vss - Dfinity's NodeJS implementation built on BLS, and used for their distributed key generation
 
-However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a large change to our codebase and mean we need to reconsider serveral aspects of our model.  But it would bring a great advantage in terms of security.
+However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a large change to our codebase and mean we need to reconsider several aspects of our model.  But it would bring a great advantage in terms of security.
 
 ### Share size has a linear relationship to secret size
 
@@ -67,24 +67,22 @@ In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of
 
 ### Secure computation
 
-Having a good system of encryption does not give us security if the host system is compromised. We are considering using a dedicated virtual machine for secure computation, such as Dyne.org's Zenroom. However there, are many more considerations one needs to make, especially if secret is initially stored on disk.  But this goes beyond the scope of assessing the security of Shamir's scheme. 
+Having a good system of encryption does not give us security if the host system is compromised. We are considering using a dedicated virtual machine for secure computation, such as Dyne.org's [Zenroom](https://zenroom.dyne.org). However there, are many more considerations one needs to make, especially if secret is initially stored on disk.  But this goes beyond the scope of assessing the security of Shamir's scheme. 
 
 ## Conclusion
 
 We feel confident that we are able to address the issues we have explored in this article, although not all of them will be implemented in the next release. However, we have focussed here mainly on technical limitations of the scheme.  There are many other social aspects which pose threats to our model, which we will explore in another article. 
 
-## References (needs sorting out)
+## References
 
 - Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
 - Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109-/AFIPS.1979.98.
 - Feldman, Paul (1987) "A practical scheme for non-interactive Verifiable Secret Sharing" Proceedings of the 28th Annual Symposium on Foundations of Computer Science
-- Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. [link](https://link.springer.com/article/10.1007/s10623-008-9265-8)
+- Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. https://link.springer.com/article/10.1007/s10623-008-9265-8
 - Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
 - Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
 - Shamir, Adi (1979). "How to share a secret". Communications of the ACM. 22 (11): 612–613. doi:10.1145/359168.359176.
 - Zenroom, a virtual machine for fast cryptographic operations on elliptic curves, https://zenroom.dyne.org/
-
-- shatter secrets
 
 ## See Also...
 
