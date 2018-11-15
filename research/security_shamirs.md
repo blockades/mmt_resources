@@ -1,9 +1,9 @@
 
 *** this article is a work-in-progress ***
 
-## Security considerations for Shamir's secret sharing
-
 A bit of an update from [Dark-Crystal](https://github.com/blockades). We are continuing to develop the identity recovery system. Parallel to this we are currently researching two areas.  Adopting secp256k1 keys, and security issues/vulnerabilities with Shamir's secret sharing and how to approach them.  This article is about the latter, and is heavily inspired by a recent security review from [Dominic Tarr](https://github.com/dominictarr). We hope that this will be useful for other projects considering using Shamir's scheme for identity recovery.
+
+## Security considerations for Shamir's secret sharing
 
 In general, Shamir's scheme is considered information-theoretically secure.  That is, individual shares contain absolutely no semantic information about the secret, and it can be said to be 'post quantum' cryptography.
 
