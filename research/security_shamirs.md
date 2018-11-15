@@ -27,7 +27,7 @@ Here are some possible solutions:
 
 #### Publicly publishing the encrypted shares  
 
-This is what we were originally planning to do, but this only helps in this context if the encryption scheme used is deterministic.  That is to say encrypting the same message with the same key twice will reliably give the same output.  The problem here is that such encryption schemes are vulnerable to replay attacks.  Most modern asymmetric schemes introduce some random nonce to evade this problem. The scheme we are using (libsodium's secret box) typically takes a 24 byte random nonce.  So this is not a good option.  However we actually already 'wrap' shares in a second level of encryption to to allow the secret owner to publish their own encrypted copy of the shard message with its associated metadata as a way to keep a personal record of what was sent to who. When we looked at other schemes for verifiable secret sharing we found they involved a similar practice, and we decided to use an existing well-documented scheme. 
+This is what we were originally planning to do, but this only helps in this context if the encryption scheme used is deterministic.  That is to say encrypting the same message with the same key twice will reliably give the same output.  The problem here is that such encryption schemes are vulnerable to replay attacks.  Most modern asymmetric schemes introduce some random nonce to evade this problem. The scheme we are using (libsodium's secret box) typically takes a 24 byte random nonce.  So this is not a good option.  However we actually already 'wrap' shares in a second level of encryption to to allow the secret owner to publish their own encrypted copy of the share message with its associated metadata as a way to keep a personal record of what was sent to who. When we looked at other schemes for verifiable secret sharing we found they involved a similar practice, and we decided to use an existing well-documented scheme. 
 
 #### Publicly publishing the hash of each share
 
@@ -57,11 +57,11 @@ Anyone holding a share is able to determine the length of the secret.  Particula
 
 ### Revoking shares if trust in a custodian is lost
 
-Suppose we loose trust in one person holding a shard. This might be because they had their computer stolen. Or maybe we had a really bad argument with them. Or maybe we found out they weren't the person they were claiming to be.
+Suppose we loose trust in one person holding a share. This might be because they had their computer stolen. Or maybe we had a really bad argument with them. Or maybe we found out they weren't the person they were claiming to be.
 
 In Shamir's original paper he states that one of the great advantages of the scheme is that it is possible to create as many distinct sets of shares as you like without needing to modify the secret. Each set of shares is incompatible with the other sets. Using [Glenn Rempe's implementation](https://github.com/grempe/secrets.js), if we run the share method several times with the same secret, we get each time a different set of shares. When generating a new set, an extra check could be done to rule out the extremely improbable case that an identical set had been generated.
 
-This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shards to the custodians we do still trust and ask them to destroy the old ones. This would make the shard belonging to the untrusted person become useless.
+This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shares to the custodians we do still trust and ask them to destroy the old ones. This would make the share belonging to the untrusted person become useless.
 
 In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. A solution we are considering, is to use ephemeral keys which are used only for a particular share and can be deleted at will. 
 
