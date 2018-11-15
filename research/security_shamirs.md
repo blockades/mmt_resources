@@ -59,7 +59,7 @@ Anyone holding a share is able to determine the length of the secret.  Particula
 
 Suppose we loose trust in one person holding a shard. This might be because they had their computer stolen. Or maybe we had a really bad argument with them. Or maybe we found out they weren't the person they were claiming to be.
 
-In Shamir's original paper he states that one of the great advantages of the scheme is that it is possible to create as many distinct sets of shares as you like without needing to modify the secret. Each set of shares is incompatible with the other sets. Using Glenn Rempe's implementation, if we run the share method several times with the same secret, we get each time a different set of shares. When generating a new set, an extra check could be done to rule out the extremely improbable case that an identical set had been generated.
+In Shamir's original paper he states that one of the great advantages of the scheme is that it is possible to create as many distinct sets of shares as you like without needing to modify the secret. Each set of shares is incompatible with the other sets. Using [Glenn Rempe's implementation](https://github.com/grempe/secrets.js), if we run the share method several times with the same secret, we get each time a different set of shares. When generating a new set, an extra check could be done to rule out the extremely improbable case that an identical set had been generated.
 
 This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shards to the custodians we do still trust and ask them to destroy the old ones. This would make the shard belonging to the untrusted person become useless.
 
@@ -89,4 +89,4 @@ We feel confident that we are able to address the issues we have explored in thi
 - Our [list of applications and articles on Shamir's secret sharing](https://github.com/blockades/mmt_resources/blob/master/research/shamirs_secret_sharing_applications.md)
 - [Brainstorming Coconut-related scenarios](https://github.com/blockades/mmt_resources/blob/master/research/coconut_brainstorm.md) ('Coconut death' refers to a role playing game we did as part of our research where we tried to recover the keys of members of the group who had been hit by coconuts)
 - [Thoughts on verifying received shards in dark crystal](https://github.com/blockades/mmt_resources/blob/master/research/verifying_recived_shards.md)
-- You can also follow our development on Secure Scuttlebutt channels #darkcrystal #dark-crystal and #mmt
+- You can also follow our development on [Secure Scuttlebutt](https://www.scuttlebutt.nz/) channels #darkcrystal #dark-crystal and #mmt
