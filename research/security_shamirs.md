@@ -1,5 +1,5 @@
 
-*** this article is a work-in-progress and probably doesnt make sense yet ***
+*** this article is a work-in-progress ***
 
 ## Security considerations for Shamir's secret sharing
 
@@ -49,7 +49,7 @@ We are currently considering the following implementations:
 - https://github.com/FabioTacke/PubliclyVerifiableSecretSharing - A Swift implementation 
 - https://github.com/dfinity/vss - Dfinity's NodeJS implementation built on BLS, and used for their distributed key generation
 
-However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a lar
+However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a large change to our codebase and mean we need to reconsider serveral aspects of our model.  But it would bring a great advantage in terms of security.
 
 ### Share size has a linear relationship to secret size
 
@@ -75,21 +75,20 @@ We feel confident that we are able to address the issues we have explored in thi
 
 ## References (needs sorting out)
 
-- https://crypto.stackexchange.com/questions/10904/post-quantum-threshold-secret-sharing
-- shatter secrets
-- Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. [link](https://link.springer.com/article/10.1007/s10623-008-9265-8)
-- how not to share a secret
-
-- Shamir, Adi (1979). "How to share a secret". Communications of the ACM. 22 (11): 612–613. doi:10.1145/359168.359176.
-- Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109-/AFIPS.1979.98.
 - Beimel, Amos (2011). "Secret-Sharing Schemes: A Survey" http://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf
+- Blakley, G.R. (1979). "Safeguarding Cryptographic Keys". Managing Requirements Knowledge, International Workshop on (AFIPS). 48: 313–317. doi:10.1109-/AFIPS.1979.98.
+- Feldman, Paul (1987) "A practical scheme for non-interactive Verifiable Secret Sharing" Proceedings of the 28th Annual Symposium on Foundations of Computer Science
+- Harn, L. & Lin, C. Detection and identification of cheaters in (t, n) secret sharing scheme, Des. Codes Cryptogr. (2009) 52: 15. [link](https://link.springer.com/article/10.1007/s10623-008-9265-8)
 - Schneier, Bruce (2010) - DNSSEC Root Key held by 7 parties worldwide https://www.schneier.com/blog/archives/2010/07/dnssec_root_key.html
-- Feldman, Paul (1987) "A practical scheme for non-interactive Verifiable Secret Sharing"
 - Schoenmakers, Berry (1999) "A Simple Publicly Verifiable Secret Sharing Scheme and its Application to Electronic Voting" Advances in Cryptology-CRYPTO'99, volume 1666 of Lecture Notes in Computer Science, pages 148-164, Berlin, 1999. Springer-Verlag. 
-- https://zenroom.dyne.org/
+- Shamir, Adi (1979). "How to share a secret". Communications of the ACM. 22 (11): 612–613. doi:10.1145/359168.359176.
+- Zenroom, a virtual machine for fast cryptographic operations on elliptic curves, https://zenroom.dyne.org/
+
+- shatter secrets
 
 ## See Also...
 
 - Our [list of applications and articles on Shamir's secret sharing](https://github.com/blockades/mmt_resources/blob/master/research/shamirs_secret_sharing_applications.md)
 - [Brainstorming Coconut-related scenarios](https://github.com/blockades/mmt_resources/blob/master/research/coconut_brainstorm.md) ('Coconut death' refers to a role playing game we did as part of our research where we tried to recover the keys of members of the group who had been hit by coconuts)
 - [Thoughts on verifying received shards in dark crystal](https://github.com/blockades/mmt_resources/blob/master/research/verifying_recived_shards.md)
+- You can also follow our development on Secure Scuttlebutt channels #darkcrystal #dark-crystal and #mmt
