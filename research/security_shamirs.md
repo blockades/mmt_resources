@@ -17,7 +17,7 @@ Harn and Lin consider the situation in which 'cheaters' claiming to be holders o
 
 This is not so much of a concern for us as we already have a way to validate who is a custodian.  However we also considered the possibility that genuine holders of shares might have a motivation for not wanting the secret to be recovered, and could maliciously modify their share.  Furthermore, the shares might be modified by some accidental or external cause, and it is important to be able to determine which share is causing the problem.
 
-It might be very easy to determine that we have recovered the wrong secret.  Either because we have some idea of how we expect it to look, or as we have recently implemented in dark crystal, an identifier is added to the secret to allow the correct secret to be automatically recognised.  (We concatonated the secret with the last 16 bytes of its SHA256 hash). 
+It might be very easy to determine that we have recovered the wrong secret.  Either because we have some idea of how we expect it to look, or as we have recently implemented in dark crystal, an identifier is added to the secret to allow the correct secret to be automatically recognised.  (We concatonate the secret with the last 16 bytes of its SHA256 hash). 
 
 However, the problem here is that although we might know for sure that we have not successfully restored our secret, we have no way of telling which share(s) have caused the problem, meaning we do not know who is responsible. 
 
@@ -51,7 +51,7 @@ We are currently considering the following implementations:
 
 However, these do not give a drop-in replacement for the secrets library we currently use.  Adopting verifiable secret sharing would require a large change to our codebase and mean we need to reconsider several aspects of our model.  But it would bring a great advantage in terms of security.
 
-### Share size has a linear relationship to secret size
+### Share size has a linear relationship with secret size
 
 Anyone holding a share is able to determine the length of the secret.  Particular kind of cryptographic keys have a characteristic length.  So the scheme gives away more information to custodians than is necessary.  Our solution to this is to add padding to the secret to increase share length to a standard amount.
 
@@ -63,7 +63,7 @@ In Shamir's original paper he states that one of the great advantages of the sch
 
 This means in a conventional secret sharing scenario (imagine the shares are written on paper and given to the custodians), we could simply give new shares to the custodians we do still trust and ask them to destroy the old ones. This would make the share belonging to the untrusted person become useless.
 
-In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. A solution we are considering, is to use ephemeral keys which are used only for a particular share and can be deleted at will. 
+In our case, we are using Secure-Scuttlebutt's immutable log, and have no way of destroying a message. A solution we are considering, is to use ephemeral keys which are used only one time for a particular share and can be deleted when a new set of shares is issued. This gives greatly increased security, but the cost is more keys to manage and increased complexity of the model. 
 
 ### Secure computation
 
