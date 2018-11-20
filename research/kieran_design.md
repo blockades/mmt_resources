@@ -7,7 +7,7 @@ So in my previous post 'Falling Coconuts' I really wanted to emphasise an approa
 So here's some thoughts on what the interface could look like. I've added scenario-pathways for `swim / theft` and the forward action.
 
 ## Home View 
-![dark-crystal-home-view.jpg]('img/design1.jpg')
+![dark-crystal-home-view.jpg](img/design1.jpg)
 
 Home view specifies 6 different user-choice pathways through the application.
 
@@ -22,12 +22,12 @@ These three views already exist in our prototype application. Pathway 2  aligns 
 6. Commune with your peers to recover a Dark Crystal - `inheritance`
 
 ## Recover View
-![dark-crystal-recover-view.jpg]('img/design2.jpg')
+![dark-crystal-recover-view.jpg](img/design2.jpg)
 
 This is much like Dan's view above, but I've added the capacity to request someone to forward a shard to you. This means when you've gotten reconnected to the network via a pub, you will be able to see your shard holders and message them directly with a request that they can respond to with a `dark-crystal/forward` message (maybe a nice to have at this stage). Or you can copy your new identity string and send it to them via a different communications platform. The positive of having a request system again is it takes the weight off the custodian of having to type in a `@public_key_.ed25519` (and possibly making a mistake). It means a request can be send, then you can message someone out-of-band saying 'Yo, that was me', they can confirm with you via a secure means and then its super easy for them to forward...
 
 ## Forward View
-![dark-crystal-forward-view.jpg]('img/design3.jpg')
+![dark-crystal-forward-view.jpg](img/design3.jpg)
 
 So here we've got two potential pathways.
 
@@ -46,5 +46,5 @@ I haven't done a view for scenario 6 - Commune with your peers to recover a Dark
 
 So I feel like taking this kind of approach is important because it separates `return shard` completely from `forward shard` and makes it quite easy to understand what course of action is the right course of action. Also by streching it out into multiple views, it gives more space for warnings and information. Having it all compacted into a single view feels a bit dicey and doesn't leave much room for info notes or other helpful messages on how to use the app correctly.
 
-![whiteboard]('img/whiteboard.jpg')
+![whiteboard](img/whiteboard.jpg)
 
