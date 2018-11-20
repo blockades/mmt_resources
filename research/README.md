@@ -14,6 +14,7 @@
 - [Social Backups](./social_backups.md)
 - [Thoughts on verifying recieved shards](./verifying_recived_shards.md)
 - [Applications using Shamirs Secret Sharing](./shamirs_secret_sharing_applications.md)
+- [On using secp256k1 keys on SSB](./secp256k1.md)
 
 ## Feedback from workshops and events
 - [Aftrotech fest review](./afrotech_review.md)
