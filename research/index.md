@@ -1,0 +1,15 @@
+
+- [accessibility of cryptographic tools](./accessibility_of_cryptographic_tools.md)
+- [aftrotech fest review](./afrotech_review.md)
+- [Brainstorming Coconut-Related Scenarios](./coconut_brainstorm.md)
+- [Coconut recovery](./coconut_recovery.md)
+- [Front end designs](./kieran_design.md) by kieran
+- [Feedback from mmt retreat sharding secrets workshop](./mmt_retreat_sharding_secrets_workshop.md)
+- [Original Coconut death experiment](./original_coconut.md)
+- [Reconstructing seeds from shards](./reconstructing_seed_from_shards.md)
+- [Dark crystal scenarios](./scenarios_mix.md) by Mix
+- [Dominics security review](./security_review_dominic.md)
+- [Security considerations for shamirs secret sharing](./security_shamirs.md)
+- [Applications using Shamirs Secret Sharing](./shamirs_secret_sharing_applications.md)
+- [Social Backups](./social_backups.md)
+- [Thoughts on verifying recieved shards](./verifying_recived_shards.md)
