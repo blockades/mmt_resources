@@ -5,42 +5,48 @@ Dark Crystal
 
 ## What is your idea?
 *Describe it - Content limited to 2000 characters*
-       
-Dark Crystal is a secret sharing protocol and prototype application. Dark Crystal takes a novel approach to using Shamir's Secret Sharing algorithm, combining narrative, human relationships and ritual with new peer-to-peer technologies to achieve distributed secret persistence. A living prototype has been built ontop of the Secure Scuttlebutt stack, a peer-to-peer offline-first gossip protocol, database and mesh network.
+ 
+Dark Crystal takes a novel approach to using Shamir’s Secret Sharing algorithm, combining narrative, community, and ritual with new peer-to-peer (p2p) technologies to achieve distributed secret persistence. A working prototype application has been built on the Secure Scuttlebutt stack, a p2p offline-first gossip protocol, database, and mesh network. 
 
-On Scuttlebutt, records in a locally stored append-only database are gossiped and replicated between peers across a shared network by up to n degrees of separation. This persistence model makes for immense resilience. Once committed and gossiped, all data, private or public, can be recovered from the mesh without its contents being exposed. In addition, this data can never be deleted.
+On Scuttlebutt, records in a local append-only database are replicated between peers across a network up to *n* degrees of separation, providing uncompromising data resilience. Encrypted data can be recovered from the mesh without ever exposing its contents.
 
-We posit that this persistence model is transformative when applied to the wicked problem of effective and secure key management. In its prototype form, Dark Crystal extends the Scuttlebutt ecosystem, enabling peers to securely back up secrets (private keys, seeds, passwords and other sensitive information) using the trust in their social network.
+We posit that this persistence model is transformative when applied to the wicked problem of secure key management. In its prototype form, Dark Crystal extends the Scuttlebutt ecosystem, enabling peers to securely back up secrets (private keys, passwords, or other sensitive information) by harnessing the trust in their social network.
 
-Your secret is split into 'shards', encrypted with the relevant Ed25519 keys and sent to selected friends. If your identity becomes compromised, you become locked-out, or lose your secret, your peers can recombine the shards to recover it for you. Whenever you need to regain access, you can request the shard from each custodian, only exposing the original secret once the desired quorum is reached and proof of identity is achieved. Dark Crystal makes this process simple, minimising human error and increasing accessibility. It is a resilient system of collective data ownership.
+A user’s secret is split into ‘shards’, encrypted with the relevant Ed25519 keys, and sent to selected peers. If the user's identity becomes compromised, they get locked out, or they lose their secret, their peers can recombine the shards to recover it. Should they need to regain access, the user requests the shard back from each custodian, only exposing the original secret once proof of identity is achieved and the user-defined quorum is reached. Dark Crystal makes this process simple—much simpler than existing sharding tools—minimising human error and increasing accessibility. 
 
-We believe this social model of data custody has many implications and usecases. First and foremost, when distributing sensitive encrypted information, such as a cache of documents, both the documents themselves and the encrypting key can be 'sharded' and distributed to peers within this unregulated mesh network. Th
+We believe this social model of data custody has many implications and use-cases. It is a critical tool for journalists or activists who need to reliably distribute sensitive information, such as the key to an encrypted cache of documents. It removes reliance on single points of failure, such as hardware devices, trusted authorities, or service providers (and even internet connectivity). With Dark Crystal, your peers become your secret layer of persistence.
 
- Distributing sensitive encrypted information, including a cache of files,
-
- It is a critical tool for anyone needing to reliably distribute sensitive information between a small group, anyone at risk of losing their device, and anyone who needs a secure backup for keys or passwords without needing to rely on hardware devices or trusted authorities.
-
-
-Character Count: 1983
+Character Count: 1993
 
 ---
 
-What are hoped for goals or longer term effects of the project?
+## What are hoped for goals or longer term effects of the project?
 
----
-- The difficulties of private key custody are an ever increasing problem in the areas of encryption, digital identity, and cryptocurrency.  We want to solve these problems using the power of **friendship networks** and **human trust**. 
+*Content limited to 2000 characters - We want to know how you think the world could be, what larger purpose this project is a part of, and/or the bigger target you aiming for. Bulleted lists are good.*
 
-- We hope that solving these problems will **make encryption tools more accessible**, and that journalists or activists using such tools will not be hindered by loosing their computer, becoming incapacitated or being captured.
+- The difficulties of private key custody is an ever-increasing problem in encryption and digital identity. We want to solve it using the power of community networks and human trust. 
 
-- We want to provide a solution whereby the custody of a sensitive document or piece of information can be distributed between a group in such a way that the group must **agree together** if and when it is safe to publish it. 
+- We believe Dark Crystal can make encryption tools more accessible, helping journalists or activists maintain security and access if they lose their computer, become incapacitated, or are captured.
 
-- We want to create a storage solution for sensitive documents which would allow the owner of those documents to cross international borders without having the documents on their person, nor relying on any company, authority or piece of hardware, and are able to recover the documents at will when the time is right.
+- Enable custody of a sensitive document or piece of information to be distributed among a trusted group, in such a way that the group must agree together if and when it is safe to reveal it. 
 
-- We want to make a system of sharing custody of secrets which works independently of any third party or authority, and even of having an internet connection. This has big implications for people living in regions with **poor connectivity** or **net neutrality** issues.
+- Create a storage solution for sensitive documents that would allow the carrier to cross international borders without having either the keys or the documents on their person, without relying on any company, cloud, or specific hardware, such that they are able to recover the documents at will when the time is right.
 
-- We hope that by powering such tools by trust and friendship, we can alter the topology of our individualist and competitive society, and bring a sense of community and cooperation.
----
-Content limited to 2000 characters - We want to know how you think the world could be, what larger purpose this project is a part of, and/or the bigger target you aiming for. Bulleted lists are good.
+- Build a system of sharing custody of secrets that works independently of any third party or authority, and even of having an internet connection. This has big implications for people living in regions with poor connectivity or net neutrality issues.
+
+- Replicate the protocol across different distributed systems, extending the practice to a broad base of beneficiaries.
+
+- By emphasising trust in the tools we use, we can instill a sense of community and cooperation. We want to empower groups of trusted peers to take control of their own security together.
+
+- We are a feminist, social justice oriented group, and we speak out about our values. We are privileged to be able to wield p2p tech, and understand this is not the case in many parts of the world. We want to widen the scope of who gets to be a peer in p2p. We believe the decentralised web (3.0) is the future of technology, and it's critically important that everyone gets to participate.
+
+Character Count: 1839
+
+--------
+
+— Our research into the accessibility of cryptographic tools found the unforgiving nature of key custody (i.e. unrecoverability) presented a serious barrier, especially for those less experienced with this type of technology. Security and accessibility are often in tension. Making sharding a smooth and simple process can enable more people to significantly increase security of their important secrets.
+
+Character Count: without last point: 1839 with it: 2180
 
 
 ---
@@ -96,85 +102,68 @@ If the proposed project is working very closely with technology such as developi
 Describe how. Briefly and clearly list key milestones, objectives, and/or activities briefly. These should be specific, measurable, attainable, realistic, and time-relatable. Bulleted lists are ideal.
 
 ---
-Our backgrounds and passions are in cooperatives, communities, and high-trust networks. We take the approach that development of new technologies must be rooted in communities, not as an abstract solution applied to a perceived problem. As such we organise and communicate in public on Scuttlebutt. All development has stemmed from a protracted period of research and is completely open source.
 
-### 1. Research and groundwork - Sept 2017 - June 2018
+0. Dark Crystal v1.0 - Already complete
+- Conduct research among our peers through open workshops, discussions and trials of alternative apps
 
-- Discussions within and without the Scuttlebutt community about how to expand which humans get to be a peer in this new p2p sneakernet        
+- Build and release working prototype and begin user testing
 
-- Hundreds of hours of education sessions, interviews and workshops at a variety of events exploring engaging with crypto, figuring out peopleâ€™s         primary pain points preventing participation
+1. Dark Crystal v1.5 - 2 months
+- Test prototype with varied user base, emphasising accessibility
 
-- Experiments with sharing and using crypto-currency wallets in a group, discovering what happens when someone loses a password or becomes         incapacitated
-
-- Private key backups emerged as the wicked problem at the crux of what allows these systems to be accessible
-
-
-Budget: $130,000 USD - COMPLETED
-
-        
-### 2. Dark Crystal v1.0 - July - Aug 2018
-
-- Develop data model schemas and build an API to access the database
-
-- Integrate cryptographic mechanisms and message passing
-
-- Integrate secure encrypted end to end messaging and shard distribution
-
-- Ensure data replication and resilience (no data loss) using gossip protocol (SSB)
-
-- Plugged into Patchbay SSB client
-
-- Release on SSB as reference client and reference ecosystem
-
-Budget: $22,000 USD - COMPLETED
-
-### 3. Dark Crystal v1.5 - 2 months
-
-- Test v1.0 with a varied user base with an emphasise on assessing accessibility
-
-- Integrate feedback to optimize terminology and user flows
+- Integrate feedback from testing and research 
 
 - Improve the user interface and community interface
 
-- Port the application into the most popular SSB client (Patchwork)
+- Port application into most popular and easy to use SSB client (Patchwork)
 
-- With support from visual designers, integrate extensive easy to understand documentation to increase accessibility and facilitate learning about key / secret management practices.
+- With support from visual designers, create stellar, easy to understand documentation
 
 Budget: $60,000
 
-### 4. Dark Crystal v2.0 - 6 months
+2. Dark Crystal v2.0 - 6 months
 
-- Build a standalone client application that functions independently of other SSB clients
+- Build standalone application that functions independently of other SSB clients
 
-- Enable your peers to recover your secret without your involvement, in the case of incapacitation, death, or your identity is lost / compromised
+- Enable use case: Shard custodians can recover secret without original user's involvement in case of incapacitation, death, or compromised/lost identity
 
-- Acquiring consent for custody of a shard
+- Implement feature to acquire consent for custody of a shard in-band
 
-- Storing and recovering large secrets; file encryption        
+- Integrate with popular encryption tools such as GPG
 
-- Enable broader access by integrating i18n (internationalization)
+- Efficient storage and recovery of larger secrets and files
 
-- Attach instructions to a secret shard to provide more information to custodians
+- Internationalization to broaden access
 
-- Explore the possibility of mobile implementation to improve access
+- Attach set of instructions (eg: a will) to a shard, to provide more information to custodians
+
+- Commence research into mobile app version of Dark Crystal, in collaboration with MMMMM, a prototype Android SSB client
+
+- Research other mobile implementations to improve access
+
+- Research and trial application with allied international groups
+
+- Initial launch and publicity to NGOs and activist groups
 
 Budget: $150,000
 
-### 5. Research and maintenance - 4 months
+3. Research and maintenance - 4 months
 
-- Pursue research and education projects with allied groups in Greece, Spain / Morocco and other gateways to the fortress. 
+- Integrate results of trials with target groups. Implement support for specific use cases (specialised documentation, technical implementations, user workflows)
 
-- Integrate results of trials with stateless groups including refugees and at-risk populations. Implement support for specific use cases for these contexts.
+- Integrate research and feedback into application
 
-- Integrate research and feedback into application.
+- Publish white paper compiling research, the protocol, and its application
 
-- Write a white paper compiling research, protocol and its application.
+- Build Android client, either stand-alone or port into MMMMM 
 
-- Port into MMMMM, a prototype Android SSB client.
+- Investigate portability of protocol into other p2p ecosystems to broaden user base
 
-- Investigate portability of the protocol into other p2p ecosystems (Holochain, Ethereum DAO, etc)
+- Official launch, further targeted publicity
 
 Budget: $90,000
+
+Character count: 1998
 
 
 ---
@@ -204,20 +193,19 @@ $300,000
 ## Who is the project for?
 Content limited to 2000 characters. Describe them - In other words, who are the people benefiting or affected most by this effort and how well do you know them?
                                       
+* **Anyone using encryption** will benefit greatly from improved key integrity. We plan to implement features to integrate with GPG for handling private keys and revocation certificates.
 
-* **Anyone using encryption** will benefit greatly from improved key integrity.  We plan to implement features to integrate with GPG for handling private keys and revocation certificates.
+* **Anyone at risk of losing a computer or device**, or those who do not have a secure methodology to store important data--people seeking asylum, at-risk journalists, people crossing borders, and activists.
 
-* Anyone with a lifestyle which means they are at risk of losing a computer or device, or **do not have a secure place to store things**.  Such as refugees, homeless or vulnerably housed people.
+* **Anyone living in an oppressive regime**, who has custody of sensitive information and is concerned for its resilience. A journalist or activist with critical information might want to give their passwords/keys to a trustee in case they are captured, but this could endanger that person. By distributing encrypted shards, which by themselves nothing about the secret, Dark Crystal removes the single point of failure by enabling a quorum of peers to collectively decide if and when it is safe to reveal the secret.
 
-* Anyone living in an oppressive regime who is in custody of sensitive information and concerned for their **privacy**. A journalist or activist who has authored some 'whistleblowing' documents might want to give keys or passwords to a friend in case they get captured.  But this could actually endanger that friend.   Our tool solves this problem by distributing the responsibility, and meaning that a small group must collectively decide if and when it is safe to publish the documents.
+* Anyone with **poor or no internet connectivity**. Dark Crystal is an offline-first p2p application, which can function independently of the internet. Furthermore, the SSB gossip protocol allows the spread of information between peers with internet connectivity and those without, by syncing devices which move between physical locations (sneaker net).
 
-* Anyone with **poor or no internet connectivity**.  This is an offline-first peer to peer application which can function independently of the internet.  Furthermore, the gossip protocol allows the spread of information between peers with internet connectivity and those without, as well by syncing devices which move between physical locations.
+* **Those in need of political asylum** are often unable to carry sensitive documents that may be required later as evidence for an asylum claim, for example when crossing certain international borders. By securing a document's encryption key (or the information itself in text form) with Dark Crystal, the information can be recovered when they need it, without having to transport the documents themselves.
 
-* Refugees are often unable to carry particular documents with them as they have to cross international borders where it might be unsafe to carry such information.  However they might need particular information for evidence for an asylum claim later. In such a case, the integrity of encryption keys or passwords might have paramount importance and this is an issue which our project addresses. 
+* The notion of **trust within a small community** of people is a concept that is well understood and endorsed by people from a wide variety of cultures. Individuals themselves are the best judges of who to trust in their unique context, and Dark Crystal puts that choice in their hands alone, without the need for an intermediary company, server, or authority.
 
-* We think the notion of **trust within a small community** of people is a concept that is well understood and endorsed by people from a **wide variety of cultures**.  
-
-We believe Dark Crystal is not just an application, but a protocol that blends a specific set of human / machine behaviours,combining secure key management with socially distributed responsibility. As such it is a protocol that is replicable across different distributed systems and has the potential to reach a broad base of beneficiaries. In other words, its got legs.
+Character count: 1997
 
 ---
 
@@ -229,15 +217,17 @@ Define the community as you see it. If your answer is none, please explain how y
 
 ---
 
-Dark Crystal has a working prototype currently being trialled by members of the Scuttlebutt community. It is a supportive and friendly international social network reminissent of early internet forums before spam and distrust became a problem. It is diffucult to reliably estimate the number of scuttlebutt users, but a recent study revealed a minimum of 7000 people on the network. Meanwhile itâ€™s base grows every day. 
+Our backgrounds and passions are in activist communities and high-trust networks. We believe that development of new technologies must be rooted in communities, not applied as an abstract solution to a perceived problem. We organise and communicate in public on Scuttlebutt (SSB), a cryptographic social network and messaging protocol. All development has stemmed from real-world experience and research, and is completely open source.
 
-While we want to build dark crystal as something which can be used by anybody independent of having involvement in this community, we think it is important that it exists as a support network.
+Our working prototype is currently being trialled by members of the SSB community. This community spans six continents and is reminiscent of early internet forums, before spam and distrust. It is difficult to estimate the number of SSB users. A recent study revealed a minimum of 7000 users. Although Dark Crystal can be used by anybody independent of this community, SSB is an excellent base for user testing, and a broad forum from which to source feedback.
 
-We realize there is still much work to be done to expand this community so that people living under oppressive governments are better represented. Our approach is to work towards making the on-boarding process as simple as possible, to minimise language and culture barriers and to focus on accessibility.  
+Our team began with an inquiry into how to make cryptographic tools more accessible. After hundreds of hours of education sessions and interviews, key custody emerged as a critical barrier faced by diverse users, especially more marginalised groups with intersecting challenges. We maintain strong links to these early testers, and we are building Dark Crystal with them in mind.
 
-If we can overcome these issues, the very mechanism by which our tool works, that each secret holder invites their trusted friends to hold shards, will cause a propagation of the user base in different directions and the community will grow. 
+We consider ourselves a feminist group, and have links with feminist and LGBTQIA activist groups internationally. We are currently conducting a survey of groups in Russia and Belarus to establish which encryption tools they use, what problems they have encountered, how they back up their keys, and why they don't use encryption if they would like to.  This research will influence development, and broaden our userbase.
 
-(this section needs expanding, something about building a trust network, how will vulnerable people find out about this, building community in areas with oppressive governments...not sure whether to mention our links with migrant support group/the social centre in athens)
+To offer a useful tool to users living under oppressive regimes, journalists, activists, asylum seekers, we are focused on making the on-boarding process and user experience as simple as possible. Future development will minimise language and culture barriers and focusing on accessibility.
+
+Character count: 1995
 
 ---
 
@@ -285,22 +275,20 @@ Choose region
 ## Why is this project needed?
 *Content limited to 2000 characters - Describe one or more of the following: the specific needs of the group(s) being met, how it uniquely solves a known issue or improve upon existing solutions, and/or what knowledge, research, technology, or community gap the proposed effort is intending to fill. If the effort targets a specific group of people, note any research or analysis you have done to ensure the effort serves the target population.*
 
-The legacy approach to data (passwords and data backups) does not map well to existing human patterns. Bill Gates declared the password dead in the 00's. We think he was onto something but his conception of the alternatives has been limited and enclosed behind a fortress mindset. 
 
-*   Encryption tools have been around for a long time but are still only used by a minority (research which shows this?).  We think the problem of private key custody is a **major barrier to accessibility**. 
+*   Encryption tools have been around for a long time, but they are still widely misunderstood and only used by a minority. Our research has shown that the problem of private key custody is a major barrier to accessibility.
 
-* Traditional methods of backing up keys or passwords require either hardware devices (which not everybody has, and which can also easily be lost) or relying on a trusted third party (which might become unavailable or untrustworthy).
+* Traditional methods of backing up keys or passwords require either hardware devices (which not everybody has access to, and can be easily damaged or lost) or relying on a service provider or trusted third party (who may become unavailable or untrustworthy).
 
-* Our experience of running workshops where we helped people set up and use password managers has brought to our attention a whole range of issues and barriers.  These problems are of particular concern to users who have difficulty making regular backups due to limited hardware, a distrust in centralized service providers, a chaotic lifestyle or vulnerable housing situation.  (go into more detail about this research)
+* Our experience of running workshops assisting people to set up and use password managers revealed a whole range of issues and barriers. These problems are of particular concern to users who have difficulty making regular backups due to limited hardware, a distrust in centralized service providers, a chaotic lifestyle, or vulnerable housing situation.
 
-* The emphasis on each individual taking responsibility completely and exclusively for themselves is a reflection of western individualist culture.  We believe some people find this alienating and this poses a **cultural barrier** to much needed technologies. 
+* The emphasis on each individual taking responsibility completely and exclusively for themselves is a reflection of an individualistic culture.  This can be alienating and poses a cultural barrier to much needed technologies. People already managing a lot of risk and interacting with unforgiving processes in their lives might not want to take on more.
 
-* We propose an **offline-first system**.  While internet connectivity in generally improving worldwide, **net neutrality** is an increasing issue in many countries. As well as issues with government censorship and surveillance, in many countries mobile internet providers are increasingly offering connections limited to only a few specific commercial services (such as facebook). Mobile internet connections are relied upon more by people who are poorer, have housing issues, or do not have access to banking. (explain with research)
+* Existing tools using Shamir's Secret Sharing are woefully under-developed and hard to use, involving copying and pasting long alphanumeric strings, figuring out how to share them securely, making sure trustees know how to securely store and back them up, and manually recalling them. We have not found a user-friendly application.
 
-* In order to test the usability of existing implementations of Shamir's secret sharing we conducted a role-play experiment where we assumed two members of our group had been incapacitated due to being hit on the head with coconuts.  The remaining group members had to reconstruct their secrets.  We found that this is a considerably harder problem to solve than that of an individual wanting to recover a lost secret themselves.  We identified many issues that made things confusing and impractical and the design of our project is a response to these findings.  
+* Dark Crystal takes an offline-first approach. The ability to replicate data across a LAN network or Bluetooth connection ensures secure secret backup beyond the confines of the internet. Net neutrality is an increasing issue in many countries, as well as issues with government censorship and surveillance. Dark Crystal enables peers to back-up sensitive information without reliance on ISPs, circumventing remote surveillance and censorship.
 
-
-
+Character count: 1991
 
 ---
 
@@ -323,34 +311,65 @@ The legacy approach to data (passwords and data backups) does not map well to ex
 ---
 
 ## Similar/Complementary efforts 
-*List other similar efforts to this proposed project. OTF expects this to include a review of any available technologies or programs that are similar to the project described. This not only allows OTF to understand how your project can be distinguished from those already active but also an applicantâ€™s understanding of the current landscape for such an undertaking.*
+*List other similar efforts to this proposed project. OTF expects this to include a review of any available technologies or programs that are similar to the project described. This not only allows OTF to understand how your project can be distinguished from those already active but also an applicant’s understanding of the current landscape for such an undertaking.*
 
-* 'Conventional' **locally installed** password managers such as keepass rely solely on the user making their own physical backups.  Data security and integrity is only as good as the individual user's hardware and backup routine. 
+* 'Conventional' **locally installed** password managers such as keepass rely on the user making their own physical backups. Data security and integrity is only as good as the individual user's hardware and backup routine.
 
-* Password managers which work in combination with a **trusted third party** cloud service such as 1Password, Lastpass, Dashlane.  This improves data integrity but there are issues with privacy and accessibility. 
+* Password managers which work in combination with a **trusted third party** cloud service such as 1Password, Lastpass, Dashlane depend on an internet connection, availability of the service, and the third party remaining trustworthy.
 
-* **Deterministic password managers** such as MasterPassword (https://masterpassword.app/) work by generating a single master key from a primary password combined with another source of entropy such as the user's name. An unlimited number of passwords can then be derived from this key meaning the user only needs to remember a single password. This solves the problem of needing physical backups and gives resiliency to device loss.  But this method does not work in the case of the user becoming incapacitated or loosing the master password.  Furthermore, there are great security issues if the master password is compromised. They also cannot be used for existing secrets or keys, making them impractical for many of our indentified use-cases.
+* **Deterministic password managers** such as MasterPassword (https://masterpassword.app/) generate a single master key from a combination of a password and two other sources of entropy, which solves the issue of persistence but requires a consistent methodology that many users find complicated. In the case of torture or compromised security, revealing the methodology exposes not just one but **all** secrets. The individual remains the single point of failure.
 
-* **Full-featured secret management tools** such as Vault by HashiCorp (https://www.vaultproject.io/) solve a lot of the security issues we have identified but are intended for enterprise use, which brings accessibility issues.
+* **Existing implementations of shamir's secret sharing** such as PassGuardian and dyne.org 'secrets' lack features to automate the transmission, storage, and retrieval of shards, making them prohibitively complex and cumbersome to use. 
 
-* **Existing implementations of shamir's secret sharing** such as PassGuardian and dyne.org 'secrets' give a community based solution, but lack features which automate the transmission,storage and retrieval of shards making them cumbersome to use.  
+* Encryption use has recently become much more widespread due to the advent of encrypted **mobile messaging** software.  While these tools have undoubtedly drastically increased accessibility, they remain dependent on centralized service providers who can be influenced, or even banned, by oppressive governments. Furthermore, security can be compromised in case of device loss or capture, since identity is generally determined by a **hardware token** (SIM card) issued and revoked by a centralized service. This hands repressive governments and bad actors further opportunities to intervene or gain access.
 
-* Encryption use has recently become much more widespread due to the advent of encrypted **mobile messaging** software.  While these tools have undoubtably drastically increased accessibility, they remain dependent on centralized service providers which can be influenced or even banned by oppressive governments. Furthermore, in case of device loss or theft, identity is generally determined by the presence of a **hardware token** (SIM card) which are issued and revoked by a centralized service, giving governments further opportunities to intervene or gain personal data.
+Character count: 1768 
 
 ---
 
 Other information 
 Content limited to 2000 characters
 
-
+**Website:**
 
 http://darkcrystal.pw
-- Client plugin: https://github.com/blockades/patchbay-dark-crystal
-- API:  
-- Protocol schema: https://github.com/blockades/ssb-dark-crystal-schema
 
-+ our email addresses + ssb identities
+demo gif:
+http://darkcrystal.pw/img/screencast.gif
+
+**Code:**
+Client plugin / UI: https://github.com/blockades/patchbay-dark-crystal
+API:  http://github.com/blockades/scuttle-dark-crystal
+Data schemas: https://github.com/blockades/ssb-dark-crystal-schema
+
+**Contact**
+dh@blockades.org
+ameba23@systemli.org
+kieran@tenthousandthings.org.uk
+mix@enspiral.com
+hello@alanna.space
+
++ our email addresses
 
 Secure scuttlebutt: https://www.scuttlebutt.nz/ #mmt and #dark-crystal channels.
 
-We could possibly also add here a simple explanation of shamir's secret sharing?
+
+notes from Alanna:
+
+I made a bunch of tiny grammar and punctuation changes, so the character counts should probably be re-checked.
+
+
+"Storing and recovering large secrets; file encryption" --> this makes it sound like it's not encrypted in v1.0 & 1.5, but it is?
+
+Unclear if the tick boxes are select one or select many....
+
+"We plan to implement features to integrate with GPG for handling private keys and revocation certificates." --> if so, this should be somewhere in the roadmap, right? Or is that post research and maintenance phase?
+
+Under "What community currently exists around this project" should we also mention a) advisors, partners, and collaborators and b) our connection to people/orgs who could help get DC to those who need it? ex. I have connections to UNICEF, Amnesty Intl, one hop from Glenn Greenwald, etc. I'm sure we each have valuable networks.
+
+Under "Why is this project needed?" - add a point about why encryption itself is becoming more and more important in our current world.
+
+Under "Similar/Complementary efforts" -- what's here is a good summary of the software landscape, but step back and ask what are the people mentioned in this application (journalists, asylum seekers, etc) actually using instead of Dark Crystal now? Some of the answers might be software, but others might be physical documents, telling friends sensitive info, etc. Maybe think a bit broader about our real "competators". For example, the competator to password managers is post-it notes and password reset functionality.
+
+If I were judging these applications, I would also be wondering about credibility and skills to deliver on this. E.g. past success building and releasing useful applications, marketing and communications, successful team coordination, etc. Is there somewhere this kind of stuff fits? Basically, we've done startups before and we've been around the block a bit.
+
