@@ -5,7 +5,6 @@
 
 Secure-Scuttlebutt has been built with future compatibility for different crypto-primitives such as elliptic curve types and hash functions.  Keys and hashes are represented as strings containing the key encoded to base64 followed by a delimiter, `'.'`, followed by suffix which describes the primitive used, for example `'ed25519'` or `'sha256'`.  This makes introducing new kinds of addresses much easier, but there are still a number of issues to address.
 
-
 ## Aspects of Scuttlebutt which are effected
 
 Scuttlebutt uses libsodium to derive Curve25519 keys, used for Diffie-Hellman style encryption, from Ed25519 keys, used for signing and verification. Ed25519 public keys are used to refer to peers on the network. 
@@ -66,7 +65,7 @@ To overcome this, we propose that in 'private-box' messages, ed25519 public keys
 The secp256k1-node module explicitly states that it is an experimental library.  We would naturally want to conduct a security audit before using this module in production.
 
 ## References:
-- secret handshake paper
+- Tarr, Dominic, 'Designing a Secret Handshake, Authenticated Key Exchange as a Capability System' [link](http://dominictarr.github.io/secret-handshake-paper/shs.pdf)
 - https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/
 - [secp256ki article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
 - [secp256k1 specification from the 'Standards for efficient cryptography group'](http://www.secg.org/sec2-v2.pdf)
