@@ -97,7 +97,7 @@ Furthermore, we have not explored the implications, what would be made possible 
 
 ## Related work
 
-- [Secp256k1 experiments](https://github.com/ameba23/secp_experiments) source code of experiments we did as research for this document
+- [Secp256k1 experiments](https://github.com/blockades/secp_experiments) source code of experiments we did as research for this document
 - [Some SSB links to the discussion on this as well as a copy of Dominics related post](https://github.com/blockades/mmt_resources/blob/master/research/secp256k1.md)
 
 ## References
