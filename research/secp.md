@@ -35,9 +35,15 @@ Provides encryption of private messages to multiple parties, obfuscating the ide
 
 Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.  The scalar multiplication used to generate a shared secret can be replaced with `secp256k1-node`'s `ecdh` method (although the arguments are taken in a different order).
 
+We have a working proof-of-concept which shows that private-box's functionality can be achieved with `secp256k1` keys.  More challenging is to get it to work with an array of recipients with a mixture of both curve25519 and secp256k1 keys.  The difficulty is that another module, 'ssb-keys' first removes the descriptive suffix (eg: `'.ed25519'`) before converting the keys and calling methods from `private-box`.  So we can't create a drop-in solution without modifying both modules. 
+
 ### [ssb-validate](https://github.com/ssbc/ssb-validate)
 
-For validating SSB messages.
+This module provides methods for verifying SSB messages.
+
+Implementing a system of signing and verifying messages with users with varying types of keys is much easier than encrypting messages to multiple parties with differing key types.  This is because we only need to 'deal with' one user at time.  To create a signature, we need the message, a private key, and to know what type of private key it is.  To verify we need the message, signature, public key, and to know what type of public key it is.  Unlike DH encryption there are no difficult cases of having a combination of keys of different types.  Futhermore, Secp256k1 libraries tend to have well-developed and secure methods for signing and verification because it is the principle security mechanism used in cryptocurrencies.  
+
+For these reasons, we feel confident that implementing signature creation and verification on SSB is possible with secp256k1 keys and have rather focused on encryption when researching this document.
 
 ## secp256k1 implementations in nodejs
 
@@ -63,19 +69,31 @@ Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys 
 
 To overcome this, we propose that in 'private-box' messages, ed25519 public keys are prefixed with an additional byte, `0x00`.  This means that all public keys are now 33 bytes, and the first byte determines which crypto primative is used. 
 
+### DH encryption between users with different key types
+
+This is a difficult problem, and we are looking into different ways of producing shared secrets between keys on different curves.  It is possible to derive an 'equivalent' keypair on the other user's curve using our own secret key as the seed, and then send the corresponding public key together with the encrypted message.  But this makes it more difficult to verify who authored the message.  Since messages are also signed, this should not pose a great problem, but this is an area we would like to explore further.
+
+### Ephemeral keys must be the correct type
+
+Both 'private-box' and 'secret-handshake' make use of ephemeral keypairs. In order to work with both types of key, we will need to generate and send one keypair for each type.  This increases complexity and message size. 
+
 ### Security
 
 The `secp256k1-node` module explicitly states in the readme that it is an experimental library.  We would naturally want to conduct a security audit before using this module in production.
 
+### Social aspects
+
+This document focuses on technical challenges.  However, the SSB community is a participative ecosystem where decisions are made together. Making a significant change to the protocol will require discussion and consensus of developers and users.  If the change brings security issues or raises ideological questions it may be difficult to reach agreement.
+
 ## Conclusions
 
+We have focussed on the technical feasibility of implementing a different elliptic curve type on SSB.  While we have identified some challenges, we feel they can be overcome, and that building a working proof-of-concept is achievable.  But we are aware that there is a long journey between having a proof-of-concept, and a real world working system that works with all the available clients with no bugs or issues. 
 
-
-## References:
+## References
 
 - Dominic Tarr, 'Designing a Secret Handshake, Authenticated Key Exchange as a Capability System' [link](http://dominictarr.github.io/secret-handshake-paper/shs.pdf)
 - https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/
-- [secp256ki article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
+- [secp256k1 article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
 - [secp256k1 specification from the 'Standards for efficient cryptography group'](http://www.secg.org/sec2-v2.pdf)
 - [A closer look at ethereum signatures - hackernoon](https://hackernoon.com/a-closer-look-at-ethereum-signatures-5784c14abecc) - quite interesting, shows how to verify signatures using solidity, amoung other things
 [Generating a usable Ethereum wallet and its corresponding keys](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) 
