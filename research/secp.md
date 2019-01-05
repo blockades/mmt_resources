@@ -23,11 +23,11 @@ This module provides way to validate references and addresses on SSB.  It's `isF
 
 ### [ssb-keys](https://github.com/ssbc/ssb-keys) 
 
-Provides key generation, signing and verification of objects, loading keys to or from a file on disk, and encryption using private-box.
+Provides key generation, signing and verification of objects, loading keys to or from a file on disk, and encryption using `private-box`.
 
 ### [ssb-private](https://github.com/ssbc/ssb-private) 
 
-API to private box
+Scuttlebot (the scuttlebutt 'server', or core process) plugin which handles private messaging by calling methods from `ssb-keys` which in turn use `private-box`.
 
 ### [private-box](https://github.com/auditdrivencrypto/private-box)
 
