@@ -55,7 +55,7 @@ For these reasons, we feel confident that implementing signature creation and ve
 
 ## Deriving ethereum addresses from secp256k1 keys.
 
-Public keys, in their complete form, are 64 bytes produced from concatonating the x and y values of the point on the curve.  Typically they are preceded with an extra byte, `0x04`. 
+Secp256k1 public keys, in their complete form, are 64 bytes produced from concatonating the x and y values of the point on the curve.  Typically they are prefixed with an extra byte, `0x04`. 
 
 Ethereum addresses are produced by removing the 04 prefix, taking the keccak-256 hash, and then truncating the first 12 bytes, to give us 20 bytes.  These are encoded as hex and the '0x' prefix is added.
 
@@ -65,7 +65,7 @@ Ethereum addresses are produced by removing the 04 prefix, taking the keccak-256
 
 ### Different length of public keys
 
-Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys have a length of 32 bytes.  Secp256k1 public keys, in their compressed form, are 33 bytes.  The extra byte is either `0x02` or `0x03` depending on whether the y-value is odd or even.  This is a problem because some of our functions (eg: encryption using 'private-box') involve concatonating several keys to produce a shared secret.  If we have a mix of both key types, it is impossible to know when one ends and the other begins.
+Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys have a length of 32 bytes.  Secp256k1 public keys, in their compressed form, are 33 bytes.  This is the 32 byte x-value prepended by either `0x02` or `0x03` depending on whether the y-value is odd or even.  This is a problem because some of our functions (eg: encryption using 'private-box') involve concatonating several keys to produce a shared secret.  If we have a mix of both key types, it is impossible to know when one ends and the other begins.
 
 To overcome this, we propose that in 'private-box' messages, ed25519 public keys are prefixed with an additional byte, `0x00`.  This means that all public keys are now 33 bytes, and the first byte determines which crypto primative is used. 
 
