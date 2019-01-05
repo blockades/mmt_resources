@@ -21,15 +21,15 @@ This module provides way to validate references and addresses on SSB.  It's `isF
 
 Provides key generation, signing and verification of objects, loading keys to or from a file on disk, and encryption using private-box.
 
-### ssb-private 
+### [ssb-private](https://github.com/ssbc/ssb-private) 
 
 API to private box
 
-### private-box
+### [private-box](https://github.com/auditdrivencrypto/private-box)
 
 Provides encryption of private messages to multiple parties, obfuscating the identities of recipients.  Ephemeral keys, DH scalar multiplication and libsodium's 'secretbox' are used.
 
-Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.
+Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.  The scalar multiplication used to generate a shared secret can be replaced with `secp256k1`'s 
 
 ### ssb-validate
 
