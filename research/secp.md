@@ -100,12 +100,7 @@ We have focussed on the technical feasibility of implementing a different ellipt
 - https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/
 - [secp256k1 article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
 - [secp256k1 specification from the 'Standards for efficient cryptography group'](http://www.secg.org/sec2-v2.pdf)
-- [A closer look at ethereum signatures - hackernoon](https://hackernoon.com/a-closer-look-at-ethereum-signatures-5784c14abecc) - quite interesting, shows how to verify signatures using solidity, amoung other things
-[Generating a usable Ethereum wallet and its corresponding keys](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) 
+- [A closer look at ethereum signatures - hackernoon](https://hackernoon.com/a-closer-look-at-ethereum-signatures-5784c14abecc) - quite interesting, shows how to verify signatures using solidity, among other things
+- [Generating a usable Ethereum wallet and its corresponding keys](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) - Command line examples using OpenSSL
 - Gavin Wood, ['Ethereum yellow paper'](http://gavwood.com/paper.pdf)
-
----
-
-- [Generating a usable Ethereum wallet and its corresponding keys](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) - this article I found really useful - it shows how to generate keys from the command line using OpenSSL.  Important to note - as illustrated in this article - there is an extra step to derive the eth address from the public key. This means that if ssb used secp256k1, ssb public keys would not be ethereum addresses - rather, ethereum addresses could be derived from them.  This process is documented in gavin wood's ethereum ['yellow paper'](http://gavwood.com/paper.pdf), and for bitcoin the relationship between public key and address is documented in [here](https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses) and [here](https://en.bitcoin.it/wiki/Address)
-- [stackexchange - what does secp256k1 look like?](https://bitcoin.stackexchange.com/questions/21907/what-does-the-curve-used-in-bitcoin-secp256k1-look-like) - i love these diagrams
-
+- [stackexchange - what does secp256k1 look like?](https://bitcoin.stackexchange.com/questions/21907/what-does-the-curve-used-in-bitcoin-secp256k1-look-like)
