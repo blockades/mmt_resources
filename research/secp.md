@@ -89,6 +89,8 @@ This document focuses on technical challenges.  However, the SSB community is a 
 
 We have focussed on the technical feasibility of implementing a different elliptic curve type on SSB.  While we have identified some challenges, we feel they can be overcome, and that building a working proof-of-concept is achievable.  But we are aware that there is a long journey between having a proof-of-concept, and a real world working system that works with all the available clients with no bugs or issues. 
 
+Furthermore, we have not explored the implications, what would be made possible and what are the potential advantages or issues.
+
 ## Related work
 
 - [Secp256k1 experiments](https://github.com/ameba23/secp_experiments) source code of experiments we did as research for this document
@@ -96,11 +98,12 @@ We have focussed on the technical feasibility of implementing a different ellipt
 
 ## References
 
-- Dominic Tarr, 'Designing a Secret Handshake, Authenticated Key Exchange as a Capability System' [link](http://dominictarr.github.io/secret-handshake-paper/shs.pdf)
-- https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/
-- [secp256k1 article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
+- Gavin Wood, ['Ethereum yellow paper'](http://gavwood.com/paper.pdf)
+- Dominic Tarr, ['Designing a Secret Handshake, Authenticated Key Exchange as a Capability System'](http://dominictarr.github.io/secret-handshake-paper/shs.pdf)
+- [Davide De Rosa, Basic blockchain programming - Elliptic Curve Keys](https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/)
 - [secp256k1 specification from the 'Standards for efficient cryptography group'](http://www.secg.org/sec2-v2.pdf)
 - [A closer look at ethereum signatures - hackernoon](https://hackernoon.com/a-closer-look-at-ethereum-signatures-5784c14abecc) - quite interesting, shows how to verify signatures using solidity, among other things
 - [Generating a usable Ethereum wallet and its corresponding keys](https://kobl.one/blog/create-full-ethereum-keypair-and-address/) - Command line examples using OpenSSL
-- Gavin Wood, ['Ethereum yellow paper'](http://gavwood.com/paper.pdf)
+- [Stackexchange - Derive a shared secret between different curves](https://crypto.stackexchange.com/questions/42127/derive-a-shared-secret-between-different-curves)
 - [stackexchange - what does secp256k1 look like?](https://bitcoin.stackexchange.com/questions/21907/what-does-the-curve-used-in-bitcoin-secp256k1-look-like)
+- [secp256k1 article on bitcoin wiki](https://en.bitcoin.it/wiki/Secp256k1)
