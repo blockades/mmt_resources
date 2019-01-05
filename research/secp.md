@@ -1,5 +1,10 @@
 
-# Draft document on implementing secp256k1 on Secure Scuttlebutt
+# Feasibility study of implementing secp256k1 on Secure Scuttlebutt (SSB)
+
+## Introduction
+
+Secure-Scuttlebutt has been built with future compatibility for different crypto-primitives such as elliptic curve types and hash functions.  Keys and hashes are represented as strings containing the key encoded to base64 followed by a delimiter, `'.'`, followed by suffix which describes the primitive used, for example `'ed25519'` or `'sha256'`.  This makes introducing new kinds of addresses much easier, but there are still a number of issues to address.
+
 
 ## Aspects of Scuttlebutt which are effected
 
@@ -31,9 +36,11 @@ Provides encryption of private messages to multiple parties, obfuscating the ide
 
 Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.  The scalar multiplication used to generate a shared secret can be replaced with `secp256k1`'s 
 
-### ssb-validate
+### [ssb-validate](https://github.com/ssbc/ssb-validate)
 
-## secp implementations in nodejs
+For validating SSB messages.
+
+## secp256k1 implementations in nodejs
 
 [secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node) based on [bitcoin core's secp256k1 C library](https://github.com/bitcoin-core/secp256k1)
 
@@ -47,9 +54,14 @@ Public keys, in their complete form, are 64 bytes produced from concatonating th
 
 Ethereum addresses are produced by removing the 04 prefix, taking the keccak-256 hash, and then truncating the first 12 bytes, to give us 20 bytes.  These are represent as hex and the '0x' prefix is added.
 
+
+[keythereum](https://github.com/ethereumjs/keythereum)'s `privateKeyToAddress` method makes this easy.  
+
 ## Challenges
 
-Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys have a length of 32 bytes.  Secp256k1 public keys, in their compressed form, are 33 bytes.  The extra byte is either 0x02 or 0x03 depending on whether the y-value is odd or even.  This is a problem because some of our functions involve concatonating several keys to produce a shared secret.  If we have a mix of both key types, it is impossible to know when one ends and the other begins.
+Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys have a length of 32 bytes.  Secp256k1 public keys, in their compressed form, are 33 bytes.  The extra byte is either 0x02 or 0x03 depending on whether the y-value is odd or even.  This is a problem because some of our functions (eg: encryption using 'private-box') involve concatonating several keys to produce a shared secret.  If we have a mix of both key types, it is impossible to know when one ends and the other begins.
+
+To overcome this, we propose that in 'private-box' messages, ed25519 public keys are prefixed with an additional byte, `0x00`.  This means that all public keys are now 33 bytes, and the first byte determines which crypto primative is used. 
 
 The secp256k1-node module explicitly states that it is an experimental library.  We would naturally want to conduct a security audit before using this module in production.
 
