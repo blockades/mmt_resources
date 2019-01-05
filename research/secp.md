@@ -89,6 +89,11 @@ This document focuses on technical challenges.  However, the SSB community is a 
 
 We have focussed on the technical feasibility of implementing a different elliptic curve type on SSB.  While we have identified some challenges, we feel they can be overcome, and that building a working proof-of-concept is achievable.  But we are aware that there is a long journey between having a proof-of-concept, and a real world working system that works with all the available clients with no bugs or issues. 
 
+## Related work
+
+- [Secp256k1 experiments](https://github.com/ameba23/secp_experiments) source code of experiments we did as research for this document
+- [Some SSB links to the discussion on this as well as a copy of Dominics related post](https://github.com/blockades/mmt_resources/blob/master/research/secp256k1.md)
+
 ## References
 
 - Dominic Tarr, 'Designing a Secret Handshake, Authenticated Key Exchange as a Capability System' [link](http://dominictarr.github.io/secret-handshake-paper/shs.pdf)
