@@ -3,7 +3,9 @@
 
 ## Introduction
 
-Secure-Scuttlebutt has been built with future compatibility for different crypto-primitives such as elliptic curve types and hash functions.  Keys and hashes are represented as strings containing the key encoded to base64 followed by a delimiter, `'.'`, followed by suffix which describes the primitive used, for example `'ed25519'` or `'sha256'`.  This makes introducing new kinds of addresses much easier, but there are still a number of issues to address.
+Secure-Scuttlebutt has been built with future compatibility for different crypto-primitives. This includes elliptic curve types for signing and encryption as well as hash functions used for content addressing.  Keys and hashes are represented as strings containing the key encoded to base64 followed by a delimiter, `'.'`, followed by suffix which describes the primitive used, for example `'ed25519'` or `'sha256'`.  This makes introducing new kinds of addresses much easier, but there are still a number of issues to address.
+
+Being able to use secp256k1 keys on Scuttlebutt would mean that Scuttlebutt identities could have a corresponding Ethereum address.  This would create a bridge between the Scuttlebutt ecosystem and the Ethereum ecosystem, and allow developers to build applications which utilise both networks. 
 
 ## Aspects of Scuttlebutt which are effected
 
@@ -72,6 +74,8 @@ To overcome this, we propose that in 'private-box' messages, ed25519 public keys
 ### DH encryption between users with different key types
 
 This is a difficult problem, and we are looking into different ways of producing shared secrets between keys on different curves.  It is possible to derive an 'equivalent' keypair on the other user's curve using our own secret key as the seed, and then send the corresponding public key together with the encrypted message.  But this makes it more difficult to verify who authored the message.  Since messages are also signed, this should not pose a great problem, but this is an area we would like to explore further.
+
+Another option is to generate a new address of the alternative key type and automatically publish a public signed message containing the public key.  That is to say a user with a ed25519 address could publish a signed secp256k1 public key and vice-versa.
 
 ### Ephemeral keys must be the correct type
 
