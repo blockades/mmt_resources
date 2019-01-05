@@ -33,7 +33,7 @@ API to private box
 
 Provides encryption of private messages to multiple parties, obfuscating the identities of recipients.  Ephemeral keys, DH scalar multiplication and libsodium's 'secretbox' are used.
 
-Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.  The scalar multiplication used to generate a shared secret can be replaced with `secp256k1`'s 
+Secretbox provides symmetric encryption and will work regardless how we choose to generate the keys.  The scalar multiplication used to generate a shared secret can be replaced with `secp256k1-node`'s `ecdh` method (although the arguments are taken in a different order).
 
 ### [ssb-validate](https://github.com/ssbc/ssb-validate)
 
