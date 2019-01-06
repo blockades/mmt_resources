@@ -9,7 +9,7 @@ Being able to use secp256k1 keys on Scuttlebutt would mean that Scuttlebutt iden
 
 ## Aspects of Scuttlebutt which are effected
 
-Scuttlebutt uses libsodium to derive Curve25519 keys, used for Diffie-Hellman style encryption, from Ed25519 keys, used for signing and verification. Ed25519 public keys are used to refer to peers on the network. 
+Scuttlebutt uses libsodium to derive Curve25519 keys, used for Diffie-Hellman style encryption, from Ed25519 keys, used for signing and verification. Ed25519 public keys are used to refer to peers on the network and are generally known as 'feed ids' as each peer has their own feed of hash-linked messages. 
 
 To implement Secp256k1 keys, we would need to consider how do DH-style scalar multiplication in order to build shared secrets, both for use in the secret handshake and for creating encrypted messages using 'private-box'.  The implementations we have looked at give us this without converting the keys. 
 
@@ -71,15 +71,15 @@ Scuttlebutt uses Ed25519 and Curve25519 keys, where both public and secret keys 
 
 To overcome this, we propose that in 'private-box' messages, ed25519 public keys are prefixed with an additional byte, `0x00`.  This means that all public keys are now 33 bytes, and the first byte determines which crypto primative is used. 
 
-### DH encryption between users with different key types
-
-This is a difficult problem, and we are looking into different ways of producing shared secrets between keys on different curves.  It is possible to derive an 'equivalent' keypair on the other user's curve using our own secret key as the seed, and then send the corresponding public key together with the encrypted message.  But this makes it more difficult to verify who authored the message.  Since messages are also signed, this should not pose a great problem, but this is an area we would like to explore further.
-
-Another option is to generate a new address of the alternative key type and automatically publish a public signed message containing the public key.  That is to say a user with a ed25519 address could publish a signed secp256k1 public key and vice-versa.
-
 ### Ephemeral keys must be the correct type
 
 Both 'private-box' and 'secret-handshake' make use of ephemeral keypairs. In order to work with both types of key, we will need to generate and send one keypair for each type.  This increases complexity and message size. 
+
+### DH encryption between users with different key types
+
+This is a serious problem, and while it might be possible to have a way of producing shared secrets between keys on different curves, there may be security risks involved.  It is possible to derive an 'equivalent' keypair on the other user's curve using our own secret key as the seed, and then send the corresponding public key together with the encrypted message.  But this makes it more difficult to verify who authored the message.  Since messages are also signed, this is perhaps not a great problem, but it is not ideal.
+
+A better option is to generate a new address of the alternative key type and automatically publish a public signed message containing the public key, somewhat similar to a TLS certificate.  That is to say a user with a secp256k1 address could publish a signed curve25519 public key for encryption.  This gives a security enhancement because it is generally regarded as bad practice to use the same keypair for signing and encryption.  In fact, there is some discussion on implementing this on SSB anyway, as currently encryption keys are derived from signing keys, which is also not ideal.  This would also mean we wouldn't have to worry about the issues of varying public key lengths, or differing ephemeral key types described above.
 
 ### Security
 
