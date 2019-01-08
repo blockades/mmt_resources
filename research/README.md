@@ -1,6 +1,7 @@
 ## Research reports
 - [Accessibility of cryptographic tools report](./accessibility_of_cryptographic_tools.md)
 - [Dominics security review](./security_review_dominic.md)
+- [Feasibility study of implementing secp256k1 on Secure Scuttlebutt](./secp.md)
 
 ## Scenarios and design
 
