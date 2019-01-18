@@ -11,13 +11,13 @@ Being able to use secp256k1 keys on Scuttlebutt would mean that Scuttlebutt iden
 
 Scuttlebutt uses libsodium to derive Curve25519 keys, used for Diffie-Hellman style encryption, from Ed25519 keys, used for signing and verification. Ed25519 public keys are used to refer to peers on the network and are generally known as 'feed ids' as each peer has their own feed of hash-linked messages. 
 
-To implement Secp256k1 keys, we would need to consider how do DH-style scalar multiplication in order to build shared secrets, both for use in the secret handshake and for creating encrypted messages using 'private-box'.  The implementations we have looked at give us this without converting the keys. 
+To implement Secp256k1 keys, we would need to consider how do DH-style scalar multiplication in order to build shared secrets, both for use in the secret handshake and for creating encrypted messages using 'private-box'.  The implementations we have looked at give us this without converting the keys but cross-curve encryption presents a problem. 
 
 ## Relevant SSB modules:
 
 ### [secret handshake](https://github.com/auditdrivencrypto/secret-handshake)
 
-This is the mechanism by which peers create a secure communication channel by means of a mutually authenticating key agreement handshake.  The handshake involves a combination of cryptographic signing, ephemeral keys, and Diffie-Hellman (DH) style shared secret derivation.
+This is the mechanism by which peers create a session key for a secure communication channel.  It works by means of a mutually authenticating key agreement handshake.  The handshake involves a combination of cryptographic signing, ephemeral keys, and Diffie-Hellman (DH) style shared secret derivation.
 
 ### [ssb-ref](https://github.com/ssbc/ssb-ref) 
 
