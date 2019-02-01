@@ -157,7 +157,7 @@ At the end of this both of my friends were starting to feel much more used to th
 Bleep also made a bunch of notes which has started to form as a repository for the steps to start diffusing the knowledge. Some of this material can be found in the #MMT #github repo wiki here"
 
 ### Workshop at Afrotech fest London, 26-27th January 2018 https://2018.afrotechfest.co.uk/ 
-Run by Dre (advisor), Lyn, Kieran.  [Full report here](./afrotech_review.md)
+Run by Dre (advisor), Lyn, Kieran.  [Full report here](https://github.com/blockades/mmt_resources/blob/master/research/afrotech_review.md)
 
 
 ![afrotech-1_sm](./img/afrotech-1_sm.jpeg)
@@ -185,7 +185,7 @@ The workshop was designed to encourage adoption of a password manager, to attemp
 
 ![sharding2](./img/sharding2.jpg)
 
-[Full report here](./mmt_retreat_sharding_secrets_workshop.md)
+[Full report here](https://github.com/blockades/mmt_resources/blob/master/research/mmt_retreat_sharding_secrets_workshop.md)
 
 ### Sharding workshop at the Network Convergence, Catalonia, July 2018 https://stories.greaterthan.finance/exploring-the-ecosystem-d03b07448b83
 ![shard_workshop](./img/shard_workshop.jpg)
