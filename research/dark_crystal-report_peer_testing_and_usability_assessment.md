@@ -2,7 +2,7 @@
 
 In order to rid the tech-world of the 'user' concept, this document substitutes the word 'user' for 'peer'.
 
-![](./img/string-ray.jpeg)
+![](./img/sting-ray.jpeg)
 
 ## Summary
 
