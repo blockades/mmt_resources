@@ -8,9 +8,9 @@ In order to rid the tech-world of the 'user' concept, this document substitutes 
 
 Peer testing was undertaken by members of the Dark Crystal team through individual and group sessions at multiple meetups and events across a period of two months. Much of the feedback opinions and data was collected at the Simply Secure design residency in Berlin in January 2019, at Agorama Sever Coop in London in February 2019 and at Art Hack in Wellington, NZ in January 2019.
 
-Dark Crystal's strengths currently lie in a very clear conceptualisation of the process of sharing secrets among trusted peers. Once peers had explored the application and gained a knowledge of the context in which to apply make use of it, the nuance of this analogy was widely appreciated and most people interacted fairly intuitively with the application.
+Dark Crystal's strengths currently lie in a very clear conceptualisation of the process of sharing secrets among trusted peers. Once peers had explored the application and gained a knowledge of the context in which to apply make use of it, the nuance of this analogy was widely appreciated and most people interacted fairly intuitively with the application. Overall we received a lot of excitement about the project and its stated goals, and there was significant enthusiasm about the implementation so far.
 
-There were however several significant barriers to adoption by peers, both within the scuttlebutt community and for new peers arriving via the website. The most important areas identified are:
+There were however several significant UX barriers to adoption by peers, both within the scuttlebutt community and for new peers arriving via the website. The most important areas identified are:
 
 * The use of language as a possible barrier to entry
 * The onboarding challenges that the Scuttlebutt community already faces
