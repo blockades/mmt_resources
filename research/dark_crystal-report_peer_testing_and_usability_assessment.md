@@ -33,6 +33,8 @@ There remains an embedded assumption about how peer-to-peer (p2p) applications, 
 
 ## Points for Discussion
 
+![](./img/dark-crystal-icon.png)
+
 There is no hierarchy or particular order of importance.
 
 1. [Language](#language)
