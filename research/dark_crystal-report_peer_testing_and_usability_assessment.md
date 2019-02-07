@@ -2,6 +2,8 @@
 
 In order to rid the tech-world of the 'user' concept, this document substitutes the word 'user' for 'peer'.
 
+![](./string-ray.jpeg)
+
 ## Summary
 
 Peer testing was undertaken by members of the Dark Crystal team through individual and group sessions at multiple meetups and events across a period of two months. Much of the feedback opinions and data was collected at the Simply Secure design residency in Berlin in January 2019, and at Agorama Sever Coop in London in February 2019. 
