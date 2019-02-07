@@ -1,10 +1,12 @@
-# Peer Testing and Usability Assessment
+# Dark Crystal
+
+## Peer Testing and Usability Assessment
 
 In order to rid the tech-world of the 'user' concept, this document substitutes the word 'user' for 'peer'.
 
 ![](./img/sting-ray.jpeg)
 
-## Summary
+### Summary
 
 Peer testing was undertaken by members of the Dark Crystal team through individual and group sessions at multiple meetups and events across a period of two months. Much of the feedback opinions and data was collected at the Simply Secure design residency in Berlin in January 2019, at Agorama Sever Coop in London in February 2019 and at Art Hack in Wellington, NZ in January 2019.
 
@@ -20,7 +22,7 @@ There were however several significant UX barriers to adoption by peers, both wi
 
 There remains an embedded assumption about how peer-to-peer (p2p) applications, specifically scuttlebutt, work. For new users with little prior knowledge of p2p and/or scuttlebutt, the application fails to indicate what the preconditions are to ensuring your data sends effectively.
 
-## Methodology
+### Methodology
 
 - Little to no knowledge of the underlying network and data persistence protocol Scuttlebutt was assumed.
 - Peers were given as little prior information possible in an attempt to simulate a new user arriving in the application following installation from the website.
@@ -31,7 +33,7 @@ There remains an embedded assumption about how peer-to-peer (p2p) applications, 
 
 ---
 
-## Points for Discussion
+### Points for Discussion
 
 ![](./img/dark-crystal-icon_200x200.png)
 
@@ -46,7 +48,7 @@ There is no hierarchy or particular order of importance.
 7. [Push or Pull](#push-or-pull)
 8. [Consent](#consent)
 
-### Language
+#### Language
 During the ideation phase of Dark Crystal, it was helpful to map the language of magic onto the social protocol as a device to conceptualise the process of sharing within a trusting group of peers, much akin to a coven converging to perform a ritual and parting their separate ways after the spell had been cast. Through the development process, this lanaguage was placed into the UI.
 
 Several peers expressed that the metaphors used within the application were confusing and obfuscating of the underlying operations of the application. This is a highly subjective perspective, some may find the language engaging, others may find it alienating. What is important to note is that since Dark Crystal is about providing accessibility to cryptography and secure and sovereign messaging to a broad base of peers, most specifically enabling peers on the margins of society to engage, this 'cliqueyness' could work contrary to the intention of the application. This deserves further examination and deeper research into specific target communities.
@@ -55,7 +57,7 @@ All peers found the tab mappings of 'My Crystals', 'Others Shards' and 'Others C
 
 Peers were generally enthusiastic about the use of 'crystals' and 'shards' to conceptualise the process / protocol. However multiple mixed messages in the language and iconography used in the application raised concerns. Many felt there was not a clear enough definition as to what exactly a 'crystal' and a 'shard' referred to in the interface. This was compounded by the use of a crystal icon as both an indicator of a 'shard' in the 'Others Shards' section, as well as their use to represent a reformed 'crystal' in the 'Others Crystals' section.
 
-### Naming
+#### Naming
 One peer was confused as to what the `secret` field suggested, whether this was some kind of extra cipher input to doubly secure your SSB key. Once it was explained that the secret could be any string, they they attempted to paste and entire document in and came up against the byte limitation.
 
 The difference between the `name` and the `label` fields is not clear at all, with one peer aliking them to `title` and `description` as typical fields in a form. `name` and `label` are overlapping concepts. `label` could also imply tags.
@@ -66,19 +68,19 @@ Many peers trialing the application were unsure what the 'request' button would 
 
 Other peers raised whether naming a secret would actually work for some people. Whether this can be directly addressed or whether this is simply 'peer error' is up to debate. While Dark Crystal should aspire to make things as intuitive as possible, there is only so much you can hold someone's hand. This is worth testing over a long period. Its possible the UI should suggest a naming convention to people as a guideline to work with, then people can apply with what makes sense for them.
 
-### Onboarding
+#### Onboarding
 The onboarding issues for Scuttlebutt itself are well known but need restating in the context of Dark Crystal's usability. Due to it currently being embedded within Patchbay, and sharing Patchbay indexes that aren't currently required by Dark Crystal, this causes a significant delay when starting the application for the first time, and when listening for the arrival of new data. At times this meant a user signing up to try out Dark Crystal had to wait **20 minutes** for data to sync and Dark Crystal to be usable. While encouraging people to be patient why trying out prototype technolgy is akward but relatively acceptable, in order to achieve wide user-base, the waiting times are simply unacceptable and are a sure fire way to lose new peers.
 
 In some instances, it took several hours for shards to render in the application between certain peers (or they never did), despite being local peers on the same network. It is not clear whether they have 'arrived' in the local database and just haven't indexed, or whether there was a network transmission failure. While Scuttlebutt is 99 times out of 100 reliable (if not more so), if we cannot guarantee delivery of shards, this remains a significant and possibly killer issue. More research needs to be done on the lower level implementation of Scuttlebot to ensure messages are gossiped and / or indexed correctly.
 
-### Privacy Transparency
+#### Privacy Transparency
 There are currently no clear indicators or assurances in the client that the data is actually encrypted and private, and the interface makes the assumption that peers using the application already possess that knowledge.
 
 Many peers expressed a desire for reassurance, at least when initially becoming familiar with the application, that the information contained in the application is either encrypted to yourself only, or in the case of the shards of the secret, encrypted and sent to the destination peers.
 
 Due to the social nature of scuttlebutt, and the secure nature of Dark Crystal, its incredibly important to strike a clear distinction between what is public and what is private.
 
-### Behaviour and Navigation
+#### Behaviour and Navigation
 
 Several users expected different behaviour when hitting the ESC button when selecting a custodian, expecting it to simply close the dropdown rather than exit the form modal.
 
@@ -90,7 +92,7 @@ Multiple users reported unintuitive use of anchor elements throughout the applic
 
 A bug that persisted in the custodian suggester has been fixed. This was an early behavioural issue that has been resolved.
 
-### Delivery Confirmation
+#### Delivery Confirmation
 
 Once the shards have been 'sent', peers who were aware of the underlying mechanism of scuttlebutt questioned whether this was an honest statement. While the messages may have published to your local log / database, this does not mean that the messages have left the source computer.
 
@@ -100,14 +102,14 @@ Peers expressed a desire for, at the bare minimum, some kind of sync indicator t
 
 Peers also expressed a desire for a confirmation that the shard has been delivered _and received_.
 
-### Push or Pull?
+#### Push or Pull?
 One peer suggested Dark Crystal lends itself more strongly to push notifications, rather than pull-based notifications.
 
 In the case where a request has been sent for a shard to be returned to the originator, there is no clear indicator to the shard custodian that a request has arrived. The custodian must go searching for this information. While this was conceived of by the developers as as a strength (the onus is on the originator of the secret to actively contact their custodians to request the return of the shard), to one peer this seemed counter-intuitive.
 
 This peer stated that due to the importance of the request, it makes sense that the custodians are notified immediately that their trusted contact is in need of their secret. Its a clear indicator to trusted contacts that either the request is genuine, or the identity of the secret originator has been compromised. In both cases it is possibly better for all parties involved to be notified of this sooner rather than later. This approach has merit. Technically it needs further consideration by the team as it runs counter to the 'pull-based' nature of Scuttlebutt.
 
-### Consent
+#### Consent
 
 Several peers raised the issue that currently there is no consent mechanism whereby a potential custodian of the shard can be asked if they want to actually are willing to be a custodian.
 
@@ -117,7 +119,7 @@ This has been a discussion throughout the process and the team is well aware of 
 
 ---
 
-## Feature Requests / Suggestions as 'Peer Journeys'
+### Feature Requests / Suggestions as 'Peer Journeys'
 This list includes as many suggestions that could be turned into peer journeys. While some are great suggestions, others may be less relevant / applicable, and some may be too much of a design change to consider implementing in the application in its current form. Its up to us as a team to decide what we should keep and what we should throw away.
 
 - As a peer, it would be helpful to receive a push notification stating that a request to return a shard has been received, along with a text alert to  contact the secret originator, in order to check that this request was authentic / valid.
@@ -161,5 +163,5 @@ This list includes as many suggestions that could be turned into peer journeys. 
 
 ---
 
-### Bugs
+#### Bugs
 - A quorum of 1 triggers cascading errors in Patchbay and it requires you to refresh the application.
