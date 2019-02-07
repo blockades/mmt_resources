@@ -10,7 +10,15 @@ Peer testing was undertaken by members of the Dark Crystal team through individu
 
 Dark Crystal's strengths currently lie in a very clear conceptualisation of the process of sharing secrets among trusted peers. Once peers had explored the application and gained a knowledge of the context in which to apply make use of it, the nuance of this analogy was widely appreciated and most people interacted fairly intuitively with the application.
 
-There were however several significant barriers to adoption by peers, both within the scuttlebutt community and for new peers arriving via the website. The most important areas identified are surrounding the use of language as a possible barrier to entry; the onboarding challenges that the Scuttlebutt community already faces; the lack of clear naming of certain functions and actions; the lack of a tutorial or guide on what it does and how to use it; the lack of clear explanation of what data is public and what data is private. There remains an embedded assumption about how peer-to-peer (p2p) applications, specifically scuttlebutt, work. For new users with little prior knowledge of p2p and/or scuttlebutt, the application fails to indicate what the preconditions are to ensuring your data sends effectively.
+There were however several significant barriers to adoption by peers, both within the scuttlebutt community and for new peers arriving via the website. The most important areas identified are:
+
+* The use of language as a possible barrier to entry
+* The onboarding challenges that the Scuttlebutt community already faces
+* The lack of clear naming of certain functions and actions
+* The lack of an integrated tutorial or guide on what it does and how to use it
+* The lack of clear explanation of what data is public and what data is private
+
+There remains an embedded assumption about how peer-to-peer (p2p) applications, specifically scuttlebutt, work. For new users with little prior knowledge of p2p and/or scuttlebutt, the application fails to indicate what the preconditions are to ensuring your data sends effectively.
 
 ## Methodology
 
