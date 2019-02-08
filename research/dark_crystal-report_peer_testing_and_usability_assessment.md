@@ -1,14 +1,14 @@
+<p align="center">
+  <img src="./img/dark-crystal-icon_200x200.png" alt="dark-crystal-icon" width="200" height="200" style="padding-bottom: 0.5em;" />
+</p>
+
 # Dark Crystal
 
 ## Peer Testing and Usability Assessment
 
-In order to rid the tech-world of the 'user' concept, this document substitutes the word 'user' for 'peer'.
-
-![](./img/sting-ray.jpeg)
-
 ### Summary
 
-Peer testing was undertaken by members of the Dark Crystal team through individual and group sessions at multiple meetups and events across a period of two months. Much of the feedback opinions and data was collected at the Simply Secure design residency in Berlin in January 2019, at Agorama Sever Coop in London in February 2019 and at Art Hack in Wellington, NZ in January 2019.
+Peer testing was undertaken by members of the Dark Crystal team through individual and group sessions at multiple meetups and events across a period of two months. Much of the feedback opinions and data was collected at the [Simply Secure design residency in Berlin](https://simplysecure.org/underexposed/) in January 2019, at [Agorama Sever Coop in London](https://home.agorama.org.uk/) in February 2019 and at Art Hack in Wellington, NZ in January 2019.
 
 Dark Crystal's strengths currently lie in a very clear conceptualisation of the process of sharing secrets among trusted peers. Once peers had explored the application and gained a knowledge of the context in which to apply make use of it, the nuance of this analogy was widely appreciated and most people interacted fairly intuitively with the application. Overall we received a lot of excitement about the project and its stated goals, and there was significant enthusiasm about the implementation so far.
 
@@ -20,12 +20,12 @@ There were however several significant UX barriers to adoption by peers, both wi
 * The lack of an integrated tutorial or guide on what it does and how to use it
 * The lack of clear explanation of what data is public and what data is private
 
-There remains an embedded assumption about how peer-to-peer (p2p) applications, specifically scuttlebutt, work. For new users with little prior knowledge of p2p and/or scuttlebutt, the application fails to indicate what the preconditions are to ensuring your data sends effectively.
+There remains an embedded assumption about how peer-to-peer (p2p) applications, specifically scuttlebutt, work. For new peers with little prior knowledge of p2p and/or scuttlebutt, the application fails to indicate what the preconditions are to ensuring your data sends effectively.
 
 ### Methodology
 
 - Little to no knowledge of the underlying network and data persistence protocol Scuttlebutt was assumed.
-- Peers were given as little prior information possible in an attempt to simulate a new user arriving in the application following installation from the website.
+- Peers were given as little prior information possible in an attempt to simulate a new peer arriving in the application following installation from the website.
 - Peers were asked to read the website at [darkcrystal.pw](https://darkcrystal.pw) and gain an understanding of the problem that Dark Crystal was attempting to address.
 - Peers were either asked to install Patchbay and navigate to the `/dark-crystal` section of the application to begin to interact with the interface.
 - Peers were questioned about what they were drawn towards as they interacted with the application, and what they expected certain actions to do.
@@ -34,8 +34,6 @@ There remains an embedded assumption about how peer-to-peer (p2p) applications, 
 ---
 
 ### Points for Discussion
-
-![](./img/dark-crystal-icon_200x200.png)
 
 There is no hierarchy or particular order of importance.
 
@@ -69,7 +67,7 @@ Many peers trialing the application were unsure what the 'request' button would 
 Other peers raised whether naming a secret would actually work for some people. Whether this can be directly addressed or whether this is simply 'peer error' is up to debate. While Dark Crystal should aspire to make things as intuitive as possible, there is only so much you can hold someone's hand. This is worth testing over a long period. Its possible the UI should suggest a naming convention to people as a guideline to work with, then people can apply with what makes sense for them.
 
 #### Onboarding
-The onboarding issues for Scuttlebutt itself are well known but need restating in the context of Dark Crystal's usability. Due to it currently being embedded within Patchbay, and sharing Patchbay indexes that aren't currently required by Dark Crystal, this causes a significant delay when starting the application for the first time, and when listening for the arrival of new data. At times this meant a user signing up to try out Dark Crystal had to wait **20 minutes** for data to sync and Dark Crystal to be usable. While encouraging people to be patient why trying out prototype technolgy is akward but relatively acceptable, in order to achieve wide user-base, the waiting times are simply unacceptable and are a sure fire way to lose new peers.
+The onboarding issues for Scuttlebutt itself are well known but need restating in the context of Dark Crystal's usability. Due to it currently being embedded within Patchbay, and sharing Patchbay indexes that aren't currently required by Dark Crystal, this causes a significant delay when starting the application for the first time, and when listening for the arrival of new data. At times this meant a peer signing up to try out Dark Crystal had to wait **20 minutes** for data to sync and Dark Crystal to be usable. While encouraging people to be patient why trying out prototype technolgy is awkward but relatively acceptable, in order to achieve wide peer-base, the waiting times are simply unacceptable and are a sure fire way to lose new peers.
 
 In some instances, it took several hours for shards to render in the application between certain peers (or they never did), despite being local peers on the same network. It is not clear whether they have 'arrived' in the local database and just haven't indexed, or whether there was a network transmission failure. While Scuttlebutt is 99 times out of 100 reliable (if not more so), if we cannot guarantee delivery of shards, this remains a significant and possibly killer issue. More research needs to be done on the lower level implementation of Scuttlebot to ensure messages are gossiped and / or indexed correctly.
 
@@ -82,15 +80,33 @@ Due to the social nature of scuttlebutt, and the secure nature of Dark Crystal, 
 
 #### Behaviour and Navigation
 
-Several users expected different behaviour when hitting the ESC button when selecting a custodian, expecting it to simply close the dropdown rather than exit the form modal.
+Some peers found both the interface and the protocol puzzling and expressed this confusion in the form of questions such as:
 
-Multiple users reported unintuitive use of anchor elements throughout the application, here is one such example:
+> How did I get here?
+> Where am I currently?
+> Where am I going next?
+> What is going to happen next?
+> What happens if I click this?
+> Will I be able to go backwards?
+> Will I be able to change my mind?
+> How many steps will there be in this process?
+> Have I done this right?
+
+Such questions reveal an inability to easily intuit what the consequences of a specific action might be. This has serious ramifications for Dark Crystal which is fundamentally about handling sensitive information.
+
+Some peers observered they felt the UI was actively encouraging them to share their secrets. This could be problematic.
+
+Several peers expected different behaviour when hitting the `ESC` button when selecting a custodian, expecting it to simply close the dropdown rather than exit the form modal.
+
+Multiple peers reported unintuitive use of anchor elements throughout the application, here is one such example:
 
 > On the main page of DC, I clicked on the image of the person who had sent me a shard.
 > I expected to it to take me to the details of the shard.
 > Instead it took me to their profile.
 
 A bug that persisted in the custodian suggester has been fixed. This was an early behavioural issue that has been resolved.
+
+There is no importance hierarchy in New Crystal form. Peers reinforced our belief that a flat form with no additional information (such as tooltips) meant it was not visually clear what was of importance.
 
 #### Delivery Confirmation
 
@@ -113,7 +129,7 @@ This peer stated that due to the importance of the request, it makes sense that 
 
 Several peers raised the issue that currently there is no consent mechanism whereby a potential custodian of the shard can be asked if they want to actually are willing to be a custodian.
 
-Cory Doctorow raised a possible threat model that the project faces, whereby those that are implicated in being custodians of a secret are potentially under threat from an attacker seeking to reveal that secret. This is incredibly problematic if the custodian is not a willing party in this arrangement. A clear consent mechanism is an important / necessary feature in order to ensure this application behaves up to the ethical standard to which we hold ourselves and doesn't implicate people unknowingly or unwillingly into potentially dangerous situations.
+In a [recent podcast](https://keybase.pub/danielsan/the-local-gossip/the-local-gossip-NeB4q4Hy-8-dark-crystal-diaries-0-cory-doctorow/) about Dark Crystal, Cory Doctorow raised a possible threat model that the project faces, whereby those that are implicated in being custodians of a secret are potentially under threat from an attacker seeking to reveal that secret. This is incredibly problematic if the custodian is not a willing party in this arrangement. A clear consent mechanism is an important / necessary feature in order to ensure this application behaves up to the ethical standard to which we hold ourselves and doesn't implicate people unknowingly or unwillingly into potentially dangerous situations.
 
 This has been a discussion throughout the process and the team is well aware of consent as a core component of the application. It was screened out in the initial implementation as it was felt by the team that it was more important to build a working prototype, and the mechanism for obtaining consent warranted further research and discussion.
 
@@ -140,7 +156,6 @@ This list includes as many suggestions that could be turned into peer journeys. 
 
 - As a peer, I would like to be able to navigate to somewhere in the application where there is a clear introduction or guide on how to use this application.
 
-
 - As a peer, when creating a new dark crystal, I would like to use a slider to indicate the quorum. This is a visually intuitive way of preventing me from choosing a quorum of 1 (which is invalid).
   * Guarantees that a peer can _never_ choose a higher quorum than the number of custodians
   * As a peer, when I select 2 or more custodians, a slider appears below which enables me to indicate the desired quorum.
@@ -160,8 +175,26 @@ This list includes as many suggestions that could be turned into peer journeys. 
 - As a peer, when I create a new crystal, rather than giving them a name, I would like to give them a list of tags, so that I can categorise / intuit their purpose more easily.
 
 - As a peer, I would like to enter a master password which gives me access to the client application and the underlying database. This is so that I can use a memorable passphrase to ensure my data is properly encrypted.
+  * Sadly people aren't encouraged / bothered to setup full disk encryption, especially with Windows machines, and many people don't even have a password to their computers.
+  * Practically speaking it is possible, but a pain to implement as it has broader ramifications for the entire scuttlebutt ecosystem and other client applications as it regulates access to the database.
+  * This could be a separate application that is run on start-up before any scuttlebutt client is allowed to boot, and is called as a hook when all scuttlebutt client applications close.
+
+- As a peer, when I create a new crystal, I would like to choose the same person twice in order to give that person more trust.
+  * Practically speaking, giving one person two shards in effect lowers the quorum for that person. Interestingly, it doesn't do the same for the others. A neat suggestion!
+  * Could this be weaved into the 'trust indicator' feature to map out a visualisation of trust down to the level of the individuals involved?
 
 ---
 
 #### Bugs
 - A quorum of 1 triggers cascading errors in Patchbay and it requires you to refresh the application.
+
+---
+
+## Notes:
+In order to rid the tech-world of the 'peer' concept, this document substitutes the word 'peer' for 'peer'.
+
+---
+
+## Thanks
+
+_A huge thank you to [Simply Secure](https://simplysecure.org/), [Agorama Server Coop](https://home.agorama.org.uk/), Art Hack, and all the individuals from the Scuttlebutt community, our friends and family who participated in and contributed to this reflective process._
