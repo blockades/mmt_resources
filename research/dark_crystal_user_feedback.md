@@ -168,3 +168,51 @@ He also said the pink was too bright (but i love it!).
 ## Cel (not sure if this should go here)
 
 > Possible good use case for #dark-crystal : 2FA backup codes. You know the list of single-use codes that some web services give you so you can log into your account if you don't have your phone/2FA/TOTP device.
+
+
+
+### Bit_Tron
+
+Ali observed the 'secret' field suggested some kind of extra cypher input to doubly secure the SSB private key!
+
+Secret too big!
+
+quorum of 1 still triggers cascading errors (mac)
+
+when filling in custodians with the dropdown ESC  could mean exit the dropdown, not the form modal!
+
+### lachenmayer
+
+metaphors confusing
+- shards and crystals is confusing!
+- could have some explanation text
+- name vs label
+    - title vs description?
+    - overlapping concepts
+    - labels could imply tags
+- better description of the fields!!
+    - whats public / whats private?
+    - label confusing! why not just include it in the secret?
+    - multiple secrets?
+- quorum as a slider, min 2!
+- custodians vs quorum - visualise using a trust indicator as a 'progress bar' / password strength indicator
+
+
+- now ive shared the secret, and have a crystal in my interface, where has it gone?
+    - offline - has it actually sent yet - synced to the broader network yet?
+    - 'shard sent' - what does that mean? Has it _actually sent_ or is it just published locally
+    - useful to say 'published locally - waiting to sync' and then 'shard sent'
+    - shard never arrives?
+    - secret now shared with these people - you can't now read this.
+
+- magical language is confusing - is obfuscating?
+    - cliquey / subtle barrier
+    - crystal meth????
+    - cultural barrier with the language used
+    - metaphors used
+    - ideation stage was relevant - scalability possibly a barrier?
+
+- main view - YOU HAVE A SHARD! Push notification that says 'CONTACT THIS PERSON'
+
+- message thats acknowledge - need to know when and where it lands!
+
