@@ -28,8 +28,8 @@ Swarm is a distributed storage platform and content distribution service. SSB al
 
 Lets consider two cases where interoperability between SSB and Ethereum would be useful:
 
-a. You want to interact with some entity with a known Ethereum address using the Scuttlebutt protocol. Eg: by referencing in a Scuttlebutt message
-b. You want to interact with some entity with a known Scuttlebutt feed id using the Ethereum protocol.  Eg: by sending them funds or including them in a smart contract. 
+1. You want to interact with some entity with a known Ethereum address using the Scuttlebutt protocol. Eg: by referencing in a Scuttlebutt message
+2. You want to interact with some entity with a known Scuttlebutt feed id using the Ethereum protocol.  Eg: by sending them funds or including them in a smart contract. 
 
 The problem is that the two systems use a different elliptic curve, so currently there can be no direct cryptographic relationship between an Ethereum address and an SSB feed id. SSB was designed to be cryptographic-primitive agnostic, so all feed ids and signatures have a suffix which describes them, typically '.ed25519', and similarly references to messages and blobs have a suffix describing their hash function. So we propose to introduce feed ids and signatures on the secp256k1 curve.
 
