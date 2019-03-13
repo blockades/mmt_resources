@@ -47,7 +47,7 @@ https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290
 
 ## Current state of this project
 
-- Key generation, seeded key generation, signing and verification are implemented and passing tests on our [fork of ssb-keys] see also [further discussion in the initial pull request](https://github.com/blockades/ssb-keys/pull/1).
+- Key generation, seeded key generation, signing and verification are implemented and passing tests on our [fork of ssb-keys](https://github.com/blockades/ssb-keys) see also [further discussion in the initial pull request](https://github.com/blockades/ssb-keys/pull/1).
   
 - The `.secp256k1` suffix for feedIds is allowed in our [fork of ssb-ref](https://github.com/blockades/ssb-ref)
 - Some other experiments can be found in [this repo](https://github.com/blockades/secp_experiments)
