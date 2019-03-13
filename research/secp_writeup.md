@@ -1,14 +1,13 @@
 
 # Report on interoperability between the Ethereum and Secure Scuttlebutt networks
 
+[link to doc on ethresear.ch](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848)
+
 ## Introduction (TODO)
 
-link to doc on ethresear.ch
-https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848
-## Purpose of interoperability
+## Comparison of SSB with other off-chain protocols
 
 Blockchains are suited to information where widespread consensus is critical, but due to the associated costs and limitations, it makes sense to use them as little as possible and have well-integrated off-chain systems. Ethereum is not simply a blockchain protocol but a stack of protocols including some which are designed specifically for off-chain transport and storage. So it makes sense to look at these protocols in order to establish whether SSB has something to offer which is not already there.
-
 
 ### Whisper
 
@@ -16,17 +15,18 @@ Whisper is a communication protocol with a focus on ephemeral messaging.  SSB ho
 
 Whisper messages include the recipient as metadata, meaning an external observer can see who is talking to who.  SSB-private obfuscates recipients, meaning an observer can see who is publishing encrypted messages, but not who they are being sent to.  This is only practical to do because of SSB's gossip protocol.  There is no ubiquitous view of the network, rather each peer can only access messages from a specified number of 'hops' away from their own node on the social graph. This means each peer has a small enough sub-set of the network that attempting to decrypt all messages because practical. This might seem like a lot of effort to go to just to obfuscate some metadata, but metadata leaking has been one of the biggest criticisms of traditional encrypted messaging approaches like PGP over email. 
 
-Eclipse attacks
+- Eclipse attacks TODO
 
 ### Swarm
+
 Swarm is a distributed storage platform and content distribution service. SSB also offerers distributed persistance, but it is not designed for content-heavy applications.  
 
 
-'slow update times' like ipns
+- 'slow update times' like ipns
 
 ## Proposed approach
 
-Two cases where interoperability between SSB and Ethereum would be useful:
+Lets consider two cases where interoperability between SSB and Ethereum would be useful:
 
 a. You want to interact with some entity with a known Ethereum address using the Scuttlebutt protocol. Eg: by referencing in a Scuttlebutt message
 b. You want to interact with some entity with a known Scuttlebutt feed id using the Ethereum protocol.  Eg: by sending them funds or including them in a smart contract. 
@@ -108,7 +108,6 @@ ConsenSys have begun implementing SSB in Java as part of their core library, Cav
 We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal, but greater clarity is needed on what exactly we want to make possible by doing so, as there are other solutions for cross-platform interoperability which don't require low level protocol changes.
 
 
-TODO:
-close pr in ssb-keys fork
-look at recieve-keys
-mention that we are using the keccak module, the same one as ethereumJS - we sign keccek256(message).
+### TODO:
+- look at recieve-keys
+- mention that we are using the keccak module, the same one as ethereumJS - we sign keccek256(message).
