@@ -5,6 +5,8 @@
 
 ## Introduction (TODO)
 
+The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications. 
+
 ## Comparison of SSB with other off-chain protocols
 
 Blockchains are suited to information where widespread consensus is critical, but due to the associated costs and limitations, it makes sense to use them as little as possible and have well-integrated off-chain systems. Ethereum is not simply a blockchain protocol but a stack of protocols including some which are designed specifically for off-chain transport and storage. So it makes sense to look at these protocols in order to establish whether SSB has something to offer which is not already there.
@@ -48,11 +50,13 @@ https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290
 ## Current state of this project
 
 - Key generation, seeded key generation, signing and verification are implemented and passing tests on our [fork of ssb-keys](https://github.com/blockades/ssb-keys) see also [further discussion in the initial pull request](https://github.com/blockades/ssb-keys/pull/1).
-  
+- We have used [secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node), and the [keccak](https://github.com/cryptocoinjs/keccak) module, the same one as ethereumJS, for hashing messages before signing.
 - The `.secp256k1` suffix for feedIds is allowed in our [fork of ssb-ref](https://github.com/blockades/ssb-ref)
 - Some other experiments can be found in [this repo](https://github.com/blockades/secp_experiments)
 
-Using these forked modules, we used TODO: add test code to a repo to publish some example messages to a test network. 
+Using these forked modules, we were able to publish messages like the one below to a test network.
+
+TODO: add test code to a repo to publish some example messages to a test network. 
 
 ### Example message published with a secp256k1 feedId and signature:
 
@@ -71,12 +75,11 @@ Using these forked modules, we used TODO: add test code to a repo to publish som
   timestamp: 1549395437491 }
 ```
 
-
 ## Security issues
 
-Implementing this could introduce a hoard of issues, but at this proof-of-concept level we have not prioritised this.  It is anyway worth noting the following: 
+Allowing these signatures on the Scuttlebutt network could introduce security issues, but at this proof-of-concept level we have not made this our primary concern.  It is anyway worth noting the following: 
 
-[secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node) explicitly states in the readme that it is an experimental module.
+The library we have used, [secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node), explicitly states in the readme that it is an experimental module.
 
 To protect against the ['chosen protocol attack'](https://www.schneier.com/academic/paperfiles/paper-chosen-protocol.pdf), we don't want a valid SSB message to also be a valid Etherum transaction _ever_. In SSB this is addressed by using the `hmac_key` argument to `ssb-keys.signObj`. The idea is that there is a separate `hmac_key` for each type of thing which one is able to sign, and then `signObj(keys, hmac_key, obj)` is the same as `sign(keys, hmac(obj, hmac_key))`. This means it is almost impossible that `hmac(obj, hmac_key)` could also be a valid Ethereum transaction.
 
@@ -103,11 +106,11 @@ Another consideration is to have a single user or entity owning multiple SSB fee
 ### 'blockparty'
 
 [blockparty](https://github.com/blockparty-ssb/blockparty) is a multi-network SSB client which aims to create interoperability between different 'scuttleverses' (the 'main' scuttlebutt network has a particular network key, so there are many possible alternatives).  Taking this project as inspiration, we could have an alternative network where secp256k1 feed ids are the norm, but have some cross-references to the 'main' network, meaning we can make use of existing accounts and infrastructure such as pubs.
+
 ## Conclusion
 
-We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal, but greater clarity is needed on what exactly we want to make possible by doing so, as there are other solutions for cross-platform interoperability which don't require low level protocol changes.
+We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers. 
 
 
 ### TODO:
 - look at recieve-keys
-- mention that we are using the keccak module, the same one as ethereumJS - we sign keccek256(message).
