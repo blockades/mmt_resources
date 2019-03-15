@@ -41,10 +41,10 @@ However, it is worth noting that there could be a further use case for cross pla
 
 ### EIP 712 - Ethereum typed structured data hashing and signing  
 
-We propose to conform to EIP712, so that the same structured data reliably gives to same signature.
+We propose to conform to EIP712, a specification of typed, structured data which means that the same structured data reliably gives to same hash or signature.
 
-https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md
-https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290
+- [EIP712 Proposal](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md)
+- [Scaling web3 with signTypedData](https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290)
 
 
 ## Current state of this project
@@ -54,9 +54,7 @@ https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290
 - The `.secp256k1` suffix for feedIds is allowed in our [fork of ssb-ref](https://github.com/blockades/ssb-ref)
 - Some other experiments can be found in [this repo](https://github.com/blockades/secp_experiments)
 
-Using these forked modules, we were able to publish messages like the one below to a test network.
-
-TODO: add test code to a repo to publish some example messages to a test network. 
+Using these forked modules, we were able to publish messages like the one below to a test network, a [demonstration can be found here](https://github.com/blockades/secp_experiments/blob/master/ssb-server.js)
 
 ### Example message published with a secp256k1 feedId and signature:
 
@@ -70,7 +68,7 @@ TODO: add test code to a repo to publish some example messages to a test network
      hash: 'sha256',
      content: 
       { type: 'post',
-        text: 'it nice to be important but its more important to be nice' },
+        text: 'its nice to be important but its more important to be nice' },
      signature: 'dg6qh+kvti0jCASiNRlF/iPO+oWsDjrsAmuTD2ZJtENlfJ3RH2bf5xbetF/kbsO+N3Al4YbCIohextle4bAa3w==.sig.secp256k1' },
   timestamp: 1549395437491 }
 ```
