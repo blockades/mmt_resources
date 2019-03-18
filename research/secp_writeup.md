@@ -1,11 +1,13 @@
 
 # Report on interoperability between the Ethereum and Secure Scuttlebutt networks
 
-[link to doc on ethresear.ch](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848)
+## Introduction
 
-## Introduction (TODO)
+The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications, and it's relationship-centred nature gives it some interesting properties which make it distinct from distributed-hash-table based protocols.
 
-The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications. 
+We discuss SSB's application as an off-chain transport and storage solution for Ethereum Dapp developers, and present a proof-of-concept for introducing secp256k1 signing to SSB.
+
+This document follows the groundwork from the article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
 
 ## Comparison of SSB with other off-chain protocols
 
@@ -17,14 +19,11 @@ Whisper is a communication protocol with a focus on ephemeral messaging.  SSB ho
 
 Whisper messages include the recipient as metadata, meaning an external observer can see who is talking to who.  SSB-private obfuscates recipients, meaning an observer can see who is publishing encrypted messages, but not who they are being sent to.  This is only practical to do because of SSB's gossip protocol.  There is no ubiquitous view of the network, rather each peer can only access messages from a specified number of 'hops' away from their own node on the social graph. This means each peer has a small enough sub-set of the network that attempting to decrypt all messages because practical. This might seem like a lot of effort to go to just to obfuscate some metadata, but metadata leaking has been one of the biggest criticisms of traditional encrypted messaging approaches like PGP over email. 
 
-- Eclipse attacks TODO
+Whisper uses a DHT which may make it vulnerable to eclipse attacks, whereby a specific node is targeted to make part of the network inaccessible.  SSB's gossip protocol makes these kind of attacks more difficult.
 
 ### Swarm
 
-Swarm is a distributed storage platform and content distribution service. SSB also offerers distributed persistance, but it is not designed for content-heavy applications.  
-
-
-- 'slow update times' like ipns
+Swarm is a distributed storage platform and content distribution service. SSB also offerers distributed data persistance, but it is not designed for content-heavy applications. 
 
 ## Proposed approach
 
@@ -46,6 +45,7 @@ We propose to conform to EIP712, a specification of typed, structured data which
 - [EIP712 Proposal](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md)
 - [Scaling web3 with signTypedData](https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290)
 
+https://github.com/ssbc/ssb-keys/issues/54
 
 ## Current state of this project
 
@@ -109,6 +109,3 @@ Another consideration is to have a single user or entity owning multiple SSB fee
 
 We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers. 
 
-
-### TODO:
-- look at recieve-keys
