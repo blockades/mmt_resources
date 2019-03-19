@@ -1,11 +1,11 @@
 
 # Report on interoperability between the Ethereum and Secure Scuttlebutt networks
 
-## Introduction
+## Abstract
 
 The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications, and it's relationship-centred nature gives it some interesting properties which make it distinct from distributed-hash-table based peer-to-peer protocols.
 
-We discuss SSB's application as an off-chain transport and storage solution for Ethereum Dapp developers, and present a proof-of-concept for introducing secp256k1 signing to SSB.
+We discuss SSB's application as an off-chain transport and storage solution for Ethereum Dapp developers, and present a proof-of-concept for introducing secp256k1 signing to SSB. SSB is suited to applications which center around relationships, such as state channels, or sending partially signed transactions between co-signers, but less appropriate for applications which center around large scale content distribution. 
 
 This document follows the groundwork from the ethresearch article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
 
@@ -15,7 +15,7 @@ Blockchains are suited to information where widespread consensus is critical, bu
 
 ### Whisper
 
-Whisper is a communication protocol with a focus on ephemeral messaging.  SSB however is designed to be a permanent log, although ephemeral messages can be sent over SSB using the module [SSB-ephemeral-keys](https://github.com/ssbc/ssb-ephemeral-keys).
+Whisper is a communication protocol with a focus on ephemeral messaging.  SSB, however, is designed to be a permanent, immutable log, although ephemeral messages can be sent over SSB using the module [SSB-ephemeral-keys](https://github.com/ssbc/ssb-ephemeral-keys).
 
 Whisper messages include the recipient as metadata, meaning an external observer can see who is talking to who.  SSB-private obfuscates recipients, meaning an observer can see who is publishing encrypted messages, but not who they are being sent to.  This is only practical to do because of SSB's gossip protocol.  There is no ubiquitous view of the network, rather each peer can only access messages from a specified number of 'hops' away from their own node on the social graph. This means each peer has a small enough sub-set of the network that attempting to decrypt all messages because practical. This might seem like a lot of effort to go to just to obfuscate some metadata, but metadata leaking has been one of the biggest criticisms of traditional encrypted messaging approaches like PGP over email. 
 
@@ -23,7 +23,7 @@ Whisper uses a DHT which may make it vulnerable to eclipse attacks, whereby a sp
 
 ### Swarm
 
-Swarm is a distributed storage platform and content distribution service. SSB also offerers distributed data persistance, but it is not designed for content-heavy applications. 
+Swarm is a distributed storage platform and content distribution service. SSB also offerers distributed data persistance, but it is designed for messages rather than large files. While SSB does have a system for requesting and distributing larger binary 'blobs', the protocol is not specifically designed for large files or data sets.
 
 ## Proposed approach
 
@@ -89,6 +89,10 @@ SSB is an agent-centred protocol where data is replicated based on relationships
 
 A [draft paper on scalability of SSB can be found here](https://github.com/dominictarr/scalable-secure-scuttlebutt/blob/master/paper.md).
 
+## Use in State Channels
+
+Due to it's agent-centred or relationship-centred design, SSB has implications for state channels, and state channel networks.  In [Counterfactual's paper on Generalised State Channels](https://www.counterfactual.com/statechannels/) it is made clear that with state channels, users hold more data than simply their public key, and storage and transport of this data is an issue for application developers.  The automated replication of SSB feeds to neighbors on the trust graph gives us a good compromise between privacy and data persistence.
+
 ## Similar/complementary efforts
 
 ConsenSys have begun implementing SSB in Java as part of their core library, [Cava](https://github.com/ConsenSys/cava).  The idea is to make it interoperable with RLPx (the protocol with which Ethereum nodes communicate with each other). 
@@ -115,5 +119,5 @@ Another consideration is to have a single user or entity owning multiple SSB fee
 
 ## Conclusion
 
-We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers.  In particular, SSB's gossip protocol is suited to agent-centred, as opposed to content-centered contexts. It is also well suited for transport and persistence of sensitive information, where it is important that metadata is obscured. 
+We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers.  In particular, SSB's gossip protocol is suited to agent-centred, as opposed to content-centered contexts, which has implications for state-channels. It is also well suited for transport and persistence of sensitive information, where it is important that metadata is obscured. 
 
