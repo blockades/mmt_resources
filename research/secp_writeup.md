@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications, and it's relationship-centred nature gives it some interesting properties which make it distinct from distributed-hash-table based protocols.
+The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications, and it's relationship-centred nature gives it some interesting properties which make it distinct from distributed-hash-table based peer-to-peer protocols.
 
 We discuss SSB's application as an off-chain transport and storage solution for Ethereum Dapp developers, and present a proof-of-concept for introducing secp256k1 signing to SSB.
 
-This document follows the groundwork from the article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
+This document follows the groundwork from the ethresearch article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
 
 ## Comparison of SSB with other off-chain protocols
 
@@ -40,12 +40,14 @@ However, it is worth noting that there could be a further use case for cross pla
 
 ### EIP 712 - Ethereum typed structured data hashing and signing  
 
-We propose to conform to EIP712, a specification of typed, structured data which means that the same structured data reliably gives to same hash or signature.
+We propose to conform to EIP712, a specification of typed, structured data which means that the same structured data reliably gives to same hash or signature. This has implications for interoperability because it mean that signed information replicated over SSB could be directly included in a contract at a later time. We propose to use [Metamask's node module for signing and verifying with EIP712](https://github.com/MetaMask/eth-sig-util).
 
 - [EIP712 Proposal](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md)
 - [Scaling web3 with signTypedData](https://medium.com/metamask/scaling-web3-with-signtypeddata-91d6efc8b290)
-
-https://github.com/ssbc/ssb-keys/issues/54
+- [uPort module](https://link.medium.com/2UsedZQu3U)
+- [Verifying such signatures in a contract](https://github.com/uport-project/eip712-claims-experiments)
+- [signing ocap-like object with EIP712](https://github.com/danfinlay/capnode/blob/eip-712/lib/crypto.js#L57)
+- [Request for EIP712 to be implemented in ssb-keys](https://github.com/ssbc/ssb-keys/issues/54)
 
 ## Current state of this project
 
@@ -54,7 +56,7 @@ https://github.com/ssbc/ssb-keys/issues/54
 - The `.secp256k1` suffix for feedIds is allowed in our [fork of ssb-ref](https://github.com/blockades/ssb-ref)
 - Some other experiments can be found in [this repo](https://github.com/blockades/secp_experiments)
 
-Using these forked modules, we were able to publish messages like the one below to a test network, a [demonstration can be found here](https://github.com/blockades/secp_experiments/blob/master/ssb-server.js)
+Using these forked modules, we were able to publish messages like the one below to a test network, [sample code demonstrating this can be found here](https://github.com/blockades/secp_experiments/blob/master/ssb-server.js)
 
 ### Example message published with a secp256k1 feedId and signature:
 
@@ -81,9 +83,15 @@ The library we have used, [secp256k1-node](https://github.com/cryptocoinjs/secp2
 
 To protect against the ['chosen protocol attack'](https://www.schneier.com/academic/paperfiles/paper-chosen-protocol.pdf), we don't want a valid SSB message to also be a valid Etherum transaction _ever_. In SSB this is addressed by using the `hmac_key` argument to `ssb-keys.signObj`. The idea is that there is a separate `hmac_key` for each type of thing which one is able to sign, and then `signObj(keys, hmac_key, obj)` is the same as `sign(keys, hmac(obj, hmac_key))`. This means it is almost impossible that `hmac(obj, hmac_key)` could also be a valid Ethereum transaction.
 
+## Scaling issues
+
+SSB is an agent-centred protocol where data is replicated based on relationships between agents. As already mentioned, in contrast to DHT-based peer-to-peer protocols, there is no one ubiquitous view of the network, but each node has access to some limited area of the social graph. This means it scales very well, but only when the application is relationship-centred in nature.
+
+A [draft paper on scalability of SSB can be found here](https://github.com/dominictarr/scalable-secure-scuttlebutt/blob/master/paper.md).
+
 ## Similar/complementary efforts
 
-ConsenSys have begun implementing SSB in Java as part of their core library, Cava.  The idea is to make it interoperable with RLPx (the protocol with which Ethereum nodes operate with each other). 
+ConsenSys have begun implementing SSB in Java as part of their core library, Cava.  The idea is to make it interoperable with RLPx (the protocol with which Ethereum nodes communicate with each other). 
 
 ## Possible alternative approaches
 
@@ -107,5 +115,5 @@ Another consideration is to have a single user or entity owning multiple SSB fee
 
 ## Conclusion
 
-We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers. 
+We have implemented secp256k1 keys for signing, and allowing this on the main Scuttlebutt network is an obtainable goal.  We have also identified some aspects of the SSB protocol which might be beneficial to Dapp developers.  In particular, SSB's gossip protocol is suited to agent-centred, as opposed to content-centered contexts. It is also well suited for transport and persistence of sensitive information, where it is important that metadata is obscured. 
 
