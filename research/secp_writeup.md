@@ -1,13 +1,13 @@
 
 # Report on interoperability between the Ethereum and Secure Scuttlebutt networks
 
+This document follows the groundwork from the ethresearch article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
+
 ## Abstract
 
 The Secure Scuttlebutt protocol was initially developed for a peer-to-peer social network.  While this is still it's best known and most popular use-case, it is being adopted for a growing number of other applications, and it's relationship-centred nature gives it some interesting properties which make it distinct from distributed-hash-table based peer-to-peer protocols.
 
 We discuss SSB's application as an off-chain transport and storage solution for Ethereum Dapp developers, and present a proof-of-concept for introducing secp256k1 signing to SSB. SSB is suited to applications which center around relationships, such as state channels, or sending partially signed transactions between co-signers, but less appropriate for applications which center around large scale content distribution. 
-
-This document follows the groundwork from the ethresearch article ['Implementing secp256k1 on Secure Scuttlebutt to create cross-platform Ethereum-Scuttlebutt applications'](https://ethresear.ch/t/implementing-secp256k1-on-secure-scuttlebutt-ssb-to-create-cross-platform-ethereum-scuttlebutt-applications/4848).
 
 ## Comparison of SSB with other off-chain protocols
 
@@ -51,7 +51,7 @@ We propose to conform to EIP712, a specification of typed, structured data which
 
 ## Current state of this project
 
-- Key generation, seeded key generation, signing and verification are implemented and passing tests on our [fork of ssb-keys](https://github.com/blockades/ssb-keys) see also [further discussion in the initial pull request](https://github.com/blockades/ssb-keys/pull/1).
+- Key generation, seeded key generation, signing and verification are implemented and passing tests on our [fork of ssb-keys](https://github.com/blockades/ssb-keys). See also [further discussion in the initial pull request](https://github.com/blockades/ssb-keys/pull/1).
 - We have used [secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node), and the [keccak](https://github.com/cryptocoinjs/keccak) module, the same one as ethereumJS, for hashing messages before signing.
 - The `.secp256k1` suffix for feedIds is allowed in our [fork of ssb-ref](https://github.com/blockades/ssb-ref)
 - Some other experiments can be found in [this repo](https://github.com/blockades/secp_experiments)
@@ -91,7 +91,7 @@ A [draft paper on scalability of SSB can be found here](https://github.com/domin
 
 ## Use in State Channels
 
-Due to it's agent-centred or relationship-centred design, SSB has implications for state channels, and state channel networks.  In [Counterfactual's paper on Generalised State Channels](https://www.counterfactual.com/statechannels/) it is made clear that with state channels, users hold more data than simply their public key, and storage and transport of this data is an issue for application developers.  The automated replication of SSB feeds to neighbors on the trust graph gives us a good compromise between privacy and data persistence.
+Due to it's agent-centred or relationship-centred design, SSB has implications for state channels, and state channel networks.  In [Counterfactual's paper on Generalised State Channels](https://www.counterfactual.com/statechannels/) it is made clear that with state channels, users hold more data than simply their public key, and storage and transport of this data is an issue for application developers.  The automated replication of SSB feeds to neighbors on the trust graph gives us a good compromise between privacy and data persistence. Tampering of a feed by peers is made impossible by using timestamps, hash-linking and signatures.
 
 ## Similar/complementary efforts
 
