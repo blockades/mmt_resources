@@ -91,7 +91,7 @@ A [draft paper on scalability of SSB can be found here](https://github.com/domin
 
 ## Similar/complementary efforts
 
-ConsenSys have begun implementing SSB in Java as part of their core library, Cava.  The idea is to make it interoperable with RLPx (the protocol with which Ethereum nodes communicate with each other). 
+ConsenSys have begun implementing SSB in Java as part of their core library, [Cava](https://github.com/ConsenSys/cava).  The idea is to make it interoperable with RLPx (the protocol with which Ethereum nodes communicate with each other). 
 
 ## Possible alternative approaches
 
