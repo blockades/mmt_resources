@@ -3,7 +3,7 @@
 - [Dominics security review](./security_review_dominic.md)
 - [Feasibility study of implementing secp256k1 on Secure Scuttlebutt](./secp.md)
 - [Report on interoperability between the Ethereum and Secure Scuttlebutt networks](./secp_writeup.md)
-- [Dark Crystal - Report on Peer Testing and Usability Assessment]('./dark_crystal_report-peer_testing_and_usability_assessment.md')
+- [Dark Crystal - Report on Peer Testing and Usability Assessment]('./dark_crystal-report_peer_testing_and_usability_assessment.md)
 
 ## Scenarios and design
 
