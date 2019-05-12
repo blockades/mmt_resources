@@ -4,6 +4,8 @@
 - [Feasibility study of implementing secp256k1 on Secure Scuttlebutt](./secp.md)
 - [Report on interoperability between the Ethereum and Secure Scuttlebutt networks](./secp_writeup.md)
 - [Dark Crystal - Report on Peer Testing and Usability Assessment](./dark_crystal-report_peer_testing_and_usability_assessment.md)
+- [UX Report from UnderExposed Design Residency with Ura Design - Part 1](./UnderExposed Residency Design Workshop with Ura Design: Part One.md)
+- [UX Report from UnderExposed Design Residency with Ura Design - Part 2](./UnderExposed Residency Design Workshop with Ura Design: Part Two.md)
 
 ## Scenarios and design
 
